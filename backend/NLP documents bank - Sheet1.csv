@@ -1,0 +1,54 @@
+Document ID,Title,Link,Topic Labels,Type Labels
+doc_001,"Finance, Growth, and Inequality, WP/21/164, June 2021",https://www.imf.org/-/media/Files/Publications/WP/2021/English/wpiea2021164-print-pdf.ashx,"Finance, Economics",White Paper
+doc_002,spaCy 101: Everything you need to know,https://spacy.io/usage/spacy-101,"Technology, Education","Technical Guide, Blog Post"
+doc_003,China end Malaysia's Sudirman Cup hopes in q-finals,https://www.thestar.com.my/sport/badminton/2025/05/02/china-end-malaysia039s-sudirman-cup-hopes-in-q-finals,Sports,News
+doc_004,Q3 2023 Global Market Outlook Full Report,https://russellinvestments.com/-/media/files/us/insights/corporate/2023-global-market-outlook-full-report.pdf,"Business, Finance, Marketing",Technical Report
+doc_005,A guide to natural language processing with Python using spaCy,https://blog.logrocket.com/guide-natural-language-processing-python-spacy/,"Technology, Education",Blog Post
+doc_006,Machine Learning Meets Transparency in Osteoporosis Risk Assessment: A Comparative Study of ML and Explainability Analysis,https://arxiv.org/pdf/2505.00410.pdf,"Science, Health, Technology",Research Paper
+doc_007,2023 State of the Markets Report,https://www.potomaceconomics.com/wp-content/uploads/2024/06/2023-MISO-SOM_Report_Body-Final.pdf,"Business, Energy",Technical Report
+doc_008,Health Management I Module Guide,https://open.umich.edu/sites/default/files/downloads/university_of_the_western_cape_school_of_public_health_-_health_management_i_-_cc_by_nc_sa_-_2011-corrected_0.pdf,"Health, Education",User Guide
+doc_009,Global Education Monitoring Report 2023,https://unesdoc.unesco.org/ark:/48223/pf0000380472,"Education, Policy",Technical Report
+doc_010,"World Economic Outlook, April 2025",https://www.imf.org/-/media/Files/Publications/WEO/2025/April/English/text.ashx,"Finance, Economics",Technical Report
+doc_011,WHO Global Report on Traditional and Complementary Medicine 2022,https://www.who.int/publications/i/item/9789240052093,"Health, Research",Policy Document
+doc_012,UNEP Emissions Gap Report 2023,https://www.unep.org/resources/emissions-gap-report-2023,"Environment, Science",Technical Report
+doc_013,He-Con Sdn Bhd v Bulyah bt Ishak & Anor,https://drive.google.com/file/d/1b0jpc1zNIwFTMAWhWTc38WWGejksHbsu/view?usp=sharing,"Law, Land Law",Court Judgment
+doc_014,Machine Learning for Cybersecurity: A Case Study,https://arxiv.org/pdf/2501.01234.pdf,"Technology, Security",Research Paper
+doc_015,Nuts about pistachio: What makes this nut so popular in Malaysia?,https://www.thestar.com.my/lifestyle/living/2025/04/29/nuts-about-pistachio-what-makes-this-nut-so-popular-in-malaysia,Lifestyle,News
+doc_016,Top 20 most expensive cities in the world,https://www.thestar.com.my/lifestyle/living/2025/05/01/top-20-most-expensive-cities-in-the-world,Lifestyle,News
+doc_017,Malaysia Airlines Job Application Form,https://www.malaysiaairlines.com/content/dam/mas/pdf/MAB%20New%20Job%20Application%20Form.pdf,Human Resources,Job Application Form
+doc_018,Malaysia Airlines Job Application Form,https://www.malaysiaairlines.com/content/dam/mas/pdf/MAB%20New%20Job%20Application%20Form.pdf,Human Resources,Job Application Form
+doc_019,Undergraduate Application Form – UOW Malaysia KDU,https://www.uow.edu.my/Student-Application-Form.pdf,Education,University Admission Application Form
+doc_020,Application Form – Monash University Malaysia,https://www.monash.edu.my/__data/assets/pdf_file/0003/1153848/MUM-Application-Form-June-2022.pdf,Education,University Admission Application Form
+doc_021,Malaysia Visa Application Form,https://fas.usda.gov/sites/default/files/2018-11/1_malaysia_visa_application.pdf,"Law, Travel",Visa Application Form
+doc_022,Graduate School Application Form – HELP University,https://university.help.edu.my/wp-content/uploads/2023/12/ELMGS_Application_Form-1.pdf,Education,University Admission Application Form
+doc_023,Flexible Work Arrangement (FWA) Application Form,https://malaysiahrforum.com/wp-content/uploads/2022/08/Flexible-Work-Application-Form-Sample.pdf,Human Resources,Flexible Work Arrangement Application Form
+doc_024,Direct Application for Admission to Foundation/Undergraduate Programmes – University of Southampton Malaysia,https://www.southamptonmalaysia.edu.my/sites/default/files/node/brochure-form/files/2021-11/6.%20Application%20Form.pdf,Education,University Admission Application Form
+doc_025,What is Cognitive Behavioral Therapy?,https://www.apa.org/ptsd-guideline/patients-and-families/cognitive-behavioral.pdf (American Psychological Association),"Psychology, Health",Informational Guide
+doc_026,The Impact of Social Media on the Mental Health of Adolescents and Young Adults,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10476631/ (PMC),"Psychology, Technology",Research Paper
+doc_027,The Association between Green Space and Adolescents’ Mental Well-Being,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7557737/ (PMC),"Psychology, Environment, Education",Systematic Review
+doc_028,Urban greenery and mental wellbeing in adults: Cross-sectional mediation analyses on multiple pathways across different greenery measures,https://arxiv.org/pdf/1905.04488.pdf (arXiv),"Psychology, Urban Planning",Research Paper
+doc_029,Risk Factors and Leadership in a Digitalized Working World and Their Effects on Employees’ Stress and Resources: Web-Based Questionnaire Study,https://www.jmir.org/2021/3/e24906/PDF (JMIR),"Psychology, Business",Research Paper
+doc_030,Malaysia Travel Guide,https://assets.ctfassets.net/v228i5y5k0x4/oBA6EChifYyOGASIyO0y0/cf4842a2f25bfbdfec07b8300d9397e7/Malaysia.pdf,"Tourism, Travel",Brochure
+doc_031,Kuala Lumpur: The Dazzling Capital City,https://idbtm.blob.core.windows.net/storage/KL%20Dazzling_December_2023.pdf,"Tourism, Urban",Brochure
+doc_032,Langkawi: The Jewel of Kedah,https://storage.ebrochures.malaysia.travel/storage/Langkawi-The-Jewel-of-Kedah_English_.pdf,"Tourism, Nature",Brochure
+doc_033,Penang Map & Guide,https://storage.ebrochures.malaysia.travel/storage/Map_Guide_PENANG_Eng.pdf,"Tourism, Heritage",Brochure
+doc_034,Cool Highlands – Experience Guide,https://storage.ebrochures.malaysia.travel/storage/CHR_2020_for_IDB.pdf,"Tourism, Adventure",Brochure
+doc_035,Biden’s 2024 State of the Union Address: Full Transcript,https://www.congress.gov/118/meeting/house/116942/documents/HHRG-118-JU00-20240312-SD001.pdf (Congress.gov | Library of Congress),"Politics, Public Policy",Transcript
+doc_036,Brené Brown: The Power of Vulnerability (TED Talk) Transcript,https://www.ted.com/talks/brene_brown_the_power_of_vulnerability/transcript (TED),"Psychology, Personal Development",Transcript
+doc_037,"Press Conference by UN Secretary-General Boutros Boutros-Ghali, 25 May 1994",https://digitallibrary.un.org/record/199906 (Digital Library),"International Relations, Law",Transcript
+doc_038,"NASA Press Conference on the Space Shuttle Columbia, 27 August 2003",https://history2.nasa.gov/columbia/Troxell/Columbia%20Web%20Site/Documents/NASA/Press%20Releases/caib_transcript.pdf (NASA History Division),"Science, Engineering",Transcript
+doc_039,Apollo 11 Lunar Surface Journal: Raw Transcripts,https://www.nasa.gov/history/alsj/a11/a11trans.html (NASA),"Space Exploration, History",Transcript
+doc_040,"US jobs data calms market fears, but jitters on policy uncertainty dominate markets",https://www.reuters.com/markets/us/us-jobs-data-calms-market-fears-jitters-policy-uncertainty-dominate-2025-03-07/ (Reuters),"Finance, Economics",News Article
+doc_041,Stocks gain on signs of easing Sino-US trade tensions,https://www.reuters.com/markets/global-markets-wrapup-1-2025-05-02/ (Reuters),"Finance, International Trade",News Article
+doc_042,US private payrolls growth beats expectations in March,https://www.reuters.com/markets/us/us-private-payrolls-accelerate-march-2025-04-02/ (Reuters),"Finance, Labor Market",News Article
+doc_043,"Stocks rebound, dollar gains; earnings, U.S.-China tariff talks in focus",https://www.reuters.com/markets/global-markets-wrapup-1-2025-04-22/ (Reuters),"Finance, International Trade",News Article
+doc_044,Galaxy S22 5G Repair Guide,https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=SM-S901B%2FDS&CttFileID=9432538&CDCttType=EU&VPath=EU%2F202312%2F20231219191544036%2FSM-S901B_RepairGuide_EU_Eng_Rev.1.1_231127.pdf (Samsung),"Technology, Mobile Devices",User Manual
+doc_045,Galaxy S22 5G Safety Guide,https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=SM-S901B%2FDS&CttFileID=9387431&CDCttType=UM&VPath=UM%2F202311%2F20231127141131934%2FSafety_information_Rev.2.0.0_231013.pdf (Samsung),"Technology, Mobile Devices",User Manual
+doc_046,Galaxy S22 5G Statement of Compliance,https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=SM-S901B%2FDS&CttFileID=9605349&CDCttType=UM&VPath=UM%2F202404%2F20240419162202636%2FPSTI_SOC_SM-S901B_DS_r1.pdf (Samsung),"Technology, Mobile Devices",User Manual
+doc_047,Galaxy S22 User Manual (Android 12),https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=SM-S901B%2FDS&CttFileID=8463982&CDCttType=UM&VPath=UM%2F202202%2F20220210122425532%2FSM-S90X_UM_EU_SS_Eng_Rev.1.0_220209.pdf (Samsung),"Technology, Mobile Devices",User Manual
+doc_048,Galaxy S22 User Manual (Android 14),https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=SM-S901B%2FDS&CttFileID=9599908&CDCttType=UM&VPath=UM%2F202404%2F20240418152523294%2FSM-S90X_G99X_UM_EU_UU_Eng_Rev.1.1_240417.pdf (Samsung),"Technology, Mobile Devices",User Manual
+doc_049,PHQ-9 Depression Screening Questionnaire,https://www.uke.de/dateien/institute/institut-und-poliklinik-f%C3%BCr-psychosomatische-medizin-und-psychotherapie/downloads/phq-9.pdf (Wikipedia – Die freie Enzyklopädie),"Health, Mental Health",Questionnaire
+doc_050,Ten-Item Personality Inventory (TIPI),https://gosling.psy.utexas.edu/wp-content/uploads/2014/09/tipi.pdf (gosling.psy.utexas.edu),Psychology,Questionnaire
+doc_051,IPAQ Short Form (7-day),https://evaluationframework.sportengland.org/media/1084/2015-ipaq-sf.pdf (evaluationframework.sportengland.org),"Public Health, Physical Activity",Questionnaire
+doc_052,RAND SF-36 Health Survey Instrument,https://www.rand.org/content/dam/rand/www/external/health/surveys_tools/mos/mos_core_36item_survey.pdf (RAND Corporation),"Health, Psychology",Questionnaire
+doc_053,ILPT Q1 2025 Earnings Presentation,https://s22.q4cdn.com/903350330/files/doc_financials/2025/q1/ILPT-Earnings-Presentation-Q1-2025.pdf,"Real Estate, Finance",Presentation PDF
