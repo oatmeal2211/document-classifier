@@ -83,7 +83,7 @@ def train_models():
 
 def main():
     # Path to the CSV file
-    csv_path = 'NLP documents bank - Sheet1.csv'
+    csv_path = 'backend/NLP documents bank - Sheet1.csv'
     
     # Check if the file exists
     if not os.path.exists(csv_path):
