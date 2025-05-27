@@ -52,3 +52,150 @@ doc_050,Ten-Item Personality Inventory (TIPI),https://gosling.psy.utexas.edu/wp-
 doc_051,IPAQ Short Form (7-day),https://evaluationframework.sportengland.org/media/1084/2015-ipaq-sf.pdf (evaluationframework.sportengland.org),"Public Health, Physical Activity",Questionnaire
 doc_052,RAND SF-36 Health Survey Instrument,https://www.rand.org/content/dam/rand/www/external/health/surveys_tools/mos/mos_core_36item_survey.pdf (RAND Corporation),"Health, Psychology",Questionnaire
 doc_053,ILPT Q1 2025 Earnings Presentation,https://s22.q4cdn.com/903350330/files/doc_financials/2025/q1/ILPT-Earnings-Presentation-Q1-2025.pdf,"Real Estate, Finance",Presentation PDF
+doc_054,Neural Natural Language Processing for Long Texts: A Survey on Classification and Summarization,https://arxiv.org/abs/2305.16259,"NLP, Deep Learning",Research Paper
+doc_055,Natural Language Processing Technologies for Document Profiling,https://aclanthology.org/R17-1039/,"NLP, Information Retrieval",Conference Paper
+doc_056,NLP for Knowledge Discovery and Information Extraction from Energetics Corpora,https://arxiv.org/pdf/2402.06964,"NLP, Information Extraction",Research Paper
+doc_057,NLP for Language Documentation: Two Reasons for the Gap between Theory and Practice,https://aclanthology.org/2024.americasnlp-1.1/,"NLP, Language Documentation",Workshop Paper
+doc_058,Capturing Style in Author and Document Representation,https://arxiv.org/abs/2407.13358,"NLP, Authorship Analysis",Research Paper
+doc_059,A Survey of Document-Level Information Extraction,https://arxiv.org/abs/2309.13249,"NLP, Information Extraction",Survey Paper
+doc_060,LMDX: Language Model-based Document Information Extraction and Localization,https://aclanthology.org/2024.findings-acl.899/,"NLP, Document Processing",Conference Paper
+doc_061,Deep Learning-based NLP Data Pipeline for EHR Scanned Documents,https://arxiv.org/abs/2110.11864,"NLP, Healthcare",Research Paper
+doc_062,NLP on Spoken Documents Without ASR,https://aclanthology.org/D10-1045/,"NLP, Speech Processing",Conference Paper
+doc_063,Risks and NLP Design: A Case Study on Procedural Document QA,https://arxiv.org/abs/2408.11860,"NLP, Risk Analysis",Case Study
+doc_064,"The Future of Diversity, Equity, Inclusion, and Belonging 2024",https://www.affirmity.com/resources/future-diversity-equity-inclusion-belonging-2024/,"HR, Diversity",White Paper
+doc_065,Diversity in Clinical Trials: 2024,https://trinitylifesciences.com/white-paper/diversity-in-clinical-trials-2024/,"Healthcare, Diversity",White Paper
+doc_066,Forecasting High-Impact Research Topics via Machine Learning on Evolving Knowledge Graphs,https://arxiv.org/abs/2402.08640,"Machine Learning, Research Trends",Research Paper
+doc_067,A Scoping Review of ChatGPT Research in Accounting and Finance,https://arxiv.org/abs/2412.05731,"AI, Finance",Research Paper
+doc_068,Recent Advances in Text Analysis,https://arxiv.org/abs/2401.00775,"Data Science, Text Analysis",Research Paper
+doc_069,"Analyzing 16,193 LLM Papers for Fun and Profits",https://arxiv.org/abs/2504.08619,"AI, Research Analysis",Research Paper
+doc_070,The Equity Equation White Paper,https://www.mheducation.com/highered/blog/2024/04/the-equity-equation-white-paper.html,"Education, Equity",White Paper
+doc_071,2022-2023 Diversity & Inclusion Report,https://www.elibrary.imf.org/view/journals/007/2024/032/007.2024.issue-032-en.xml,"Economics, Diversity",Report
+doc_072,Top 25 Downloaded Research Papers of 2024,https://www.nature.com/collections/jjebdbhbje,"Science, Research",Research Collection
+doc_073,A Look at 2024’s Most Viewed Research Topics,https://www.frontiersin.org/news/2025/01/14/2024-most-viewed-research-topics,"Science, Research Trends",Article
+doc_074,2024 in Research Highlights - American Economic Association,https://www.aeaweb.org/research/top-ten-research-highlight-2024,"Economics, Research",Article
+doc_075,6 Major Takeaways From the 2024 Future of DEIB Report,https://www.affirmity.com/blog/6-major-takeaways-from-2024-future-deib-report/,"HR, Diversity",Article
+doc_076,What Diverse Talent Wants in 2024: Key Stats,https://powertofly.com/up/2024-workplace-dei-statistics-trends,"HR, Diversity",Report
+doc_077,15 Essential DEI Training Topics for Today's Evolving Workplace,https://www.findcourses.com/prof-dev/guides/diversity/15-essential-dei-training-topics-for-todays-evolving-workplace-24337,"HR, Training",Guide
+doc_078,250 Latest Research Paper Topics and Ideas [2024],https://us.greatassignmenthelp.com/blog/research-paper-topics/,"Education, Research",Blog Post
+doc_079,Research Paper Ideas 2024 - PhD Direction,https://www.phddirection.com/research-thesis-topics-2024/,"Education, Research",Blog Post
+doc_080,Research Papers - Diversity Atlas,https://diversityatlas.io/research-papers,"Diversity, Research",Research Papers
+doc_081,White Papers and Reports - American Library Association,https://www.ala.org/acrl/issues/whitepapers,"Library Science, Reports",White Papers
+doc_082,A Search for New Antibiotics in Ancient DNA,https://www.wsj.com/science/biology/antibiotics-woolly-mammoths-neanderthals-94395f19,"Biology, Medicine",News Article
+doc_083,Gender-transformative climate action framework rooted in feminist theory & justice,https://timesofindia.indiatimes.com/city/chandigarh/gender-transformative-climate-action-framework-rooted-in-feminist-theory-justice-research-paper/articleshow/121375332.cms,"Climate Change, Gender Studies",Research Paper
+doc_084,China's national security: White Paper on CCP longevity amidst 'volatile' geopolitical landscape,https://timesofindia.indiatimes.com/world/china/chinas-national-security-white-paper-on-ccp-longevity-amidst-volatile-geopolitical-landscape/articleshow/121331981.cms,"Geopolitics, National Security",White Paper
+doc_085,AI tools enhance judgment of relevance of research to society,https://www.ft.com/content/1160d247-be62-4dbe-9a36-7a99a8f96ae4,"Artificial Intelligence, Research Methodology",News Article
+doc_086,Research paper downloads act as proxy for academics' real-world influence,https://www.ft.com/content/94a63515-d197-4d88-b176-d177ac1226be,"Academia, Business",News Article
+doc_087,AI used to predict potential new antibiotics in groundbreaking study,https://www.theguardian.com/society/article/2024/jun/05/ai-antibiotic-resistance,"Artificial Intelligence, Medicine",News Article
+doc_088,"Evolving Topics in Federated Learning: Trends, and Emerging Directions for IS",https://arxiv.org/abs/2409.15773,"Machine Learning, Information Systems",Research Paper
+doc_089,Exploring utilization of generative AI for research and education in data-driven materials science,https://arxiv.org/abs/2504.08817,"Artificial Intelligence, Materials Science",Research Paper
+doc_090,Artificial intelligence for Sustainable Energy: A Contextual Topic Modeling and Content Analysis,https://arxiv.org/abs/2110.00828,"Artificial Intelligence, Sustainable Energy",Research Paper
+doc_091,Disinformation research,https://en.wikipedia.org/wiki/Disinformation_research,"Media Studies, Political Science",Encyclopedia Entry
+doc_092,"2024 Wrapped: Our Top White Papers, Webinars, and Blogs",https://airshare.air-inc.com/2024-wrapped-our-top-white-papers-webinars-and-blogs,"Business, Mobility",Blog Post
+doc_093,White paper: 10 Most Important Digitalization Trends in 2024,https://go.valantic.com/white-paper-digitalization-trends-2024,Information Technology,White Paper
+doc_094,Whitepapers 2024,Resource Listing - Sonatype,https://www.sonatype.com/resources/whitepapers,"Software Development, Security"
+doc_095,Advanced Manufacturing and Factory Automation White Papers,https://www.manufacturingtomorrow.com/whitepapers.php,"Manufacturing, Automation",White Paper
+doc_096,White Papers - Society for Clinical Research Sites,https://myscrs.org/learning-campus/white-papers/,"Clinical Research, Healthcare",White Paper
+doc_097,A 2025 Guide to White Papers (with Templates and Examples),https://piktochart.com/blog/white-papers-templates-examples/,"Business, Marketing",Guide
+doc_098,25 White Paper Examples & Templates to Use Right Away [2025],https://visme.co/blog/white-paper-examples/,"Business, Design",Guide
+doc_099,Finding a white paper topic,https://thatwhitepaperguy.com/finding-a-white-paper-topic/,"Writing, Marketing",Blog Post
+doc_100,White Paper Topics: How to Find Topics That Will Get Downloaded,https://www.upliftcontent.com/blog/white-paper-topics/,Content Marketing,Blog Post
+doc_101,Research Topics,Pew Research Center,https://www.pewresearch.org/topics/,Various
+doc_102,2024-2025 CRA Quad Paper: Reclaiming the Future,https://www.arxiv.org/pdf/2503.18952,"Research Policy, Technology",White Paper
+doc_103,2024 Google Scholar Research Interest Ranking for Top 3260 Computer Science Authors,https://arxiv.org/abs/2503.13451,"Computer Science, Research Trends",Research Paper
+doc_104,Human Understanding AI Paper Challenge 2024 -- Dataset Design,https://arxiv.org/abs/2403.16509,"Artificial Intelligence, Human-Computer Interaction",Research Paper
+doc_105,The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery,https://arxiv.org/abs/2408.06292,"Artificial Intelligence, Scientific Discovery",Research Paper
+doc_106,Can LLMs Generate Novel Research Ideas?,https://arxiv.org/pdf/2409.04109,"Artificial Intelligence, Research Methodology",Research Paper
+doc_107,2024-2025 CRA Quad Paper - Computing Research Association,https://www.arxiv.org/pdf/2503.09612,"Computing Research, Ethics",White Paper
+doc_108,Neuro-Symbolic AI in 2024: A Systematic Review,https://arxiv.org/abs/2501.05435,"Artificial Intelligence, Neuro-Symbolic AI",Research Paper
+doc_109,Adaptive Transit Signal Priority based on Deep Reinforcement Learning and Connected Vehicles,https://arxiv.org/abs/2408.00098,"Transportation, Machine Learning",Research Paper
+doc_110,Measuring Progress in Dictionary Learning for Language Model Interpretability with Board Game Models,https://arxiv.org/abs/2408.00113,"Machine Learning, Interpretability",Research Paper
+doc_111,AI-Empowered Human Research Integrating Brain Science and Social Sciences Insights,https://arxiv.org/pdf/2411.12761,"Artificial Intelligence, Brain Science, Social Sciences",Research Paper
+doc_112,"On Lattices, Learning with Errors, Random Linear Codes, and Cryptography",https://arxiv.org/abs/2401.03703,"Cryptography, Lattice Theory",Research Paper
+doc_113,A framework for improving the accessibility of research papers on arXiv.org,https://arxiv.org/abs/2212.07286,"Accessibility, Open Science",Research Paper
+doc_114,Temporal Subspace Clustering for Molecular Dynamics Data,https://arxiv.org/abs/2408.00056,"Machine Learning, Molecular Dynamics",Research Paper
+doc_115,On the Perturbed States for Transformed Input-robust Reinforcement Learning,https://arxiv.org/abs/2408.00023,"Reinforcement Learning, Robustness",Research Paper
+doc_116,2024-2025 CRA Quad Paper: Prioritizing Computing Research to Empower and Protect Vulnerable Populations,https://www.arxiv.org/pdf/2503.09612,"Computing Research, Social Impact",White Paper
+doc_117,AI tools enhance judgment of relevance of research to society,https://www.ft.com/content/1160d247-be62-4dbe-9a36-7a99a8f96ae4,"Artificial Intelligence, Research Evaluation",News Article
+doc_118,Research paper downloads act as proxy for academics' real-world influence,https://www.ft.com/content/94a63515-d197-4d88-b176-d177ac1226be,"Academia, Research Metrics",News Article
+doc_119,AI used to predict potential new antibiotics in groundbreaking study,https://www.theguardian.com/society/article/2024/jun/05/ai-antibiotic-resistance,"Artificial Intelligence, Medicine",News Article
+doc_120,China's national security: White Paper on CCP longevity amidst 'volatile' geopolitical landscape,https://timesofindia.indiatimes.com/world/china/chinas-national-security-white-paper-on-ccp-longevity-amidst-volatile-geopolitical-landscape/articleshow/121331981.cms,"Geopolitics, National Security",White Paper
+doc_121,Gender-transformative climate action framework rooted in feminist theory & justice,https://timesofindia.indiatimes.com/city/chandigarh/gender-transformative-climate-action-framework-rooted-in-feminist-theory-justice-research-paper/articleshow/121375332.cms,"Climate Change, Gender Studies",Research Paper
+doc_122,Likely Exploited Vulnerabilities: A Proposed Metric for Vulnerability Exploitation Probability,https://csrc.nist.gov/News/2025/nist-publishes-cybersecurity-white-paper-41,Cybersecurity,White Paper
+doc_123,World Health Statistics 2025: Mixed Progress Towards WHO's Triple Billion Targets,https://www.who.int/news/item/15-05-2025-who-warns-of-slowing-global-health-gains-in-new-statistics-report,Global Health,Report
+doc_124,Pandemic Agreement Adopted to Enhance Global Health Equity and Safety,https://www.who.int/news/item/20-05-2025-world-health-assembly-adopts-historic-pandemic-agreement-to-make-the-world-more-equitable-and-safer-from-future-pandemics,Global Health Policy,News Release
+doc_125,Community White Papers for NASA Decadal Astrobiology Research and Exploration Strategy (NASA-DARES),https://exoplanets.nasa.gov/exep/exopag/NASA-DARES/,Space Exploration,White Paper
+doc_126,Office of Space Commerce Solicits White Papers for TraCSS Research & Technology Development,https://www.space.commerce.gov/office-of-space-commerce-solicits-white-papers-for-ssa-stc-research/,Space Policy,White Paper
+doc_127,New White Paper on the Standardization of the Government Specialist Position,https://www.justice.gov/oip/blog/new-white-paper-standardization-government-specialist-position-chief-foia-officers-0,Government Operations,White Paper
+doc_128,Transition to Advanced Encryption Standard (AES) White Paper,https://www.cisa.gov/resources-tools/resources/transition-advanced-encryption-standard-aes-white-paper,Cybersecurity,White Paper
+doc_129,World Report on Social Determinants of Health Equity,https://www.who.int/teams/social-determinants-of-health/equity-and-health/world-report-on-social-determinants-of-health-equity,Public Health,Report
+doc_130,Multi-country Cholera Outbreak: External Situation Report #24,https://www.who.int/publications/m/item/multi-country-cholera-outbreak--external-situation-report--24--20-march-2025,Epidemiology,Situation Report
+doc_131,Yellow Fever in the Americas: 2025 Update,https://www.who.int/emergencies/disease-outbreak-news/item/2025-DON570,Infectious Diseases,Disease Update
+doc_132,State of the World's Nursing 2025 Report Launch,https://www.emro.who.int/media/news/state-of-the-worlds-nursing-2025-report-launch.html,Healthcare Workforce,Report
+doc_133,New EU Sustainability Regulations White Paper for Tourism Management Organizations,https://www.argophilia.com/news/new-eu-sustainability-regulations/242349/,Environmental Policy,White Paper
+doc_134,The Future of Jobs Report 2025,https://www.weforum.org/publications/the-future-of-jobs-report-2025/infographics-94b6214b36/,Labor Market Trends,Report
+doc_135,AI-Driven Animation Production Redefined in CreateAI’s Latest White Paper Release,https://www.nripage.com/articles/finance-%26-economics/2025/05/07/ai-driven-animation-production-redefined-in-createais-latest-white-paper-release,Artificial Intelligence,White Paper
+doc_136,New Research Paper: Participatory Approaches and Digital Documentation,https://crdf.org.in/news/new-research-paper-participatory-approaches-and-digital-documentation-can-the-two-meet,Digital Humanities,Research Paper
+doc_137,Review: China's New White Paper on Its Political System,https://news.cgtn.com/news/2021-06-25/Review-China-s-new-white-paper-on-its-political-system-11nJMpYs1Jm/index.html,Political Science,White Paper
+doc_138,New White Paper Sets Stance on Taiwan in Clear Focus,https://www.chinadaily.com.cn/a/201907/25/WS5d38eafba310d83056400d99.html,International Relations,White Paper
+doc_139,New White Paper: Navigating the Future of Sales Tax Compliance,https://salestaxdatalink.com/new-white-paper-navigating-the-future-of-sales-tax-compliance/,Tax Policy,White Paper
+doc_140,White Papers - Society for Clinical Research Sites,https://myscrs.org/learning-campus/white-papers/,Clinical Research,White Paper
+doc_141,White Papers,FHFA-OIG,https://www.fhfaoig.gov/Reports/WhitePapers,Financial Oversight
+doc_142,Likely Exploited Vulnerabilities: A Proposed Metric for Vulnerability Exploitation Probability,https://csrc.nist.gov/News/2025/nist-publishes-cybersecurity-white-paper-41,Cybersecurity,White Paper
+doc_143,World Health Statistics 2025: Monitoring Health for the SDGs,https://www.who.int/publications/i/item/9789240110496,Global Health,Report
+doc_144,Community White Papers for NASA Decadal Astrobiology Research and Exploration Strategy (NASA-DARES),https://exoplanets.nasa.gov/exep/exopag/NASA-DARES/,Space Exploration,White Paper
+doc_145,A Destination's Guide to the New EU Sustainability Regulations,https://etc-corporate.org/reports/a-destinations-guide-to-the-new-eu-sustainability-regulations/,Environmental Policy,White Paper
+doc_146,The Future of Jobs Report 2025,https://www.weforum.org/publications/the-future-of-jobs-report-2025/,Labor Market Trends,Report
+doc_147,Foundation Models for Astrobiology - NASA-DARES 2025 White Paper,https://astrobiology.com/2025/05/foundation-models-for-astrobiology-nasa-dares-2025-white-paper.html,Artificial Intelligence,White Paper
+doc_148,Cybersecurity Framework: Incident Response Recommendations and Considerations,https://www.nist.gov/cyberframework,Cybersecurity,Framework
+doc_149,World Health Assembly Daily Update: 22 May 2025,https://www.who.int/news/item/22-05-2025-seventy-eighth-world-health-assembly---daily-update--22-may-2025,Global Health Policy,News Release
+doc_150,New EU Sustainability Regulations White Paper for Tourism Management Organizations,https://www.argophilia.com/news/new-eu-sustainability-regulations/242349/,Environmental Policy,White Paper
+doc_151,NIST Releases CSWP 39: Considerations for Achieving Crypto Agility,https://csrc.nist.gov/news/2025/nist-releases-cswp-39-for-public-comment,Cybersecurity,White Paper
+doc_152,African Union and WHO Renew Strategic Partnership to Strengthen Health Systems in Africa,https://www.who.int/news/item/24-05-2025-world-health-organization-and-african-union-renew-strategic-partnership-to-drive-impact-and-strengthen-health-systems-in-africa,Global Health,News Release
+doc_153,Tourism in Transport Policy - European Parliament Briefing,https://www.europarl.europa.eu/RegData/etudes/BRIE/2025/772845/EPRS_BRI%282025%29772845_EN.pdf,Transportation Policy,Briefing
+doc_154,WHO Press Conference: World Health Statistics 2025,https://www.unognewsroom.org/teleprompter/en/2646/who-press-conference-world-health-statistics-2025-15-may-2025,Global Health,Press Conference
+doc_155,NIST Calls for Public Input on New 5G Cybersecurity Paper,https://executivegov.com/2025/01/nist-5g-white-paper-no-supi-based-paging/,Cybersecurity,White Paper
+doc_156,GDS-Movement and ETC Urge Destinations to Get Ahead of New EU Green Rules,https://www.traveldailynews.com/special-interest-travel/sustainable-tourism/gds-movement-and-etc-urge-destinations-to-get-ahead-of-new-eu-green-rules/,Sustainable Tourism,News Article
+doc_157,The World Health Assembly Endorses Extension of the Global Strategy on Digital Health to 2027,https://www.who.int/news/item/23-05-2025-world-health-assembly-endorses-extension-of-the-global-digital-health-strategy-to-2027,Digital Health,News Release
+doc_158,NIST National Cybersecurity Center Calls for Comment on Latest White Paper,https://australiancybersecuritymagazine.com.au/nist-national-cybersecurity-center-calls-for-comment-on-latest-white-paper/,Cybersecurity,White Paper
+doc_159,WHO Publishes World Health Statistics Report 2025,https://communitymedicine4asses.wordpress.com/2025/05/16/who-publishes-world-health-statistics-report-2025-15-may-2025/,Global Health,Report
+doc_160,NASA DARES to Establish an Astrobiology-Specific Technology Development Program,https://primordialscoop.org/2025/03/21/nasa-dares-to-establish-an-astrobiology-spec_,,
+doc_161,"The Astrobiology Data Ecosystem, Open Science, And The AI Era – NASA-DARES 2025 White Paper",https://astrobiology.com/2025/05/the-astrobiology-data-ecosystem-open-science-and-the-ai-era-nasa-dares-2025-white-paper.html,"Astrobiology, Open Science",White Paper
+doc_162,Foundation Models for Astrobiology - NASA-DARES 2025 White Paper,https://astrobiology.com/2025/05/foundation-models-for-astrobiology-nasa-dares-2025-white-paper.html,"Astrobiology, AI",White Paper
+doc_163,NASA TPS Capability for Astrobiology Missions – NASA-DARES 2025 White Paper,https://astrobiology.com/2025/05/nasa-tps-capability-for-astrobiology-missions-nasa-dares-2025-white-paper.html,"Astrobiology, Space Technology",White Paper
+doc_164,Likely Exploited Vulnerabilities: NIST Publishes Cybersecurity White Paper 41,https://csrc.nist.gov/News/2025/nist-publishes-cybersecurity-white-paper-41,Cybersecurity,White Paper
+doc_165,NIST Releases CSWP 39 for Public Comment,https://csrc.nist.gov/news/2025/nist-releases-cswp-39-for-public-comment,Cryptography,White Paper
+doc_166,Seventy-eighth World Health Assembly – Daily update: 22 May 2025,https://www.who.int/news/item/22-05-2025-seventy-eighth-world-health-assembly---daily-update--22-may-2025,Global Health,News Release
+doc_167,WHO warns of slowing global health gains in new statistics report,https://www.who.int/news/item/15-05-2025-who-warns-of-slowing-global-health-gains-in-new-statistics-report,Global Health,News Article
+doc_168,World Health Statistics 2025 is published!,https://www.linkedin.com/posts/haidong-wang-19ba108_world-health-statistics-2025-is-published-activity-7329515588408532992-wnel,Global Health,Announcement
+doc_169,A Destination's Guide to the New EU Sustainability Regulations,https://etc-corporate.org/reports/a-destinations-guide-to-the-new-eu-sustainability-regulations/,Environmental Policy,White Paper
+doc_170,GDS-Movement and European Travel Commission Urge Destinations to Get Ahead of New EU Green Rules,https://www.gds.earth/blog/gds-movement-and-european-travel-commission-urge-destinations-to-get-ahead-of-new-eu-green-rules/,Sustainable Tourism,Blog Post
+doc_171,The Future of Jobs Report 2025,https://www.weforum.org/publications/the-future-of-jobs-report-2025/,Economics,Labor Market Trends
+doc_172,Why AI literacy is now a core competency in education,https://www.weforum.org/stories/2025/05/why-ai-literacy-is-now-a-core-competency-in-education/,"Education, AI",News Article
+doc_173,The Future of Jobs in South-Eastern Asia: upskilling dominates as technology and geoeconomic uncertainty change talent landscape,https://www.weforum.org/stories/2025/05/the-future-of-jobs-in-south-eastern-asia-upskilling-dominates-as-technology-and-geoeconomic-uncertainty-change-talent-landscape/,Labor Market Trends,News Article
+doc_174,The new skills triad: How we equip the workforce for the future of work,https://www.weforum.org/stories/2025/04/new-skills-triad-and-future-of-work/,Workforce Development,Blog Post
+doc_175,Is AI closing the door on entry-level job opportunities?,https://www.weforum.org/stories/2025/04/ai-jobs-international-workers-day/,"Employment, AI",News Article
+doc_176,Medical Benchmarks and the Myth of the Universal Patient,https://www.newyorker.com/magazine/2025/03/31/medical-benchmarks-and-the-myth-of-the-universal-patient,Healthcare,Magazine Article
+doc_177,Donors pledge over $170 million to WHO ahead of US exit,https://www.reuters.com/business/healthcare-pharmaceuticals/countries-pledge-over-170-million-who-ahead-us-exit-2025-05-20/,Global Health Funding,News Article
+doc_178,"Half a billion young people will be obese or overweight by 2030, report finds",https://www.theguardian.com/society/2025/may/20/young-people-obesity-2030-report,Public Health,News Article
+doc_179,"People in 70 countries are missing out on medical care amid funding cuts, says WHO",https://www.reuters.com/business/healthcare-pharmaceuticals/least-70-countries-missing-out-treatment-amid-funding-cuts-says-who-chief-2025-05-19/,Global Health,News Article
+doc_180,NASA DARES to Establish an Astrobiology-Specific Technology Development Program,https://primordialscoop.org/2025/03/21/nasa-dares-to-establish-an-astrobiology-specific-technology-development-program/,Astrobiology,White Paper
+doc_181,WHO warns of slowing global health gains in new statistics report,https://www.who.int/news/item/15-05-2025-who-warns-of-slowing-global-health-gains-in-new-statistics-report,Global Health,News Release
+doc_182,Seventy-eighth World Health Assembly – Daily update: 22 May 2025,https://www.who.int/news/item/22-05-2025-seventy-eighth-world-health-assembly---daily-update--22-may-2025,Global Health Policy,Daily Update
+doc_183,World Health Statistics 2025 is published!,https://www.linkedin.com/posts/haidong-wang-19ba108_world-health-statistics-2025-is-published-activity-7329515588408532992-wnel,Global Health,Announcement
+doc_184,A Destination's Guide to the New EU Sustainability Regulations,https://etc-corporate.org/reports/a-destinations-guide-to-the-new-eu-sustainability-regulations/,Environmental Policy,White Paper
+doc_185,GDS-Movement and European Travel Commission Urge Destinations to Get Ahead of New EU Green Rules,https://www.gds.earth/blog/gds-movement-and-european-travel-commission-urge-destinations-to-get-ahead-of-new-eu-green-rules/,Sustainable Tourism,Blog Post
+doc_186,The Future of Jobs Report 2025, https://www.weforum.org/publications/the-future-of-jobs-report-2025/ ,Economics,Labor Market Trends
+doc_187,Why AI literacy is now a core competency in education,https://www.weforum.org/stories/2025/05/why-ai-literacy-is-now-a-core-competency-in-education/,"Education, AI",News Article
+doc_188,The Future of Jobs in South-Eastern Asia: upskilling dominates as technology and geoeconomic uncertainty change talent landscape,https://www.weforum.org/stories/2025/05/the-future-of-jobs-in-south-eastern-asia-upskilling-dominates-as-technology-and-geoeconomic-uncertainty-change-talent-landscape/,Labor Market Trends,News Article
+doc_189,The new skills triad: How we equip the workforce for the future of work,https://www.weforum.org/stories/2025/04/new-skills-triad-and-future-of-work/,Workforce Development,Blog Post
+doc_190,Is AI closing the door on entry-level job opportunities?,https://www.weforum.org/stories/2025/04/ai-jobs-international-workers-day/,"Employment, AI",News Article
+doc_191,Medical Benchmarks and the Myth of the Universal Patient,https://www.newyorker.com/magazine/2025/03/31/medical-benchmarks-and-the-myth-of-the-universal-patient,Healthcare,Magazine Article
+doc_192,Donors pledge over $170 million to WHO ahead of US exit,https://www.reuters.com/business/healthcare-pharmaceuticals/countries-pledge-over-170-million-who-ahead-us-exit-2025-05-20/,Global Health Funding,News Article
+doc_193,"Half a billion young people will be obese or overweight by 2030, report finds",https://www.theguardian.com/society/2025/may/20/young-people-obesity-2030-report,Public Health,News Article
+doc_194,"People in 70 countries are missing out on medical care amid funding cuts, says WHO",https://www.reuters.com/business/healthcare-pharmaceuticals/least-70-countries-missing-out-treatment-amid-funding-cuts-says-who-chief-2025-05-19/,Global Health,News Article
+doc_195,NASA DARES to Establish an Astrobiology-Specific Technology Development Program,https://primordialscoop.org/2025/03/21/nasa-dares-to-establish-an-astrobiology-specific-technology-development-program/,Astrobiology,White Paper
+doc_196,"The Astrobiology Data Ecosystem, Open Science, And The AI Era – NASA-DARES 2025 White Paper",https://astrobiology.com/2025/05/the-astrobiology-data-ecosystem-open-science-and-the-ai-era-nasa-dares-2025-white-paper.html,"Astrobiology, Open Science",White Paper
+doc_197,Foundation Models for Astrobiology - NASA-DARES 2025 White Paper,https://astrobiology.com/2025/05/foundation-models-for-astrobiology-nasa-dares-2025-white-paper.html,"Astrobiology, AI",White Paper
+doc_198,NASA TPS Capability for Astrobiology Missions – NASA-DARES 2025 White Paper,https://astrobiology.com/2025/05/nasa-tps-capability-for-astrobiology-missions-nasa-dares-2025-white-paper.html,"Astrobiology, Space Technology",White Paper
+doc_199,NIST Releases CSWP 39 for Public Comment,https://csrc.nist.gov/news/2025/nist-releases-cswp-39-for-public-comment,Cryptography,White Paper
+doc_200,Considerations for Achieving Crypto Agility: Strategies and Practices,https://csrc.nist.gov/pubs/cswp/39/considerations-for-achieving-cryptographic-agility/ipd,Cybersecurity,White Paper
