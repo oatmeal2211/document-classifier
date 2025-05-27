@@ -2,7 +2,7 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-
+from api.classifier import classify_document
 
 def main():
     """Run administrative tasks."""

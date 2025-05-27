@@ -1,0 +1,28 @@
+University of Malaysia - Undergraduate Application Form
+
+PERSONAL INFORMATION
+Full Name: [Please enter your full name]
+Date of Birth: [DD/MM/YYYY]
+Nationality: [Your nationality]
+Passport/ID Number: [Your identification number]
+Email Address: [Your email]
+Contact Number: [Your contact number]
+
+PROGRAM SELECTION
+Faculty: [Select faculty]
+Program: [Select program]
+Intake: [Select intake period]
+
+EDUCATIONAL BACKGROUND
+Previous Institution: [Your previous school/institution]
+Qualification: [Type of qualification]
+Year Completed: [Year]
+Academic Results: [Please attach transcript]
+
+DECLARATION
+I hereby declare that all information provided is accurate and complete. I understand that any false information may result in the rejection of my application or termination of enrollment.
+
+Signature: ___________________
+Date: _______________________
+
+Please complete all sections of this application form to apply for admission to the university program. Incomplete applications will not be processed. 
