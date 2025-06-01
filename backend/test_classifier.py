@@ -15,29 +15,21 @@ def test_classifier():
     """Test the classifier with sample texts."""
     
     test_documents = [
-        # Finance/Economics document
-        "Analysis of market trends and economic indicators for Q3 2023 shows steady growth in emerging markets. The report examines inflation rates and GDP growth across different regions.",
-        
-        # Technology/Education document (like a tutorial)
-        "A comprehensive guide to natural language processing with Python using spaCy. Learn how to tokenize text, perform entity recognition, and build custom pipelines for text analysis.",
-        
-        # Sports news
-        "China ends Malaysia's Sudirman Cup hopes in quarter-finals. The national badminton team fought hard but couldn't overcome the defending champions.",
-        
-        # Health research document
-        "Machine Learning applications in medical diagnosis: A comparative study of ML techniques for early detection of osteoporosis and risk assessment in patients.",
-        
-        # Legal document (court case)
-        "He-Con Sdn Bhd v Bulyah bt Ishak & Anor: Court ruling on land dispute case establishes new precedent for property rights in Malaysia.",
-        
-        # University application form
-        "University of Malaysia Application Form for Undergraduate Studies. Please complete all sections to apply for admission to the university program.",
-        
-        # Tourism brochure
-        "Discover the beautiful islands of Langkawi, the Jewel of Kedah. Explore pristine beaches, lush rainforests, and experience the rich cultural heritage.",
-        
-        # Job application form
-        "Malaysia Airlines Job Application Form. Please fill in your personal details, qualifications, and work experience to apply for available positions."
+    # Modified Existing Documents
+    "Quarterly financial analysis report: Review of Q3 2023 market performance, focusing on technology sector investments and projected growth based on recent economic indicators.", # Modified Finance
+    "Hands-on tutorial: Implementing a basic sentiment analysis model using NLTK and scikit-learn in Python for classifying movie reviews.", # Modified Tech/Education
+    "Latest research on Alzheimer's disease: Exploring potential biomarkers and early diagnostic methods through neuroimaging and genetic studies.", # Modified Health
+    "Press Release: Landmark court decision on property rights sets new precedent for land ownership disputes involving historical claims.", # Modified Legal
+    "Higher Education Admission Application: Please provide your academic history, personal statement, and contact information to apply.", # Modified University Application
+    "Employment Application Form: Complete all sections including work experience, educational background, and references for consideration.", # Modified Job Application
+    "Explore the enchanting landscapes of Kyoto, Japan. Visit ancient temples, serene gardens, and vibrant markets in this cultural heartland.", # Modified Tourism
+
+    # New Documents
+    "A new report highlights the impact of deforestation on climate change and proposes sustainable forestry practices to mitigate environmental damage.", # Environmental Conservation
+    "Classic Chocolate Chip Cookie Recipe: Ingredients and step-by-step instructions for baking perfect chewy cookies.", # Recipe
+    "Product Review: The new XYZ noise-canceling headphones offer superb audio quality and comfort, though the battery life could be improved.", # Product Review
+    "Travel Guide Snippet: Best places to eat street food in Bangkok – a culinary journey through local markets and hidden gems.", # Travel Guide
+    "Chapter One: The old house stood silhouetted against the stormy sky, its windows like vacant eyes staring out over the choppy sea. A perfect place for secrets to hide.", # Creative Writing
     ]
     
     print("Testing Topic Classification:")
