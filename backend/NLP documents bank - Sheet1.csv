@@ -139,7 +139,7 @@ doc_137,Review: China's New White Paper on Its Political System,https://news.cgt
 doc_138,New White Paper Sets Stance on Taiwan in Clear Focus,https://www.chinadaily.com.cn/a/201907/25/WS5d38eafba310d83056400d99.html,International Relations,White Paper
 doc_139,New White Paper: Navigating the Future of Sales Tax Compliance,https://salestaxdatalink.com/new-white-paper-navigating-the-future-of-sales-tax-compliance/,Tax Policy,White Paper
 doc_140,White Papers - Society for Clinical Research Sites,https://myscrs.org/learning-campus/white-papers/,Clinical Research,White Paper
-doc_141,White Papers,FHFA-OIG,https://www.fhfaoig.gov/Reports/WhitePapers,Financial Oversight
+doc_141,White Papers,https://www.fhfaoig.gov/Reports/WhitePapers,,Financial Oversight
 doc_142,Likely Exploited Vulnerabilities: A Proposed Metric for Vulnerability Exploitation Probability,https://csrc.nist.gov/News/2025/nist-publishes-cybersecurity-white-paper-41,Cybersecurity,White Paper
 doc_143,World Health Statistics 2025: Monitoring Health for the SDGs,https://www.who.int/publications/i/item/9789240110496,Global Health,Report
 doc_144,Community White Papers for NASA Decadal Astrobiology Research and Exploration Strategy (NASA-DARES),https://exoplanets.nasa.gov/exep/exopag/NASA-DARES/,Space Exploration,White Paper
@@ -158,7 +158,7 @@ doc_156,GDS-Movement and ETC Urge Destinations to Get Ahead of New EU Green Rule
 doc_157,The World Health Assembly Endorses Extension of the Global Strategy on Digital Health to 2027,https://www.who.int/news/item/23-05-2025-world-health-assembly-endorses-extension-of-the-global-digital-health-strategy-to-2027,Digital Health,News Release
 doc_158,NIST National Cybersecurity Center Calls for Comment on Latest White Paper,https://australiancybersecuritymagazine.com.au/nist-national-cybersecurity-center-calls-for-comment-on-latest-white-paper/,Cybersecurity,White Paper
 doc_159,WHO Publishes World Health Statistics Report 2025,https://communitymedicine4asses.wordpress.com/2025/05/16/who-publishes-world-health-statistics-report-2025-15-may-2025/,Global Health,Report
-doc_160,NASA DARES to Establish an Astrobiology-Specific Technology Development Program,https://primordialscoop.org/2025/03/21/nasa-dares-to-establish-an-astrobiology-spec_,,
+doc_160,NASA DARES to Establish an Astrobiology-Specific Technology Development Program,https://primordialscoop.org/2025/03/21/nasa-dares-to-establish-an-astrobiology-spec_,"Astrobiology,",
 doc_161,"The Astrobiology Data Ecosystem, Open Science, And The AI Era – NASA-DARES 2025 White Paper",https://astrobiology.com/2025/05/the-astrobiology-data-ecosystem-open-science-and-the-ai-era-nasa-dares-2025-white-paper.html,"Astrobiology, Open Science",White Paper
 doc_162,Foundation Models for Astrobiology - NASA-DARES 2025 White Paper,https://astrobiology.com/2025/05/foundation-models-for-astrobiology-nasa-dares-2025-white-paper.html,"Astrobiology, AI",White Paper
 doc_163,NASA TPS Capability for Astrobiology Missions – NASA-DARES 2025 White Paper,https://astrobiology.com/2025/05/nasa-tps-capability-for-astrobiology-missions-nasa-dares-2025-white-paper.html,"Astrobiology, Space Technology",White Paper
@@ -199,3 +199,302 @@ doc_197,Foundation Models for Astrobiology - NASA-DARES 2025 White Paper,https:/
 doc_198,NASA TPS Capability for Astrobiology Missions – NASA-DARES 2025 White Paper,https://astrobiology.com/2025/05/nasa-tps-capability-for-astrobiology-missions-nasa-dares-2025-white-paper.html,"Astrobiology, Space Technology",White Paper
 doc_199,NIST Releases CSWP 39 for Public Comment,https://csrc.nist.gov/news/2025/nist-releases-cswp-39-for-public-comment,Cryptography,White Paper
 doc_200,Considerations for Achieving Crypto Agility: Strategies and Practices,https://csrc.nist.gov/pubs/cswp/39/considerations-for-achieving-cryptographic-agility/ipd,Cybersecurity,White Paper
+doc_201,OpenAI debuts GPT-4 Turbo and fine-tuning program for GPT-4,https://techcrunch.com/2023/11/06/openai-launches-gpt-4-turbo-and-launches-fine-tuning-program-for-gpt-4/,"Generative AI, Model Release",News Article
+doc_202,OpenAI debuts GPT-4o ‘omni’ model now powering ChatGPT,https://techcrunch.com/2024/05/13/openais-newest-model-is-gpt-4o/,"Multimodal AI, ChatGPT",News Article
+doc_203,"OpenAI makes ChatGPT more direct, less verbose",https://techcrunch.com/2024/04/11/openai-makes-chatgpt-more-direct-less-verbose/,"Chat Interfaces, UX",News Article
+doc_204,OpenAI will soon phase out GPT-4 from ChatGPT,https://techcrunch.com/2025/04/11/openai-is-winding-down-its-gpt-4-ai-model-in-chatgpt/,"Model Lifecycle, Policy",News Article
+doc_205,OpenAI makes GPT-4 generally available,https://techcrunch.com/2023/07/06/openai-makes-gpt-4-generally-available/,"Model Availability, API",News Article
+doc_206,Sweep aims to automate basic dev tasks using large language models,https://techcrunch.com/2023/11/02/sweep-aims-to-automate-basic-dev-tasks-using-large-language-models/,"Developer Tools, Automation",News Article
+doc_207,Outset is using GPT-4 to make user surveys better,https://techcrunch.com/2023/10/26/outset-gpt-4-surveys/,"Surveys, User Research",News Article
+doc_208,Microsoft-affiliated research finds flaws in GPT-4,https://techcrunch.com/2023/10/17/microsoft-affiliated-research-finds-flaws-in-gpt-4/,"Model Evaluation, Research",News Article
+doc_209,OpenAI releases “GPT-4 with vision” — research shows its strengths & weaknesses,https://techcrunch.com/2023/11/06/openai-gpt-4-with-vision-release-research-flaws/,"Computer Vision, Model Analysis",News Article
+doc_210,Google AI Test Kitchen Now Available,https://techcrunch.com/2023/10/11/google-ai-test-kitchen/,"AI Platforms, User Experience",News Article
+doc_211,Amazon launches Bedrock for building generative AI applications,https://techcrunch.com/2023/08/03/amazon-launches-bedrock/,"Cloud, Generative AI",News Article
+doc_212,"Anthropic launches Claude 3, its most powerful AI assistant yet",https://techcrunch.com/2024/04/03/anthropic-launches-claude-3/,"AI Assistants, Model Release",News Article
+doc_213,AI startup Adept emerges from stealth with $65M to rethink enterprise workflows,https://techcrunch.com/2024/02/28/adept-raises-65m/,"Startups, Automation",News Article
+doc_214,Microsoft brings AI-powered features to Teams,https://techcrunch.com/2024/03/10/microsoft-brings-ai-powered-features-to-teams/,"Collaboration, Productivity",News Article
+doc_215,Salesforce acquires AI startup Momen­tix to supercharge Sales Cloud,https://techcrunch.com/2023/12/05/salesforce-acquires-momentix/,"CRM, M&A",News Article
+doc_216,NVIDIA unveils next-gen A100s GPUs for accelerated AI workloads,https://techcrunch.com/2024/05/21/nvidia-unveils-next-gen-a100s/,"Hardware, AI Acceleration",News Article
+doc_217,Adobe integrates Firefly AI features directly into Photoshop,https://techcrunch.com/2023/11/07/adobe-firefly-photoshop/,"Creative Tools, Generative AI",News Article
+doc_218,Spotify’s new AI recommender learns your taste faster,https://techcrunch.com/2023/09/12/spotify-uses-ai-to-recommend-songs/,"Music Tech, Personalization",News Article
+doc_219,TikTok tests AI avatars that mimic your expressions,https://techcrunch.com/2024/04/17/tiktok-tests-ai-avatars/,"Social Media, Computer Vision",News Article
+doc_220,Zoom launches AI meeting assistant to transcribe and summarize calls,https://techcrunch.com/2023/10/25/zoom-launches-ai-meeting-assistant/,"Video Conferencing, Speech AI",News Article
+doc_221,"IBM unveils watsonx, its next-generation AI and data platform",https://techcrunch.com/2023/11/14/ibm-unveils-watsonx/,"Enterprise AI, Data Platforms",News Article
+doc_222,Intel debuts Gaudi 3 AI chip with upgraded performance,https://techcrunch.com/2024/03/04/intel-gaudi3-ai-chip/,"Semiconductors, AI Hardware",News Article
+doc_223,Meta AI now offers real-time language translation in Messenger,https://techcrunch.com/2024/01/09/meta-ai-real-time-translation/,"Social Chat, Translation AI",News Article
+doc_224,Cisco adds generative AI capabilities to its networking gear,https://techcrunch.com/2024/06/03/cisco-ai-networking/,"Networking, AI Integration",News Article
+doc_225,OpenAI rolls out new ChatGPT Enterprise features for corporate customers,https://techcrunch.com/2024/02/21/openai-chatgpt-enterprise-features/,"Enterprise Software, Security",News Article
+doc_226,Future of Jobs Report 2023 — World Economic Forum,https://www3.weforum.org/docs/WEF_Future_of_Jobs_2023.pdf,"Future Skills, Automation",Report
+doc_227,"“Sustainable Tourism Development: A Critique” (2003, Journal of Sustainable Tourism)",https://doi.org/10.1080/09669580308667211,Sustainable Tourism,Journal Article
+doc_228,"“Sustainability and Marketing in Tourism: Contexts, Paradoxes, Approaches, Challenges & Potential” (2017, JST)",https://doi.org/10.1080/09669582.2017.1322824,Sustainable Tourism,Journal Article
+doc_229,"“Global Trends in Sustainable Tourism Research” (2019, Journal of Sustainable Tourism)",https://doi.org/10.1080/09669582.2018.1457992,Sustainable Tourism,Journal Article
+doc_230,"“Barriers to Implementing Sustainable Tourism Policy in Mass-Tourism Destinations” (2010, Tourism & Hospitality Planning & Development)",https://doi.org/10.1080/1479053X.2010.502386,Sustainable Tourism,Journal Article
+doc_231,"“Policy Learning and Policy Failure in Sustainable Tourism Governance” (2011, Journal of Policy Research in Tourism, Leisure & Events)",https://doi.org/10.1080/19407963.2011.576870,Sustainable Tourism,Journal Article
+doc_232,"“Traditions of Sustainability in Tourism Studies” (2006, Annals of Tourism Research)",https://doi.org/10.1016/j.annals.2005.06.004,Sustainable Tourism,Journal Article
+doc_233,"“Sustainable Tourism: Research and Reality” (2012, Annals of Tourism Research)",https://doi.org/10.1016/j.annals.2012.02.003,Sustainable Tourism,Journal Article
+doc_234,"“The Global–Local Nexus in Sustainable Tourism Development” (2013, Journal of Sustainable Tourism)",https://doi.org/10.1080/09669582.2013.835703,Sustainable Tourism,Journal Article
+doc_235,"“Natural Resource Use and Impacts in Sustainable Tourism” (2015, Tourism Management)",https://doi.org/10.1016/j.tourman.2014.08.013,Sustainable Tourism,Journal Article
+doc_236,"“Measuring Progress Toward Sustainable Tourism” (2018, Tourism Management Perspectives)",https://doi.org/10.1016/j.tmp.2018.04.003,Sustainable Tourism,Journal Article
+doc_237,"Carbon Footprint of Tourism Destinations: A Review of Methodologies & Case Studies (2019, Tourism Management)",https://doi.org/10.1016/j.tourman.2018.09.017,Sustainable Tourism,Journal Article
+doc_238,"Residents’ Perceptions of Tourism Impacts and Sustainable Development (2016, Journal of Sustainable Tourism)",https://doi.org/10.1080/09669582.2015.1048417,Sustainable Tourism,Journal Article
+doc_239,"Circular Economy in Tourism: A Review (2021, Sustainability)",https://doi.org/10.3390/su13084233,Sustainable Tourism,Journal Article
+doc_240,"Community-Based Tourism and Sustainable Livelihoods (2018, Tourism Planning & Development)",https://doi.org/10.1080/21568316.2017.1312506,Sustainable Tourism,Journal Article
+doc_241,"Measuring Tourism Carrying Capacity: A Systematic Review (2022, Ecological Indicators)",https://doi.org/10.1016/j.ecolind.2021.108357,Sustainable Tourism,Journal Article
+doc_242,"Overtourism and Sustainable Tourism Management (2020, Journal of Travel Research)",https://doi.org/10.1177/0047287519883039,Sustainable Tourism,Journal Article
+doc_243,"Green Hotel Practices and Guest Satisfaction (2018, International Journal of Hospitality Management)",https://doi.org/10.1016/j.ijhm.2018.02.012,Sustainable Tourism,Journal Article
+doc_244,"Climate-Change Adaptation in Coastal Tourism (2020, Journal of Sustainable Tourism)",https://doi.org/10.1080/09669582.2019.1601839,Sustainable Tourism,Journal Article
+doc_245,"Food-Waste Reduction in the Hospitality Industry (2021, International Journal of Hospitality Management)",https://doi.org/10.1016/j.ijhm.2020.102681,Sustainable Tourism,Journal Article
+doc_246,"Ecotourism and Biodiversity Conservation (2015, Journal of Sustainable Tourism)",https://doi.org/10.1080/09669582.2015.1010185,Sustainable Tourism,Journal Article
+doc_247,"Social Media Influence on Sustainable Tourist Behaviour (2019, Current Issues in Tourism)",https://doi.org/10.1080/13683500.2018.1468288,Sustainable Tourism,Journal Article
+doc_248,"Smart Tourism for Sustainability (2020, Tourism Management)",https://doi.org/10.1016/j.tourman.2019.104009,Sustainable Tourism,Journal Article
+doc_249,"Renewable-Energy Adoption in Island Tourism (2017, Renewable & Sustainable Energy Reviews)",https://doi.org/10.1016/j.rser.2017.01.019,Sustainable Tourism,Journal Article
+doc_250,"Inclusive Tourism and Accessibility (2017, Tourism Management Perspectives)",https://doi.org/10.1016/j.tmp.2017.09.002,Sustainable Tourism,Journal Article
+doc_251,"Volunteer Tourism and the SDGs (2021, Journal of Sustainable Tourism)",https://doi.org/10.1080/09669582.2020.1770203,Sustainable Tourism,Journal Article
+doc_252,"Sustainable Tourism Indicators: A Meta-Analysis (2019, Tourism Management Perspectives)",https://doi.org/10.1016/j.tmp.2018.12.001,Sustainable Tourism,Journal Article
+doc_253,"Landscape Stewardship in Rural Tourism (2018, Tourism Geographies)",https://doi.org/10.1080/14616688.2018.1470199,Sustainable Tourism,Journal Article
+doc_254,"Cultural Heritage and Sustainable Urban Tourism (2020, Sustainability)",https://doi.org/10.3390/su12083277,Sustainable Tourism,Journal Article
+doc_255,"Plastic-Waste Mitigation in Marine Tourism (2022, Marine Pollution Bulletin)",https://doi.org/10.1016/j.marpolbul.2022.113341,Sustainable Tourism,Journal Article
+doc_256,"Environmental Certification and Hotel Performance (2019, Journal of Cleaner Production)",https://doi.org/10.1016/j.jclepro.2019.118555,Sustainable Tourism,Journal Article
+doc_257,Global Education Monitoring Report 2023: Technology in Education,https://unesdoc.unesco.org/ark:/48223/pf0000382164.locale=en,"Education Policy, Technology",Report
+doc_258,Education at a Glance 2023 — OECD Indicators,https://www.oecd.org/education/education-at-a-glance/2023/eag-2023.pdf,Education Statistics,Report
+doc_259,"PISA 2022 Results, Vol. I: Student Performance",https://www.oecd.org/pisa/PISA-2022-results-volume-I.pdf,Student Assessment,Report
+doc_260,Learning Poverty Brief 2022 — World Bank,https://thedocs.worldbank.org/en/doc/7ed34514996447170e154e9e06cb55e8-0050062022/related/2022-Learning-Poverty-Brief.pdf,"Basic Education, Equity",Report
+doc_261,Global Higher Education Sector Outlook 2023 (Deloitte),https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Public-Sector/gx-edu-global-higher-education-sector-outlook-2023.pdf,Higher Ed Trends,Report
+doc_262,"The Future of Jobs and Skills in Education (WEF, 2016 sector briefing)",https://www3.weforum.org/docs/GAC16_Future_of_Jobs.pdf,"Future Skills, Workforce",Report
+doc_263,"“Artificial Intelligence in Education: Promises and Implications” (Computers & Education, 2019)",https://doi.org/10.1016/j.compedu.2019.103832,"EdTech, AI",Journal Article
+doc_264,"“Gamification in Education: Engagement Effects” (Frontiers in Education, 2020)",https://doi.org/10.3389/feduc.2020.00020,Student Engagement,Journal Article
+doc_265,"Project-Based Learning Research Review (Edutopia, 2023 blog)",https://www.edutopia.org/project-based-learning-research,Teaching Methods,Blog Post
+doc_266,"Digital Learning: Education in the Fourth Industrial Revolution (UNESCO, 2020)",https://unesdoc.unesco.org/ark:/48223/pf0000375704,Digital Learning,Report
+doc_267,Global Education Monitoring Report 2022: Non-State Actors,https://unesdoc.unesco.org/ark:/48223/pf0000380951.locale=en,Education ,Report
+doc_268,Education Finance Watch 2023,https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099004503292310698/idu0b39ee6160833f041860989303a451602c366,Education Finance,Report
+doc_269,TALIS 2018 Insights and Interpretations,https://www.oecd.org/education/talis/TALIS2018_Insights_and_Interpretations.pdf,Teacher Survey,Report
+doc_270,Prioritising Learning During COVID-19 (GEEAP 2022),https://documents.worldbank.org/en/publication/documents-reports/documentdetail/891971638804396610,Learning Recovery,Report
+doc_271,Coursera Global Skills Report 2023,https://www.coursera.org/content/dam/Coursera/Assets/skills-reports/global-skills-report/Coursera_GlobalSkillsReport2023.pdf,"Skills, Online Learning",Report
+doc_272,World Development Report 2018: Learning to Realize Education’s Promise,https://openknowledge.worldbank.org/bitstream/handle/10986/28340/9781464810961.pdf,Global Learning,Report
+doc_273,OECD Digital Education Outlook 2021,https://www.oecd-ilibrary.org/education/oecd-digital-education-outlook-2021_b71f4606-en.pdf,"EdTech, AI",Report
+doc_274,UNICEF Education Strategy 2019-2030,https://www.unicef.org/media/58146/file/UNICEF-education-strategy-2019-2030.pdf,UNICEF Strategy,Report
+doc_275,UNESCO ICT in Education Report 2023,https://unesdoc.unesco.org/ark:/48223/pf0000384899.locale=en,ICT4E,Report
+doc_276,Reimagining Our Futures Together (UNESCO 2021),https://unesdoc.unesco.org/ark:/48223/pf0000379707.locale=en,Future of Education,Report
+doc_277,The Flipped Classroom: Advantages & Challenges (Computers & Education 2017),https://doi.org/10.1016/j.compedu.2016.12.002,Flipped Learning,Journal Article
+doc_278,MOOCs for Continuing Professional Development (Computers & Education 2019),https://doi.org/10.1016/j.compedu.2018.10.002,MOOCs,Journal Article
+doc_279,Effectiveness of Virtual Reality for Learning (Computers & Education 2020),https://doi.org/10.1016/j.compedu.2020.103910,"VR, EdTech",Journal Article
+doc_280,Student Engagement in Online Environments (Educational Research Review 2023),https://doi.org/10.1016/j.edurev.2022.100424,Online Learning,Journal Article
+doc_281,Learning Loss From COVID-19 School Closures (Nature Human Behaviour 2022),https://doi.org/10.1038/s41562-021-01297-8,COVID Impact,Journal Article
+doc_282,Artificial Intelligence in Higher Education: Review (ETHE 2020),https://doi.org/10.1186/s41239-020-00218-x,"AI, Higher Ed",Journal Article
+doc_283,Gamified Learning Meta-Analysis (JCAL 2019),https://doi.org/10.1111/jcal.12399,Gamification,Journal Article
+doc_284,Class Size and Student Achievement (Educational Research Review 2018),https://doi.org/10.1016/j.edurev.2018.06.001,Class Size,Journal Article
+doc_285,STEM Education in Primary Schools (IJSTEM 2021),https://doi.org/10.1186/s40594-021-00296-0,"STEM, Primary",Journal Article
+doc_286,Open Educational Resources: Systematic Review (EIT 2020),https://doi.org/10.1007/s10639-019-10065-2,OER,Journal Article
+doc_287,EdTech Evidence Review 2022 (EdTech Hub),https://docs.edtechhub.org/lib/P8QQVQHU/download/2SV67896/edtech-hub-2022-edtech-evidence-review.pdf,EdTech Evidence,Report
+doc_288,Trends Shaping Education 2022 (OECD),https://www.oecd.org/education/tse-2022.pdf,Global Trends,Report
+doc_289,Education Under Attack 2022,https://protectingeducation.org/wp-content/uploads/documents/documents_eea2022.pdf,Conflict & Education,Report
+doc_290,Equity in Education: Breaking Down Barriers (OECD 2018),https://www.oecd-ilibrary.org/education/equity-in-education_9789264073234-en.pdf,Equity,Report
+doc_291,Mobile Learning for Mathematics: Review (Computers & Education 2020),https://doi.org/10.1016/j.compedu.2020.103915,Mobile Learning,Journal Article
+doc_292,Augmented Reality in Science Education (Computers & Education 2018),https://doi.org/10.1016/j.compedu.2018.11.005,"AR, Science",Journal Article
+doc_293,Perceptions of Online Learning Quality (Distance Education 2020),https://doi.org/10.1080/01587919.2020.1869528,Online Quality,Journal Article
+doc_294,EU Digital Education Action Plan 2021-2027,https://education.ec.europa.eu/sites/default/files/document-library-docs/deap-communication-sept2020_en.pdf,Digital Strategy,Report
+doc_295,Teaching During COVID-19 Highlights (OECD 2020),https://www.oecd.org/education/talis/Teaching_during_COVID-19_Highlights.pdf,COVID Teaching,Report
+doc_296,State of the Global Education Crisis (World Bank/UNESCO/UNICEF 2021),https://documents.worldbank.org/en/publication/documents-reports/documentdetail/416991638768297704,Learning Crisis,Report
+doc_297,Global Teacher Status Index 2018 (Varkey Foundation),https://www.varkeyfoundation.org/media/filer_public/0c/51/0c5175de-9165-4f1e-a015-d91030d29e3e/global_teacher_status_index_2018.pdf,Teacher Status,Report
+doc_298,Learning Passport: R&D Brief (UNICEF 2021),https://www.unicef.org/media/93511/file/The-Learning-Passport-Research-and-Development-Brief.pdf,Digital Learning,Report
+doc_299,GPE Results Report 2023,https://assets.globalpartnership.org/s3fs-public/2023-09/gpe-results-report-2023.pdf,Global Partnership,Report
+doc_300,Homework and Student Achievement: Meta-Analysis (RER 2022),https://doi.org/10.3102/00346543221102232,Homework,Journal Article
+doc_301,Teacher Burnout and Student Outcomes (TATE 2019),https://doi.org/10.1016/j.tate.2019.102356,Teacher Burnout,Journal Article
+doc_302,How AI Is Changing Assessment in the Classroom (EdSurge 2023),https://www.edsurge.com/news/2023-05-15-how-ai-is-changing-assessment-in-the-classroom,"Assessment, AI",Blog Post
+doc_303,Project-Based Learning That Works in Remote Settings (Edutopia 2022),https://www.edutopia.org/article/project-based-learning-remote,"PBL, Remote Learning",Blog Post
+doc_304,Global Learning Crisis Threatens 70% of 10-Year-Olds (The Guardian 2022),https://www.theguardian.com/global-development/2022/jun/23/global-learning-crisis-threatens-70-of-10-year-olds,Learning Crisis,News Article
+doc_305,Pandemic’s Effects on U.S. Test Scores (NY Times 2023),https://www.nytimes.com/2023/02/09/us/covid-education-test-scores.html,"COVID Impact, USA",News Article
+doc_306,World Bank EdStats Data Handbook 2023,https://datatopics.worldbank.org/education/files/EdStats%20Handbook_2023.pdf,Education Statistics,Report
+doc_307,"The Human Resources Reckoning (2023, Financial Times)",https://www.ft.com/content/fddaa145-af5f-4dd2-9647-0e4b32040a95,HR ,News Article
+doc_308,"Young People Are Taking Over the Workplace (2023, WSJ)",https://www.wsj.com/lifestyle/careers/gen-z-workforce-expectation-differences-a07c5915,"Gen Z Workforce, Culture Shift",News Article
+doc_309,Human Resource Management Review (ScienceDirect),https://www.sciencedirect.com/journal/human-resource-management-review,"HR Theory, Strategic HR",Journal
+doc_310,Human Resource Management Journal (Wiley),https://onlinelibrary.wiley.com/journal/17488583,"HR Practices, Work Psychology",Journal
+doc_311,Journal of Human Resources,https://jhr.uwpress.org/,"Labor Economics, Workforce Trends",Journal
+doc_312,Strategic Human Resource Management and Firm Performance (2022),https://doi.org/10.1016/j.hrmr.2022.100957,"Strategic HRM, Performance",Journal Article
+doc_313,Improving Communication Culture in Manufacturing (2024),https://www.onlinewhitepapers.com/human-resources/improving-communication-culture-manufacturing/,Workplace Communication,White Paper
+doc_314,"How HR Can Lead Culture Transformation (2023, SHRM)",https://www.shrm.org/hr-today/news/hr-magazine/summer2023/pages/how-hr-can-lead-culture-transformation.aspx,"Change Management, Leadership",Blog Post
+doc_315,HR Trends for 2024 (AIHR),https://www.aihr.com/blog/hr-trends/,"Future of Work, Talent Strategy",Blog Post
+doc_316,Top HR Challenges in 2023 (Gartner),https://www.gartner.com/en/articles/top-5-priorities-for-hr-leaders-in-2023,"Retention, Culture, Leadership",Report
+doc_317,State of People Strategy 2023 (Lattice),https://lattice.com/library/the-state-of-people-strategy-2023,"People Analytics, Talent Retention",Report
+doc_318,"AI in HR: Transforming the Employee Lifecycle (IBM, 2023)",https://www.ibm.com/downloads/cas/VQZ9NJZA,"AI, HR Tech",Report
+doc_319,Deloitte Human Capital Trends Report (2023),https://www2.deloitte.com/content/dam/Deloitte/global/Documents/HumanCapital/hc-trends-2023.pdf,"Human Capital, Workforce Strategy",Report
+doc_320,Global Talent Trends 2023 (LinkedIn),https://business.linkedin.com/talent-solutions/global-talent-trends,"Hiring, Skills Gap",Report
+doc_321,Reinventing HR: Google Re:Work Guide,https://rework.withgoogle.com/guides/,"HR Design, Behavioral Science",Guide
+doc_322,"HR Scorecard: Linking People, Strategy, and Performance (Book Summary)",https://hbr.org/product/the-hr-scorecard-linking-people-strategy-and-performance/4328-HBK-ENG,"Metrics, Alignment",Book Summary
+doc_323,"HR in the Age of Automation (World Economic Forum, 2022)",https://www3.weforum.org/docs/WEF_Future_of_Jobs_2020.pdf,"Automation, Workforce Disruption",Report
+doc_324,"Human Resource Planning Guide (AIHR, 2024)",https://www.aihr.com/blog/human-resource-planning/,"Strategic Planning, Workforce Modeling",Guide
+doc_325,"Employee Experience Index (Qualtrics & MIT Sloan, 2022)",https://www.qualtrics.com/employee-experience/employee-experience-index/,"Engagement, Experience Metrics",Report
+doc_326,What is Strategic HRM? (Chartered Institute of Personnel and Development),https://www.cipd.org/uk/knowledge/factsheets/strategic-hrm-factsheet/,"SHRM Theory, HR Alignment",Factsheet
+doc_327,"HR Metrics and Workforce Analytics (AIHR, 2023)",https://www.aihr.com/blog/hr-metrics/,"HR Analytics, KPIs",Guide
+doc_328,SHRM 2023 HR Competency Model,https://www.shrm.org/learningandcareer/competency-model/pages/default.aspx,"Skills, Competency Framework",Web Resource
+doc_329,2023 Global Human Capital Trends (Deloitte),https://www2.deloitte.com/us/en/insights/focus/human-capital-trends.html,Workforce Transformation,Report
+doc_330,HR Policy Manual Template (Society for Nonprofits),https://www.snpo.org/publications/hrpolicies.pdf,"HR Compliance, Policy Development",Template
+doc_331,"Ethics in Human Resource Management (2019, ResearchGate)",https://www.researchgate.net/publication/335932469_Ethics_in_Human_Resource_Management,"Ethics, HR Practices",Journal Article
+doc_332,"Human Resource Management Capstone Guide (Coursera, 2023)",https://www.coursera.org/learn/human-resource-management-capstone,"HR Capstone, Practical Application",Online Course
+doc_333,Top 10 Global HR Trends for 2024 (Forbes),https://www.forbes.com/sites/forbeshumanresourcescouncil/2023/12/27/top-10-hr-trends-to-watch-in-2024/,"HR Trends, Global Talent",News Article
+doc_334,Workforce of the Future 2030 (PwC),https://www.pwc.com/gx/en/services/people-organisation/workforce-of-the-future/workforce-of-the-future-the-competing-forces-shaping-2030-pwc.pdf,"Future Workforce, Strategy",Report
+doc_335,Understanding the Employee Lifecycle (AIHR),https://www.aihr.com/blog/employee-lifecycle/,"Talent Management, Lifecycle",Blog Post
+doc_336,SHRM Workplace Immigration Guide,https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/workplace-immigration-guide.aspx,"Immigration, Global HR",Guide
+doc_337,"DEI in HR: Diversity, Equity & Inclusion Toolkit (Catalyst, 2022)",https://www.catalyst.org/wp-content/uploads/2022/09/catalyst-dei-toolkit.pdf,"DEI, Inclusion Strategies",Toolkit
+doc_338,"Human Resource Risk Management Strategies (2023, SafetyCulture)",https://safetyculture.com/topics/human-resource-risk-management/,"Risk, Compliance",Guide
+doc_339,World Bank HR Strategic Plan 2020-2025,https://thedocs.worldbank.org/en/doc/982731511086279643-0070022017/original/HRStrategy.pdf,Public Sector HR,Report
+doc_340,Digital HR: Tech Tools for 2024 (AIHR),https://www.aihr.com/blog/hr-technology/,"HR Tech, Automation",Blog Post
+doc_341,Harvard Business Review: HR’s Role in Strategy Execution (2023),https://hbr.org/2005/07/human-resources-strategy,Strategic HR,Journal Article
+doc_342,People Analytics: A Practical Guide (Josh Bersin),https://joshbersin.com/2023/02/a-practical-guide-to-people-analytics/,"Analytics, Insights",Blog Post
+doc_343,"The Role of HR in ESG Strategy (McKinsey, 2023)",https://www.mckinsey.com/business-functions/people-and-organizational-performance/our-insights/the-role-of-hr-in-esg,"ESG, Sustainability",Report
+doc_344,SHRM COVID-19 Workforce Survey,https://www.shrm.org/hr-today/trends-and-forecasting/research-and-surveys/pages/covid-19-research.aspx,"Pandemic, Remote Work",Survey Report
+doc_345,Compensation Benchmarking Guide (Payscale),https://www.payscale.com/compensation-trends/guide-to-compensation-benchmarking/,"Pay Strategy, Benchmarking",Guide
+doc_346,The AI-Driven HR Function (MIT Sloan Management Review),https://sloanreview.mit.edu/article/how-to-lead-an-ai-powered-human-resources-function/,"AI, Future of HR",Journal Article
+doc_347,A Research Paper on Cryptography (2019),https://ijtre.com/wp-content/uploads/2021/10/2019070403.pdf,Cryptography,Research Paper
+doc_348,Cryptography.pdf - EA Journals (2021),https://www.eajournals.org/wp-content/uploads/Cryptography.pdf,"Public-Key Cryptography, Asymmetric Encryption",Journal Article
+doc_349,Cryptography: A Review (2021),https://ijaem.net/issue_dcp/Cryptography%20A%20Review.pdf,"Information Security, Cryptographic Techniques",Review Paper
+doc_350,A Review Paper on Cryptography (2019),https://www.researchgate.net/publication/334418542_A_Review_Paper_on_Cryptography,"Data Security, Encryption Algorithms",Review Paper
+doc_351,Overview of Cryptography (2009),https://www.researchgate.net/publication/315029214_Overview_of_Cryptography,"Cryptographic Methods, Data Protection",Research Paper
+doc_352,New Directions in Cryptography (1976),https://www-ee.stanford.edu/~hellman/publications/24.pdf,"Block Ciphers, Authentication",Seminal Paper
+doc_353,Communication Theory of Secrecy Systems (1949),https://en.wikipedia.org/wiki/Communication_Theory_of_Secrecy_Systems,"Information Theory, Secret-Key Cryptography",Foundational Paper
+doc_354,Quantum Cryptography: Key Distribution and Beyond (2018),https://arxiv.org/abs/1802.05517,"Quantum Key Distribution, Cryptographic Applications",Research Paper
+doc_355,Security Aspects of Practical Quantum Cryptography (1999),https://arxiv.org/abs/quant-ph/9911054,"Quantum Security, Practical Implementations",Research Paper
+doc_356,Quantum Cryptography Using Larger Alphabets (1999),https://arxiv.org/abs/quant-ph/9910095,"High-Dimensional Systems, Key Distribution",Research Paper
+doc_357,A Graduate Course in Applied Cryptography (2017),https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_4.pdf,"Applied Cryptography, Security Goals",Textbook
+doc_358,Cryptography: An Introduction (3rd Edition) (2010),https://www.cs.umd.edu/~waa/414-F11/IntroToCrypto.pdf,"Stream Ciphers, LFSR",Textbook
+doc_359,An Overview of Cryptography (2005),https://www.cs.princeton.edu/~chazelle/courses/BIB/overview-crypto.pdf,"Secret Key, Public Key, Hash Functions",Educational Resource
+doc_360,Cryptography - Department of Computer Science and Technology (2005),https://www.cl.cam.ac.uk/archive/rja14/Papers/SE-05.pdf,"Security Engineering, Mathematics",Educational Resource
+doc_361,Encyclopedia of Cryptography and Security (2005),https://en.wikipedia.org/wiki/Encyclopedia_of_Cryptography_and_Security,"Authentication, Cryptoanalysis, Hash Functions",Reference Book
+doc_362,Hold the Photons! (2005),https://www.wired.com/2005/12/hold-the-photons,"Secure Communication, Classical Cryptography",News Article
+doc_363,NIST's Postquantum Cryptography Standards: 'This Is the Start of the Race' (2024),https://deloitte.wsj.com/cio/nists-postquantum-cryptography-standards-this-is-the-start-of-the-race-6e279b49,"Quantum Computing, Cybersecurity",News Article
+doc_364,Cryptology ePrint Archive,https://eprint.iacr.org/,"Cryptology, Research Papers",Online Repository
+doc_365,Security Protocols Open Repository,https://en.wikipedia.org/wiki/Security_Protocols_Open_Repository,"Security Protocols, Formal Verification",Online Repository
+doc_366,Index of Cryptography Articles,https://en.wikipedia.org/wiki/Index_of_cryptography_articles,"Cryptography Topics, Reference",Index
+doc_367,Advancing Scalability in Decentralized Storage: A Novel Approach to Proof-of-Replication via Polynomial Evaluation (2024),https://iacr.org/cryptodb/data/conf.php?venue=crypto&year=2024,Transportation,Research Paper
+doc_368,Report on Post-Quantum Cryptography (2024),https://bidenwhitehouse.archives.gov/wp-content/uploads/2024/07/REF_PQC-Report_FINAL_Send.pdf,"Post-Quantum Cryptography, National Security",Government Report
+doc_369,The Post-Quantum Cryptography Transition: Making Progress But Still a Long Road Ahead (2025),https://cra.org/wp-content/uploads/2025/01/2024-2025-CRA-Quad-Paper_-The-Post-Quantum-Cryptography-Transition_-Making-Progress-But-Still-a-Long-Road-Ahead.pdf,"Post-Quantum Cryptography, Transition Challenges",Whitepaper
+doc_370,State of Crypto Report 2024,https://a16zcrypto.com/posts/article/state-of-crypto-report-2024/,"Crypto Trends, Blockchain Infrastructure",Report
+doc_371,Agile Cryptography for the Banking Industry (2024),https://academy.sandboxaq.com/marketing-collateral-qsg/102709,"Agile Cryptography, Banking Sector",Whitepaper
+doc_372,The New NIST Standards Are Here: What Does It Mean for PQC in 2024?,https://pqshield.com/new-whitepaper-the-new-nist-standards-are-here-what-does-it-mean-for-pqc-in-2024/,"NIST Standards, Post-Quantum Cryptography",Whitepaper
+doc_373,"Post Quantum Cryptography Awareness is High, But Widespread Preparation Lags (2024)",https://www.entrust.com/company/newsroom/post-quantum-cryptography-awareness-is-high-but-widespread-action-lags-finds-2024-global-entrust-report,"Post-Quantum Cryptography, Organizational Readiness",Report
+doc_374,NIST Releases Draft Report on Transition to Post-Quantum Cryptography (2024),https://www.quantum.gov/nist-draft-report-on-pqc-transition/,"Post-Quantum Cryptography, Transition Planning",Government Report
+doc_375,"2024 Global PKI, IoT and Post Quantum Cryptography Study",https://ponemonsullivanreport.com/2024/08/2024-global-pki-iot-and-post-quantum-cryptography-study/,"PKI, IoT Security, Post-Quantum Cryptography",Study
+doc_376,Global Encryption Trends – 2024,https://www.encryptionconsulting.com/global-encryption-trends-2024/,"Encryption Strategies, Data Protection",Report
+doc_377,Selected Areas in Cryptography – SAC 2024,https://link.springer.com/book/10.1007/978-3-031-82852-2,"Applied Cryptology, Symmetric-Key Primitives",Conference Proceedings
+doc_378,Top 74 Cryptography Papers Published in 2024,https://scispace.com/journals/cryptography-2yifskpu/2024,"Cryptography Research, 2024 Publications",Journal Articles
+doc_379,"Cryptography, Volume 8, Issue 2 (June 2024)",https://www.mdpi.com/2410-387X/8/2,"Pseudo-Random Sequences, Complexity Measures",Journal Issue
+doc_380,"Cryptography, Volume 8, Issue 4 (December 2024)",https://www.mdpi.com/2410-387X/8/4,"Key Space Partitioning, Block Cipher Cryptanalysis",Journal Issue
+doc_381,Cryptography and Security Sep 2024,https://www.arxiv.org/list/cs.CR/2024-09?show=2000&skip=85,"Cryptography, Security, AI Integration",arXiv Preprints
+doc_382,Safeguarding U.S. Secrets from Quantum Computers Just Got Easier (2024),https://www.axios.com/2024/08/13/nist-post-quantum-cryptography-encryption,"NIST Standards, Quantum Threats",News Article
+doc_383,Battle Begins to Stop Quantum Computers Smashing Cyber Defenses (2024),https://www.thetimes.co.uk/article/battle-begins-to-stop-quantum-computers-smashing-cyber-defences-rzmlwqw7f,"Quantum Computing, Cybersecurity",News Article
+doc_384,The Quantum Apocalypse Is Coming. Be Very Afraid (2025),https://www.wired.com/story/q-day-apocalypse-quantum-computers-encryption,"Quantum Computing, Encryption Risks",News Article
+doc_385,UK Cybersecurity Agency Warns Over Risk of Quantum Hackers (2025),https://www.theguardian.com/technology/2025/mar/20/uk-cybersecurity-agency-quantum-hackers,"Quantum Computing, UK Cybersecurity",News Article
+doc_386,"BFSI Not Ready to Tackle Quantum Computing Threats, Says Study (2025)",https://timesofindia.indiatimes.com/city/hyderabad/bfsi-not-ready-to-tackle-quantum-computing-threats-says-study/articleshow/121170313.cms,"Quantum Computing, BFSI Sector",News Article
+doc_387,Transportation Statistical Annual Report 2024,https://www.bts.gov/newsroom/transportation-statistical-annual-report-2024,"Transportation Statistics, Data Analysis",Government Report
+doc_388,Critical Issues in Transportation for 2024 and Beyond,https://nap.nationalacademies.org/catalog/27432/critical-issues-in-transportation-for-2024-and-beyond,"Transportation Policy, Societal Challenges",Report
+doc_389,Understanding AI Risks in Transportation (September 2024),https://www.transportation.gov/sites/dot.gov/files/2024-09/HASS_COE_AI_Assurance_Whitepaper_AI_Risk_Sep2024.pdf,"AI in Transportation, Risk Assessment",Whitepaper
+doc_390,Annual Performance Report 2024,https://www.transportation.gov/mission/budget/annual-performance-report-2024,"Transportation Performance, Budgeting",Government Report
+doc_391,The State of Freight – October 2024,https://www.freightwaves.com/news/white-paper-the-state-of-freight-october-2024,"Freight Market, Supply Chain Disruptions",Whitepaper
+doc_392,Transportation White Paper 2024 - Disability Rights Pennsylvania,https://www.breakthroughfuel.com/resources/exclusive-content/2024-state-of-transportation-report/,"Accessibility, Disability Rights",Whitepaper
+doc_393,2024 State of Transportation Report: Trends and Challenges,https://www.breakthroughfuel.com/resources/exclusive-content/2024-state-of-transportation-report/,"Transportation Trends, Industry Challenges",Report
+doc_394,Transport and Logistics Industry Risks and Opportunities 2024,https://www.onlinewhitepapers.com/finance/logistics-risks-opportunities/,"Logistics, Risk Management",Whitepaper
+doc_395,US Future of Transportation Report 2024,https://store.mintel.com/report/us-future-of-transportation-market-report,"Transportation Market, Future Outlook",Market Report
+doc_396,Gallagher Transportation Sector Perspectives 2024 — State of the Sector,https://www.ajg.com/news-and-insights/transportation-2024-state-of-the-sector/,"Transportation Sector, Industry Trends",Whitepaper
+doc_397,Responsible Federated Learning in Smart Transportation: Outlooks and Challenges (2024),https://arxiv.org/abs/2404.06777,"Federated Learning, Smart Transportation",Research Paper
+doc_398,Quantum Computing in Intelligent Transportation Systems: A Survey (2024),https://arxiv.org/abs/2406.00862,"Quantum Computing, Intelligent Transportation",Survey Paper
+doc_399,"Graph Neural Networks in Intelligent Transportation Systems: Advances, Applications and Trends (2024)",https://arxiv.org/abs/2401.00713,"Graph Neural Networks, Transportation Systems",Research Paper
+doc_400,Advancing Object Detection in Transportation with Multimodal Large Language Models (2024),https://arxiv.org/abs/2409.18286,"Object Detection, Multimodal Models",Research Paper
+doc_401,Transportation Research Part A: Policy and Practice,https://www.sciencedirect.com/journal/transportation-research-part-a-policy-and-practice,"Transportation Policy, Planning",Journal
+doc_402,"Transportation Research Interdisciplinary Perspectives, Vol 24",https://www.sciencedirect.com/journal/transportation-research-interdisciplinary-perspectives/vol/24/suppl/C,Interdisciplinary Transportation Research,Journal
+doc_403,Transportation Research Record,https://journals.sagepub.com/home/trr,"Transportation Research, Technical Papers",Journal
+doc_404,"Journal of Transportation Engineering, Part A: Systems",https://ascelibrary.org/journal/jtepbs,"Transportation Engineering, Systems",Journal
+doc_405,Transportation (Springer Journal),https://link.springer.com/journal/11116,"Transportation Research, Travel Behavior",Journal
+doc_406,"Research Digest, January 2024 - Center for Transportation Research",https://ctr.utexas.edu/2024/01/24/research-digest-january-2024-transportation-research-board-publications/,"Transportation Research, Digest",Research Digest
+doc_407,Green corridors beat clock: Delhi traffic police's lifesaving routes give transplant patients second chance (2025),https://timesofindia.indiatimes.com/city/delhi/green-corridors-beat-clock-delhi-traffic-polices-lifesaving-routes-give-transplant-patients-second-chance/articleshow/121480470.cms,"Emergency Transportation, Organ Transplants",News Article
+doc_408,"NTSB releases report on fatal Illinois school bus, semi-truck crash that killed 5 (2025)",https://www.myjournalcourier.com/news/article/ntsb-illinois-school-bus-crash-20310835.php,"Transportation Safety, Accident Report",News Article
+doc_409,Seattle drivers face growing traffic woes (2025),https://www.axios.com/local/seattle/2025/01/06/seattle-traffic-congestion-2024,"Traffic Congestion, Urban Transportation",News Article
+doc_410,"US drivers log 3.28 trillion miles in 2024, setting new record (2025)",https://www.reuters.com/world/us/us-drivers-log-328-trillion-miles-2024-setting-new-record-2025-03-05/,"Road Travel, Transportation Statistics",News Article
+doc_411,"MTA's emergency exits are a gauntlet of dangers like exposed wiring, broken handrails and missing lights: audit (2024)",https://www.reuters.com/world/us/us-drivers-log-328-trillion-miles-2024-setting-new-record-2025-03-05/,"Public Transportation, Safety Audit",News Article
+doc_412,"Gondolas, driverless trucks and more transportation initiatives in Houston reported during 2024",https://www.houstonchronicle.com/news/houston-texas/trending/article/2024-transportation-services-houston-20002794.php,"Transportation Innovation, Autonomous Vehicles",News Article
+doc_413,"US faces growing crisis over high traffic deaths, NTSB chair says (2024)",https://www.reuters.com/business/healthcare-pharmaceuticals/us-faces-growing-public-health-crisis-over-traffic-deaths-ntsb-chair-says-2024-11-19/,"Traffic Safety, Public Health Crisis",News Article
+doc_414,Key Findings from the 2024 State of School Transportation Report,https://www.hopskipdrive.com/blog/key-findings-2024-state-of-school-transportation-report/,"School Transportation, Driver Shortage",Blog Post
+doc_415,Air Travel Consumer Reports for 2024,https://www.transportation.gov/resources/individuals/aviation-consumer-protection/air-travel-consumer-reports-2024,"Air Travel, Consumer Protection",Government Report
+doc_416,Annual Report 2024 - Transportation Choices Coalition,https://transportationchoices.org/annual-report-2024/,"Transportation Advocacy, Policy",Annual Report
+doc_417,Transportation Research Circulars,https://www.trb.org/Publications/PubsTransportationResearchCirculars.aspx,"Transportation Research, Circulars",Research Circulars
+doc_418,Whitepapers - Transport Intelligence,https://ti-insight.com/research-papers/whitepapers/,"Transport Intelligence, Market Analysis",Whitepapers
+doc_419,Whitepapers,https://www.ttnews.com/whitepapers,"Freight Industry, Back Office Efficiency",White Paper
+doc_420,Exploring the 2024 Transportation Industry Update,https://nltd.com/transportation_whitepaper,"Transportation Industry, Future Outlook",Whitepaper
+doc_421,FTA Annual Research Report for Fiscal Year 2024,https://www.transit.dot.gov/research-innovation/fta-annual-research-report-fiscal-year-2024-report-0273,"Public Transportation, Innovation",Government Report
+doc_422,Transportation Statistics Annual Report 2024,https://govwhitepapers.com/whitepapers/transportation-statistics-annual-report-2024,"Transportation Statistics, Infrastructure",Annual Report
+doc_423,Advancing Highway Traffic Monitoring Through Strategic Research: 2024 Update,https://www.trb.org/Publications/PubsTransportationResearchCirculars.aspx,"Traffic Monitoring, Strategic Research",Research Circular
+doc_424,Adjustment to Asphalt Mixtures to Meet Performance Testing Requirements and Allow Innovations,https://www.trb.org/Publications/PubsTransportationResearchCirculars.aspx,"Asphalt Mixtures, Performance Testing",Research Circular
+doc_426,Opinions of the Court - 2024,https://www.supremecourt.gov/opinions/slipopinion/24,Law,Court Opinions
+doc_427,2024 Year-End Report on the Federal Judiciary,https://www.supremecourt.gov/publicinfo/year-end/2024year-endreport.pdf,"Federal Judiciary, Judicial Independence",Annual Report
+doc_428,Federal Judicial Caseload Statistics 2024,https://www.uscourts.gov/data-news/reports/statistical-reports/federal-judicial-caseload-statistics/federal-judicial-caseload-statistics-2024,"Caseload Statistics, Federal Courts",Statistical Report
+doc_429,2024 National Money Laundering Risk Assessment,https://home.treasury.gov/system/files/136/2024-National-Money-Laundering-Risk-Assessment.pdf,"Money Laundering, Financial Crimes",Risk Assessment
+doc_430,SBA Issues White Paper on its Size Standards Methodology (2024),https://www.sba.gov/article/2024/09/13/sba-issues-white-paper-its-size-standards-methodology,"Small Business Law, Regulatory Standards",Whitepaper
+doc_431,Copyright and Artificial Intelligence Report (Parts 1-3),https://www.copyright.gov/ai/,"AI, Copyright Law",Government Report
+doc_432,2024 Guidance Update on Patent Subject Matter Eligibility,https://www.federalregister.gov/documents/2024/07/17/2024-15377/2024-guidance-update-on-patent-subject-matter-eligibility-including-on-artificial-intelligence,"Patent Law, AI",Guidance Document
+doc_433,New White Paper on FOIA Data,https://www.justice.gov/oip/blog/new-white-paper-foia-data-chief-foia-officer-council-technology-committees-working-group,"FOIA, Data Management",Whitepaper
+doc_434,Taxation of Digital Products Uniformity Project Draft White Paper,https://www.mtc.gov/wp-content/uploads/2024/09/Draft-Bundling-White-Paper-for-9-5-24-Work-Group-Meeting.pdf,"Tax Law, Digital Products",Draft Whitepaper
+doc_435,"Further Consolidated Appropriations Act, 2024",https://www.congress.gov/bill/118th-congress/house-bill/2882/text,"Appropriations, Federal Law",Legislation
+doc_436,LawLLM: Law Large Language Model for the US Legal System (2024),https://arxiv.org/abs/2407.21065,"AI, Legal Language Models",Research Paper
+doc_437,Challenges and Opportunities for Visual Analytics in Jurisprudence (2024),https://arxiv.org/abs/2412.06543,"Visual Analytics, Legal Research",Research Paper
+doc_438,Large Legal Fictions: Profiling Legal Hallucinations in LLMs (2024),https://arxiv.org/abs/2401.01301,"AI, Legal Accuracy",Research Paper
+doc_439,PILOT: Legal Case Outcome Prediction with Case Law (2024),https://arxiv.org/abs/2401.15770,"AI, Case Law Prediction",Research Paper
+doc_440,University of Minnesota Law School Legal Studies Research Paper Series Vol. 22 No. 5 (2024),https://law.umn.edu/news/2024-10-14-university-minnesota-law-school-legal-studies-research-paper-series-vol-22-no-5,"Legal Theory, Corporate Governance",Research Paper
+doc_441,Faculty Publications - Northwestern Law (2024),https://wwws.law.northwestern.edu/research-faculty/publications/search/fpsearchr.cfm?month=6&year=2024,"Constitutional Law, Prosecutorial Incentives",Research Paper
+doc_442,SSRN Research Paper Series,https://www.law.virginia.edu/ssrn-research-paper-series,"Law and Economics, Public Law",Research Paper
+doc_443,Articles in Law Reviews & Other Academic Journals,https://digitalcommons.wcl.american.edu/facsch_lawrev/,Various Legal Topics,Journal Articles
+doc_444,Academic Publications - Harvard Law School Center on the Legal Profession,https://clp.law.harvard.edu/knowledge-hub/academic-publications/,"Legal Profession, Diversity",Academic Publications
+doc_445,Scholarly Impact of Law School Faculties in 2024,https://z.umn.edu/9yr2,"Legal Scholarship, Faculty Rankings",Research Study
+doc_446,The legal profession in 2024: AI,https://hls.harvard.edu/today/harvard-law-expert-explains-how-ai-may-transform-the-legal-profession-in-2024/,"AI, Legal Profession",News Article
+doc_447,The Most Viewed Legal Research Reports and Global Legal Monitor Articles of 2024,https://blogs.loc.gov/law/2025/01/the-most-viewed-legal-research-reports-and-global-legal-monitor-articles-of-2024/,"Legal Research, Global Legal Developments",Blog Post
+doc_448,Interactive Case Law Update - United States Sentencing Commission,https://www.ussc.gov/education/training-resources/interactive-case-law-update,"Case Law, Sentencing Guidelines",Legal Update
+doc_449,New York Official Reports: Law Reports Style Manual,https://nycourts.gov/reporter/Styman_menu.shtml,"Legal Writing, Citation Standards",Style Manual
+doc_450,Local Law Reports - NYCEM,https://www.nyc.gov/site/em/about/local-law-reports.page,"Local Legislation, Emergency Management",Government Reports
+doc_451,2024 State of the Legal Industry White Paper,https://www.leopardsolutions.com/thought-leadership/state-of-the-legal-industry-2024/,"Legal Industry Trends, DEI, Law Firm Growth",Whitepaper
+doc_452,Generative AI Legal Landscape 2024,https://law.stanford.edu/publications/generative-ai-legal-landscape-2024-2/,"AI in Law, Legal Technology",Whitepaper
+doc_453,2024 General Counsel Report,https://www.ftitechnology.com/l/gc-report-2024,"General Counsel, Legal Strategy",Whitepaper
+doc_454,2024 Midyear Employment Law Update,https://hrwatchdog.calchamber.com/2024/08/free-2024-midyear-employment-law-update-white-paper/,"Employment Law, California Labor Laws",Whitepaper
+doc_455,2024 Report on the Legal Industry: Exploring Applications and Use Cases for Legal AI,https://www.robinai.com/whitepaper/2024-report-on-the-legal-industry-exploring-applications-and-use-cases-for-legal-ai,"Legal AI, Contract Review, Legal Operations",Whitepaper
+doc_456,Future of Legal Services – White Paper 2024,https://the-innovative-lawyer.squarespace.com/s/future-of-legal-services-report-2024.pdf,"Legal Services, AI, Climate Change",Whitepaper
+doc_457,24 Voices for 2024,https://www.netdocuments.com/resource/24-voices-for-2024/,"Legal Technology, AI, Automation",Whitepaper
+doc_458,Top Trends Influencing Legal Operations in 2024,https://info.simplelegal.com/legal-ops-trends-2024,"Legal Operations, Corporate Legal",Whitepaper
+doc_459,Legal Issues and Business Considerations When Using Generative AI,https://www.iab.com/wp-content/uploads/2024/06/IAB_GenerativeAI_WhitePaper_June2024.pdf,"Generative AI, Intellectual Property, Privacy",Whitepaper
+doc_460,2024 LAIR Report: Access to Justice through Data and Research,https://www.justice.gov/atj/media/1379491/dl,"Access to Justice, Legal Data",Government Report
+doc_461,Large Legal Fictions: Profiling Legal Hallucinations in Large Language Models (2024),https://arxiv.org/abs/2401.01301,"AI, Legal Accuracy, LLMs",Research Paper
+doc_462,Human Centered AI for Indian Legal Text Analytics (2024),https://arxiv.org/abs/2403.10944,"AI, Legal Text Analytics, India",Research Paper
+doc_463,PILOT: Legal Case Outcome Prediction with Case Law (2024),https://arxiv.org/abs/2401.15770,"AI, Case Law, Outcome Prediction",Research Paper
+doc_464,Challenges and Opportunities for Visual Analytics in Jurisprudence (2024),https://arxiv.org/abs/2412.06543,"Visual Analytics, Jurisprudence",Research Paper
+doc_465,"Laws, Volume 13, Issue 3 (June 2024)",https://www.mdpi.com/2075-471X/13/3,"Legal Theory, Democratic Ideals",Journal Issue
+doc_466,"Journal of Corporate Law Studies, Volume 24, Issue 2 (2024)",https://www.tandfonline.com/toc/rcls20/current,"Corporate Law, Governance",Journal Issue
+doc_467,University of Minnesota Law School Legal Studies Research Paper Series Vol. 22 No. 5 (2024),https://law.umn.edu/news/2024-10-14-university-minnesota-law-school-legal-studies-research-paper-series-vol-22-no-5,"Legal Theory, Corporate Governance",Research Paper
+doc_468,Edinburgh Law School Legal Studies Research Paper Series - September 2024,https://www.law.ed.ac.uk/news-events/news/edinburgh-law-school-legal-studies-research-paper-series-september-2024,"Legal Studies, Various Topics",Research Paper
+doc_469,Case Research Paper Series in Legal Studies - SSRN,https://www.ssrn.com/link/case-legal-studies.html,"Legal Studies, Various Topics",Research Paper
+doc_470,Cornell Law School Legal Studies Research Paper Series - SSRN,https://www.ssrn.com/link/cornell-legal-studies.html,"Legal Studies, Various Topics",Research Paper
+doc_471,The Most Viewed Legal Research Reports and Global Legal Monitor Articles of 2024,https://blogs.loc.gov/law/2025/01/the-most-viewed-legal-research-reports-and-global-legal-monitor-articles-of-2024/,"Legal Research, Global Legal Developments",Blog Post
+doc_472,Interactive Case Law Update - United States Sentencing Commission,https://www.ussc.gov/education/training-resources/interactive-case-law-update,"Case Law, Sentencing Guidelines",Legal Update
+doc_473,New York Official Reports: Law Reports Style Manual,https://nycourts.gov/reporter/Styman_menu.shtml,"Legal Writing, Citation Standards",Style Manual
+doc_474,Law - Latest Research and News - Nature,https://www.nature.com/subjects/law,"Legal Research, Various Topics",News Articles
+doc_475,Legal Tech Connection - 2024 White Papers,https://www.legaltechconnection.com/2024/white-paper/,"Legal Technology, Compliance, AI",Whitepapers
+doc_476,The World in 2024: Ten Issues That Will Shape the International Agenda (2024),https://www.cidob.org/en/publications/world-2024-ten-issues-will-shape-international-agenda,International Relation,Policy Report
+doc_477,2024 CFR Annual Report,https://www.cfr.org/annual-report,"Foreign Policy, U.S. Global Strategy",Annual Report
+doc_478,2024 Comprehensive Annual Report on Public Diplomacy and International Broadcasting,https://www.state.gov/2024-comprehensive-annual-report-on-public-diplomacy-and-international-broadcasting/,"U.S. Public Diplomacy, Media Strategy",Government Report
+doc_479,Foreign Policy White Paper – Fiji (2024),https://www.foreignaffairs.gov.fj/foreign-policy-white-paper-2/,"Pacific Diplomacy, Foreign Policy",Government Whitepaper
+doc_480,2024 Carnegie California Global Affairs Survey,https://carnegieendowment.org/research/2024/10/2024-carnegie-california-global-affairs-survey,"Public Opinion, Global Affairs",Survey Report
+doc_481,Conflicts to Watch in 2024,https://www.cfr.org/report/conflicts-watch-2024,"Conflict Forecasting, Global Hotspots",Policy Brief
+doc_482,Annual Report 2024/2025 – Atlantic Council,https://www.atlanticcouncil.org/in-depth-research-reports/report/2024-annual-report-how-programs-shaped-the-global-future/,"Global Strategy, Think Tank Impact",Annual Report
+doc_483,2024 Chicago Council Survey: America's Foreign Policy Future,https://globalaffairs.org/research/public-opinion-survey/americas-foreign-policy-future-public-opinion-and-2024-election,"U.S. Foreign Policy, Public Opinion",Survey Report
+doc_484,World Migration Report 2024,https://en.wikipedia.org/wiki/World_Migration_Report,"Migration Trends, Global Mobility",UN Report
+doc_485,Ten Global Affairs Reads of 2024,https://globalaffairs.org/commentary-and-analysis/blogs/ten-global-affairs-reads-2024,"Global Affairs, Book Recommendations",Blog Post
+doc_486,AI Technologies and International Relations (2024),https://www.tandfonline.com/doi/full/10.1080/03071847.2024.2392394,"Artificial Intelligence, Global Governance",Journal Article
+doc_487,Governing Dual-Use Technologies: Lessons for AI Governance (2024),https://arxiv.org/abs/2409.02779,"Dual-Use Tech, International Security",Research Paper
+doc_488,Escalation Risks from Language Models in Military and Diplomatic Decision-Making (2024),https://arxiv.org/abs/2401.03408,"AI, Military Strategy, Diplomacy",Research Paper
+doc_489,Persistent Hierarchy in Contemporary International Collaboration (2024),https://arxiv.org/abs/2410.13020,"Global Collaboration, Scientific Hierarchy",Research Paper
+doc_490,The Global Governance of Artificial Intelligence: Next Steps for Research (2023),https://arxiv.org/abs/2305.11528,"AI Governance, International Policy",Research Paper
+doc_491,"International Relations - Volume 39, Number 1 (2024)",https://journals.sagepub.com/toc/ireb/current,"Global Climate Policy, U.S. Foreign Policy",Journal Issue
+doc_492,"International Affairs - Volume 100, Issue 1 (2024)",https://academic.oup.com/ia/issue/100/1,"Latin American Perspectives, Global Politics",Journal Issue
+doc_493,"Journal of International Relations, Peace Studies, and Development",https://scholarworks.arcadia.edu/agsjournal/,"Peace Studies, Development, Global Politics",Academic Journal
+doc_494,Journal of International Relations & Foreign Policy (JIRFP),https://jirfp.thebrpi.org/,"International Relations, Political Economy",Academic Journal
+doc_495,International Relations Open Access Articles,https://network.bepress.com/social-and-behavioral-sciences/political-science/international-relations/,"Various IR Topics, Open Access",Academic Articles
+doc_496,US and Allies Accuse North Korea and Russia of Violating UN Sanctions (2025),https://apnews.com/article/3ada38bfc312ccd4b9bb6551bb671195,"UN Sanctions, Military Cooperation",News Article
+doc_497,"Despite Tariff Pause, U.S. and China Continue Bitter 'Decoupling' (2025)",https://www.washingtonpost.com/world/2025/05/29/us-china-decoupling-accelerates/,"U.S.-China Relations, Economic Strategy",News Article
+doc_498,Transcript: A Foreign Policy Debrief with Jake Sullivan (2025),https://www.ft.com/content/515f4d78-be95-4e09-9be2-8663d0f6d2ec,"U.S. Foreign Policy, Global Conflicts",Interview Transcript
+doc_499,East Timor Deports Ex-Filipino Congressman Accused of Masterminding a Governor's Murder (2025),https://apnews.com/article/8e7407ec852eb7fae3d1e70b7de76e6c,"Southeast Asia, International Justice",News Article
+doc_500,How U.S. Cuts in Somalia Could Imperil the Fight Against al-Shabab (2025),https://www.washingtonpost.com/world/2025/05/27/somalia-al-shabab-american-troops-trump/,"Counterterrorism, U.S. Military Policy",News Article
