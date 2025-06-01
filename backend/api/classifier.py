@@ -11,6 +11,7 @@ from pathlib import Path
 import mimetypes
 import chardet
 import logging
+import threading
 
 # For classification
 from transformers import DistilBertTokenizerFast, DistilBertForSequenceClassification
@@ -186,6 +187,37 @@ class DocumentContentExtractor:
             print(f"\nDocument {i+1}: {content[:200]}...")
         return enhanced_df
 
+_model_cache = {}
+_model_cache_lock = threading.Lock()
+
+def load_model_and_tokenizer(classification_type):
+    """
+    Loads and caches the model, tokenizer, and label encoder for the given classification type.
+    """
+    with _model_cache_lock:
+        if classification_type in _model_cache:
+            return _model_cache[classification_type]
+
+        if classification_type == 'topic':
+            model_dir = os.path.join("media", "models", "topic_classifier")
+        else:
+            model_dir = os.path.join("media", "models", "doctype_classifier")
+
+        if not (os.path.exists(model_dir) and os.path.exists(os.path.join(model_dir, "config.json"))):
+            raise FileNotFoundError(f"Model not found at {model_dir}. Please train the model first.")
+
+        tokenizer = DistilBertTokenizerFast.from_pretrained(model_dir)
+        model = DistilBertForSequenceClassification.from_pretrained(model_dir)
+        label_map_path = os.path.join(model_dir, "label_encoder.pkl")
+        if os.path.exists(label_map_path):
+            with open(label_map_path, "rb") as f:
+                label_encoder = pickle.load(f)
+        else:
+            label_encoder = None
+
+        _model_cache[classification_type] = (tokenizer, model, label_encoder)
+        return tokenizer, model, label_encoder
+
 def classify_document(text, classification_type='topic'):
     """
     Classify a document's text as either topic or document type.
@@ -195,24 +227,11 @@ def classify_document(text, classification_type='topic'):
     Returns:
         dict: { 'result': predicted_label, 'confidence': probability }
     """
-    # Set model directory based on classification_type
-    if classification_type == 'topic':
-        model_dir = os.path.join("media", "models", "topic_classifier")
-    else:
-        model_dir = os.path.join("media", "models", "doctype_classifier")
-
-    # Check if model exists
-    if not (os.path.exists(model_dir) and os.path.exists(os.path.join(model_dir, "config.json"))):
-        return {"error": f"Model not found at {model_dir}. Please train the model first."}
-
-    # Load model and tokenizer
     try:
-        tokenizer = DistilBertTokenizerFast.from_pretrained(model_dir)
-        model = DistilBertForSequenceClassification.from_pretrained(model_dir)
+        tokenizer, model, label_encoder = load_model_and_tokenizer(classification_type)
     except Exception as e:
-        return {"error": f"Failed to load model/tokenizer: {e}"}
+        return {"error": str(e)}
 
-    # Tokenize input
     inputs = tokenizer(text, truncation=True, padding=True, max_length=512, return_tensors="pt")
     with torch.no_grad():
         outputs = model(**inputs)
@@ -221,18 +240,15 @@ def classify_document(text, classification_type='topic'):
         label_id = pred.item()
         confidence = confidence.item()
 
-    # Load label mapping
-    label_map_path = os.path.join(model_dir, "label_encoder.pkl")
-    if os.path.exists(label_map_path):
-        with open(label_map_path, "rb") as f:
-            label_encoder = pickle.load(f)
-        label = label_encoder.inverse_transform([label_id])[0]
+    if label_encoder:
+        try:
+            label = label_encoder.inverse_transform([label_id])[0]
+        except Exception:
+            label = str(label_id)
     else:
         label = str(label_id)
 
     return {"result": label, "confidence": confidence}
-
-# ---- OPTIONAL: Standalone CSV enhancement ----
 
 def main():
     """Main function for standalone usage"""
