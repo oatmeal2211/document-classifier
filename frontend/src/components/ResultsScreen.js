@@ -85,19 +85,6 @@ const ResultsScreen = ({ results, setResults, documents }) => {
     return document ? document.file_name : 'Unknown Document';
   };
 
-  // Function to create a confidence bar
-  const ConfidenceBar = ({ confidence }) => {
-    const percentage = (confidence * 100).toFixed(0);
-    return (
-      <div className="confidence-bar">
-        <div 
-          className="confidence-bar-fill" 
-          style={{ width: `${percentage}%` }}
-        ></div>
-      </div>
-    );
-  };
-
   return (
     <div className="results-screen">
       <div className="card">
@@ -131,7 +118,6 @@ const ResultsScreen = ({ results, setResults, documents }) => {
                 <tr>
                   <th>Document</th>
                   <th>{activeTab === 'topic' ? 'Topic' : 'Document Type'}</th>
-                  <th>Confidence</th>
                   <th>Actions</th>
                 </tr>
               </thead>
@@ -140,10 +126,6 @@ const ResultsScreen = ({ results, setResults, documents }) => {
                   <tr key={result.id}>
                     <td>{getDocumentName(result.document)}</td>
                     <td>{result.result}</td>
-                    <td>
-                      {(result.confidence * 100).toFixed(1)}%
-                      <ConfidenceBar confidence={result.confidence} />
-                    </td>
                     <td>
                       {activeTab === 'topic' ? (
                         <button 

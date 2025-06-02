@@ -22,6 +22,7 @@ from bs4 import BeautifulSoup
 import time
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
+from sklearn.naive_bayes import MultinomialNB
 
 # Download required NLTK resources
 nltk.download('punkt', quiet=True)
@@ -72,7 +73,7 @@ class DocumentClassifier:
         
         return ' '.join(cleaned_tokens)
     
-    def train_topic_classifier(self, documents, labels):
+    def train_topic_classifier(self, documents, labels, model_type='LinearSVC'):
         """Train the topic classifier with provided documents and labels."""
         # Preprocess documents
         processed_docs = [self.preprocess_text(doc) for doc in documents]
@@ -82,10 +83,18 @@ class DocumentClassifier:
             processed_docs, labels, test_size=0.2, random_state=42
         )
         
+        # Define the classifier based on model_type
+        if model_type == 'LinearSVC':
+            classifier = LinearSVC(C=1.5)
+        elif model_type == 'MultinomialNB':
+            classifier = MultinomialNB()
+        else:
+            raise ValueError(f"Unknown model type: {model_type}")
+
         # Create and train the pipeline
         pipeline = Pipeline([
             ('tfidf', TfidfVectorizer(max_features=5000, ngram_range=(1, 3))),
-            ('classifier', LinearSVC(C=1.5))
+            ('classifier', classifier)
         ])
         
         # Train the model
@@ -93,7 +102,7 @@ class DocumentClassifier:
         
         # Evaluate the model (optional, but good for debugging)
         accuracy = pipeline.score(docs_test, labels_test)
-        print(f"Topic classifier test accuracy: {accuracy:.2f}")
+        print(f"Topic classifier test accuracy ({model_type}): {accuracy:.2f}")
         
         # Save the model
         joblib.dump(pipeline, TOPIC_MODEL_PATH)
@@ -101,7 +110,7 @@ class DocumentClassifier:
         
         return pipeline
     
-    def train_doc_type_classifier(self, documents, labels):
+    def train_doc_type_classifier(self, documents, labels, model_type='LinearSVC'):
         """Train the document type classifier with provided documents and labels."""
         # Preprocess documents
         processed_docs = [self.preprocess_text(doc) for doc in documents]
@@ -111,10 +120,18 @@ class DocumentClassifier:
             processed_docs, labels, test_size=0.2, random_state=42
         )
         
+        # Define the classifier based on model_type
+        if model_type == 'LinearSVC':
+            classifier = LinearSVC(C=1.5)
+        elif model_type == 'MultinomialNB':
+            classifier = MultinomialNB()
+        else:
+            raise ValueError(f"Unknown model type: {model_type}")
+
         # Create and train the pipeline
         pipeline = Pipeline([
             ('tfidf', TfidfVectorizer(max_features=5000, ngram_range=(1, 3))),
-            ('classifier', LinearSVC(C=1.5))
+            ('classifier', classifier)
         ])
         
         # Train the model
@@ -122,7 +139,7 @@ class DocumentClassifier:
         
         # Evaluate the model (optional, but good for debugging)
         accuracy = pipeline.score(docs_test, labels_test)
-        print(f"Document type classifier test accuracy: {accuracy:.2f}")
+        print(f"Document type classifier test accuracy ({model_type}): {accuracy:.2f}")
         
         # Save the model
         joblib.dump(pipeline, DOC_TYPE_MODEL_PATH)
@@ -144,7 +161,7 @@ class DocumentClassifier:
 
             # Calculate confidence based on classifier type
             # Corrected step name from 'classifier' to 'clf'
-            if isinstance(self.topic_classifier.named_steps['clf'], LinearSVC):
+            if isinstance(self.topic_classifier.named_steps['classifier'], LinearSVC):
                 # Use decision_function for LinearSVC
                 scores = self.topic_classifier.decision_function([processed_text])[0]
                 # Get the index of the predicted class
@@ -172,7 +189,7 @@ class DocumentClassifier:
 
             # Calculate confidence based on classifier type
             # Corrected step name from 'classifier' to 'clf'
-            if isinstance(self.doc_type_classifier.named_steps['clf'], LinearSVC):
+            if isinstance(self.doc_type_classifier.named_steps['classifier'], LinearSVC):
                 # Use decision_function for LinearSVC
                 scores = self.doc_type_classifier.decision_function([processed_text])[0]
                 # Get the index of the predicted class

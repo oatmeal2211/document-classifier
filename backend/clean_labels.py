@@ -4,15 +4,317 @@ import csv
 import re
 import os
 import sys
+import pandas as pd
+import numpy as np
 
 # Define the input and output file paths
 # Assuming the script is run from the backend/ directory where the CSV is located
 input_csv_path = 'NLP documents bank - Sheet1.csv'
 output_csv_path = 'NLP documents bank - Sheet1_cleaned.csv'
 
-# Define label mappings for standardization and removal
-# Keys are the raw labels (case-insensitive match), values are the standardized labels.
-# Labels not in the mapping will be kept as is. Explicit None values will still be removed.
+# Define primary topic categories
+PRIMARY_TOPICS = {
+    'Technology',           # Technology, AI, Computing, Digital
+    'Business',            # Business, Finance, Economics, Management
+    'Research/Academic',   # General Research, Academic content
+    'Education',          # Education, Teaching, Learning
+    'Health',             # Health, Medical, Psychology, Wellness
+    'Legal/Policy',       # Legal, Policy, Compliance
+    'Environment',        # Environment, Sustainability, Climate
+    'Government',         # Politics, Law, Public Policy
+    'Science',            # General Science, Space, Engineering
+    'Security',           # Security, Defense, Cybersecurity
+    'Transportation',     # Transportation, Mobility, Logistics
+    'Humanities'          # Culture, Arts, Social Sciences
+}
+
+# Define primary document types
+PRIMARY_DOC_TYPES = {
+    'Article',           # Articles, News, Blog Posts
+    'Research',          # Research Papers, Academic Papers
+    'Report',            # Reports, Studies, Whitepapers
+    'Guide',            # Guides, Manuals, Instructions
+    'Legal',            # Legal Documents, Policies
+    'Educational',       # Educational Materials, Textbooks
+    'Form',             # Forms, Applications, Questionnaires
+    'Presentation',     # Presentations, Slides
+    'Reference',        # References, Documentation
+    'Dataset'           # Data, Datasets, Collections
+}
+
+# Define topic label mappings for standardization
+TOPIC_LABEL_MAPPING = {
+    # Technology & Computing
+    'AI': 'Technology',
+    'Artificial Intelligence': 'Technology',
+    'Machine Learning': 'Technology',
+    'Deep Learning': 'Technology',
+    'EdTech': 'Technology',
+    'ICT4E': 'Technology',
+    'Blockchain': 'Technology',
+    'Cryptography': 'Technology',
+    'Quantum Computing': 'Technology',
+    'Cybersecurity': 'Technology',
+    'Data Science': 'Technology',
+    'Cloud Computing': 'Technology',
+    'IoT': 'Technology',
+    'Robotics': 'Technology',
+    'AR': 'Technology',
+    'VR': 'Technology',
+    'Digital Technology': 'Technology',
+    'Technology/Innovation': 'Technology',
+    'Tech': 'Technology',
+    'IT': 'Technology',
+    'Computer Vision': 'Technology',
+    'NLP': 'Technology',
+    'Developer Tools': 'Technology',
+    'Software': 'Technology',
+    
+    # Business & Finance
+    'Finance': 'Business',
+    'Economics': 'Business',
+    'Business': 'Business',
+    'Marketing': 'Business',
+    'Real Estate': 'Business',
+    'HR': 'Business',
+    'Human Resources': 'Business',
+    'Management': 'Business',
+    'Workforce': 'Business',
+    'Strategic Planning': 'Business',
+    'Analytics': 'Business',
+    'CRM': 'Business',
+    'M&A': 'Business',
+    'Financial': 'Business',
+    'Labor Economics': 'Business',
+    'International Trade': 'Business',
+    
+    # Research & Academic
+    'Research': 'Research/Academic',
+    'Academic': 'Research/Academic',
+    'Scientific Research': 'Research/Academic',
+    'Academic Research': 'Research/Academic',
+    'Research Paper': 'Research/Academic',
+    'Academic Paper': 'Research/Academic',
+    'Academia': 'Research/Academic',
+    
+    # Education
+    'Education/Learning': 'Education',
+    'Learning': 'Education',
+    'Training': 'Education',
+    'Teaching': 'Education',
+    'Student': 'Education',
+    'Teacher': 'Education',
+    'Educational': 'Education',
+    'Higher Ed': 'Education',
+    'MOOC': 'Education',
+    'OER': 'Education',
+    'Class': 'Education',
+    'Homework': 'Education',
+    
+    # Health & Medical
+    'Healthcare': 'Health',
+    'Medical': 'Health',
+    'Wellness': 'Health',
+    'Psychology': 'Health',
+    'Mental Health': 'Health',
+    'Clinical': 'Health',
+    'Biology': 'Health',
+    'Medicine': 'Health',
+    'Epidemiology': 'Health',
+    'Disease': 'Health',
+    
+    # Legal & Policy
+    'Law': 'Legal/Policy',
+    'Policy': 'Legal/Policy',
+    'Legal': 'Legal/Policy',
+    'Compliance': 'Legal/Policy',
+    'Regulation': 'Legal/Policy',
+    'Risk': 'Legal/Policy',
+    'Governance': 'Legal/Policy',
+    
+    # Environment
+    'Environmental': 'Environment',
+    'Sustainability': 'Environment',
+    'Climate': 'Environment',
+    'Energy': 'Environment',
+    
+    # Government & Politics
+    'Politics': 'Government',
+    'Political': 'Government',
+    'Government': 'Government',
+    'Public Policy': 'Government',
+    'Foreign Policy': 'Government',
+    'International Relations': 'Government',
+    'Diplomacy': 'Government',
+    'Global Relations': 'Government',
+    
+    # Science & Engineering
+    'Space': 'Science',
+    'Astronomy': 'Science',
+    'Engineering': 'Science',
+    'Physics': 'Science',
+    'Chemistry': 'Science',
+    'Astrobiology': 'Science',
+    'Scientific': 'Science',
+    
+    # Security & Defense
+    'Security/Defense': 'Security',
+    'Defense': 'Security',
+    'Cybersecurity': 'Security',
+    'Information Security': 'Security',
+    'Network Security': 'Security',
+    
+    # Transportation & Logistics
+    'Transportation/Mobility': 'Transportation',
+    'Mobility': 'Transportation',
+    'Transit': 'Transportation',
+    'Logistics': 'Transportation',
+    'Supply Chain': 'Transportation',
+    'Freight': 'Transportation',
+    
+    # Humanities & Culture
+    'Culture': 'Humanities',
+    'Lifestyle': 'Humanities',
+    'Arts': 'Humanities',
+    'Social Sciences': 'Humanities',
+    'Tourism': 'Humanities',
+    'Travel': 'Humanities',
+    'Sports': 'Humanities',
+    'Athletics': 'Humanities'
+}
+def normalize_topic_label(label, visited=None):
+    """Normalize a topic label by mapping to predefined primary categories with cycle detection."""
+    if not label:
+        return ""
+    
+    # Initialize visited set for cycle detection
+    if visited is None:
+        visited = set()
+    
+    # Convert to standard format and split multiple topics
+    topics = [t.strip() for t in str(label).split(',')]
+    normalized_topics = set()
+    
+    for topic in topics:
+        if not topic:
+            continue
+            
+        if topic in visited:
+            continue
+            
+        visited.add(topic)
+        
+        # Check for exact matches in mapping
+        if topic in TOPIC_LABEL_MAPPING:
+            mapped = TOPIC_LABEL_MAPPING[topic]
+            if mapped in PRIMARY_TOPICS:
+                normalized_topics.add(mapped)
+                continue
+        
+        # Convert to lowercase for remaining checks
+        topic_lower = topic.lower()
+        
+        # First try direct mapping with lowercase
+        if topic_lower in [t.lower() for t in PRIMARY_TOPICS]:
+            for primary in PRIMARY_TOPICS:
+                if primary.lower() == topic_lower:
+                    normalized_topics.add(primary)
+                    break
+            continue
+                    
+        # Try substring matching with primary categories
+        matched = False
+        for primary in PRIMARY_TOPICS:
+            primary_lower = primary.lower()
+            if primary_lower in topic_lower or topic_lower in primary_lower:
+                normalized_topics.add(primary)
+                matched = True
+                break
+                
+        if matched:
+            continue
+            
+        # Apply domain-specific rules
+        if any(tech in topic_lower for tech in ['ai', 'software', 'computing', 'digital', 'data', 'cyber']):
+            normalized_topics.add('Technology')
+        elif any(biz in topic_lower for biz in ['finance', 'economic', 'market', 'business', 'trade']):
+            normalized_topics.add('Business')
+        elif any(edu in topic_lower for edu in ['education', 'learning', 'teaching', 'student', 'academic']):
+            normalized_topics.add('Education')
+        elif any(health in topic_lower for health in ['health', 'medical', 'clinical', 'disease']):
+            normalized_topics.add('Health')
+        elif any(gov in topic_lower for gov in ['government', 'policy', 'regulation', 'law']):
+            normalized_topics.add('Legal/Policy')
+    
+    # Return the first normalized topic if any found
+    normalized_list = sorted(normalized_topics)
+    return normalized_list[0] if normalized_list else "Technology"  # Default to Technology if no match
+
+# Additional normalization for document type labels
+def normalize_doc_type_label(label, visited=None):
+    """Normalize a document type label by mapping to predefined document type categories."""
+    if not label:
+        return ""
+    
+    # Initialize visited set for cycle detection
+    if visited is None:
+        visited = set()
+    
+    # Convert to standard format and split multiple types
+    types = [t.strip() for t in str(label).split(',')]
+    normalized_types = set()
+    
+    for doc_type in types:
+        if not doc_type:
+            continue
+            
+        if doc_type in visited:
+            continue
+            
+        visited.add(doc_type)
+        
+        # Check for exact matches in mapping
+        if doc_type in DOC_TYPE_LABEL_MAPPING:
+            mapped = DOC_TYPE_LABEL_MAPPING[doc_type]
+            if mapped in PRIMARY_DOC_TYPES:
+                normalized_types.add(mapped)
+                continue
+        
+        # Convert to lowercase for remaining checks
+        type_lower = doc_type.lower()
+        
+        # First try direct mapping with lowercase
+        if type_lower in [t.lower() for t in PRIMARY_DOC_TYPES]:
+            for primary in PRIMARY_DOC_TYPES:
+                if primary.lower() == type_lower:
+                    normalized_types.add(primary)
+                    break
+            continue
+        
+        # Special case mappings for common types
+        if 'white paper' in type_lower or 'whitepaper' in type_lower:
+            normalized_types.add('Report')
+        elif 'technical' in type_lower:
+            if 'guide' in type_lower:
+                normalized_types.add('Guide')
+            else:
+                normalized_types.add('Report')
+        elif any(blog in type_lower for blog in ['blog', 'news', 'article', 'post']):
+            normalized_types.add('Article')
+        elif any(report in type_lower for report in ['report', 'study', 'analysis', 'assessment']):
+            normalized_types.add('Report')
+        elif any(research in type_lower for research in ['research', 'academic', 'scientific', 'paper']):
+            normalized_types.add('Research')
+        elif any(guide in type_lower for guide in ['guide', 'manual', 'instruction', 'tutorial']):
+            normalized_types.add('Guide')
+        elif any(legal in type_lower for legal in ['legal', 'law', 'regulation', 'policy']):
+            normalized_types.add('Legal')
+        elif any(edu in type_lower for edu in ['course', 'educational', 'learning', 'teaching']):
+            normalized_types.add('Educational')
+    
+    # Return the first normalized type if any found
+    normalized_list = sorted(normalized_types)
+    return normalized_list[0] if normalized_list else "Article"  # Default to Article if no match
 label_mapping = {
     # Generalized Topic Labels
     'finance': 'Business/Finance',
@@ -395,729 +697,387 @@ label_mapping = {
     'latin american perspectives': 'Politics/Law',
 
 
-    'education': 'Education',
-    'basic education': 'Education',
-    'higher ed trends': 'Education',
-    'future skills': 'Business/Finance',
-    'edtech': 'Technology',
-    'student engagement': 'Education',
-    'teaching methods': 'Education',
-    'digital learning': 'Education',
-    'education finance': 'Business/Finance',
-    'teacher survey': 'Education',
-    'learning recovery': 'Education',
-    'online learning': 'Education',
-    'global learning': 'Education',
-    'unicef strategy': 'Politics/Law',
-    'ict4e': 'Technology',
-    'future of education': 'Education',
-    'flipped learning': 'Education',
-    'moocs': 'Education',
-    'vr': 'Technology',
-    'online quality': 'Education',
-    'covid impact': 'Health',
-    'higher ed': 'Education',
-    'gamification': 'Education',
-    'class size': 'Education',
-    'stem': 'Education',
-    'primary': 'Education',
-    'oer': 'Education',
-    'edtech evidence': 'Technology',
-    'global trends': 'Business/Finance',
-    'conflict & education': 'Politics/Law',
-    'equity': 'Education',
-    'mobile learning': 'Technology',
-    'ar': 'Technology',
-    'digital strategy': 'Business/Finance',
-    'covid teaching': 'Education',
-    'learning crisis': 'Education',
-    'teacher status': 'Education',
-    'global partnership': 'Politics/Law',
-    'homework': 'Education',
-    'teacher burnout': 'Business/Finance',
-    'assessment': 'Education',
-    'pbl': 'Education',
-    'remote learning': 'Education',
-    'usa': 'Politics/Law',
-    'education statistics': 'Education',
+    # Business and Finance
+    'Business': 'Business/Finance',
+    'Finance': 'Business/Finance',
+    'Financial': 'Business/Finance',
+    'Economics': 'Business/Finance',
+    'Market Analysis': 'Business/Finance',
+    'Investment': 'Business/Finance',
 
-    'tourism': 'Tourism',
-    'sustainable tourism': 'Tourism',
-    'travel': 'Tourism',
-    'adventure': 'Tourism',
-    'ecotourism': 'Tourism',
-    'smart tourism': 'Technology',
-    'inclusive tourism': 'Tourism',
-    'volunteer tourism': 'Tourism',
-    'rural tourism': 'Tourism',
-    'urban tourism': 'Tourism',
-    'tourism geographies': 'Tourism',
-    'tourism planning': 'Tourism',
-    'tourism management': 'Tourism',
-    'tourism research': 'Research/Academia',
-    'tourism statistics': 'Tourism',
-    'travel behavior': 'Tourism',
-    'travel guide': 'Tourism',
-    'travel industry': 'Business/Finance',
-    'travel research': 'Research/Academia',
-    'travel statistics': 'Tourism',
-    'travel technology': 'Technology',
+    # Education
+    'Online Learning': 'Education',
+    'E-learning': 'Education',
+    'Higher Education': 'Education',
+    'K-12': 'Education',
+    'STEM Education': 'Education',
+    'Educational': 'Education',
+    'Teaching': 'Education',
+    'Learning': 'Education',
+    'Pedagogy': 'Education',
+    'MOOCs': 'Education',
+    'Distance Learning': 'Education',
+    'Remote Learning': 'Education',
 
-    'environment': 'Environment/Sustainability',
-    'climate change': 'Environment/Sustainability',
-    'environmental policy': 'Politics/Law',
-    'nature': 'Environment/Sustainability',
-    'sustainable energy': 'Environment/Sustainability',
-    'environmental impacts': 'Environment/Sustainability',
-    'environmental regulations': 'Politics/Law',
-    'environmental science': 'Environment/Sustainability',
-    'environmental studies': 'Environment/Sustainability',
-    'marine pollution': 'Environment/Sustainability',
-    'plastic waste mitigation': 'Environment/Sustainability',
-    'sustainable agriculture': 'Environment/Sustainability',
-    'sustainable development': 'Environment/Sustainability',
-    'sustainable energy systems': 'Environment/Sustainability',
-    'sustainable finance': 'Business/Finance',
-    'sustainable forest management': 'Environment/Sustainability',
-    'sustainable land management': 'Environment/Sustainability',
-    'sustainable livelihoods': 'Business/Finance',
-    'sustainable materials': 'Environment/Sustainability',
-    'sustainable practices': 'Environment/Sustainability',
-    'sustainable resource management': 'Environment/Sustainability',
-    'sustainable transportation': 'Transportation',
-    'sustainable urban development': 'Environment/Sustainability',
-    'sustainable water management': 'Environment/Sustainability',
+    # Health
+    'Healthcare': 'Health',
+    'Medical': 'Health',
+    'Public Health': 'Health',
+    'Mental Health': 'Health',
+    'Clinical': 'Health',
+    'Wellness': 'Health',
+    'COVID': 'Health',
+    'Pandemic': 'Health',
 
-    'food': 'Food',
-    'recipe': 'Food',
-    'vegan cuisine': 'Food',
-    'food waste reduction': 'Environment/Sustainability',
+    # Legal and Policy
+    'Law': 'Legal/Policy',
+    'Legal': 'Legal/Policy',
+    'Policy': 'Legal/Policy',
+    'Regulation': 'Legal/Policy',
+    'Compliance': 'Legal/Policy',
+    'Governance': 'Legal/Policy',
 
-    'culture': 'Lifestyle/Culture',
-    'heritage': 'Lifestyle/Culture',
-    'literature': 'Lifestyle/Culture',
-    'arts': 'Lifestyle/Culture',
-    'culture shift': 'Business/Finance',
-    'organizational culture': 'Business/Finance',
-    'lifestyle': 'Lifestyle/Culture',
+    # Politics
+    'Political': 'Politics/Law',
+    'Government': 'Politics/Law',
+    'Public Policy': 'Politics/Law',
+    'Legislation': 'Politics/Law',
 
-    'space exploration': 'Space',
-    'astrobiology': 'Space',
-    'space technology': 'Technology',
-    'space policy': 'Politics/Law',
-    'space missions': 'Space',
-    'space operations': 'Space',
+    # Environment
+    'Environmental': 'Environment/Sustainability',
+    'Sustainability': 'Environment/Sustainability',
+    'Climate': 'Environment/Sustainability',
+    'Green': 'Environment/Sustainability',
+    'Renewable': 'Environment/Sustainability',
 
-    # Adding mappings for previously observed specific labels
-    'security': 'Security', # Keeping Security as its own top-level category for now
-    'diversity': 'Business/Finance', # Mapping Diversity to Business/Finance based on dataset context
-    'engineering': 'Technology',
-    'information retrieval': 'Technology',
-    'information extraction': 'Technology',
-    'language documentation': 'Research/Academia',
-    'authorship analysis': 'Research/Academia',
-    'document processing': 'Technology',
-    'speech processing': 'Technology',
-    'neuro-symbolic ai': 'Technology',
-    'interpretability': 'Technology',
-    'brain science': 'Health',
-    'accessibility': 'General',
-    'molecular dynamics': 'Research/Academia',
-    'reinforcement learning': 'Technology',
-    'materials science': 'Research/Academia',
-    'media studies': 'Lifestyle/Culture',
-    'manufacturing': 'Business/Finance',
-    'content marketing': 'Business/Finance',
-    'education policy': 'Education',
-    'student assessment': 'Education',
-    'hr analytics': 'Business/Finance',
-    'workforce transformation': 'Business/Finance',
-    'asymmetric encryption': 'Technology',
-    'cryptographic techniques': 'Technology',
-    'data security': 'Security',
-    'cryptographic methods': 'Technology',
-    'authentication': 'Security',
-    'information theory': 'Research/Academia',
-    'cryptographic applications': 'Technology',
-    'practical implementations': 'Technology',
-    'high-dimensional systems': 'Research/Academia',
-    'applied cryptography': 'Technology',
-    'textbook': 'Education',
-    'lfsr': 'Technology',
-    'hash functions': 'Technology',
-    'mathematics': 'Research/Academia',
-    'reference book': 'Research/Academia',
-    'classical cryptography': 'Technology',
-    'quantum computing': 'Technology',
-    'formal verification': 'Technology',
-    'post-quantum cryptography': 'Technology',
-    'nist standards': 'Security',
-    'organizational readiness': 'Business/Finance',
-    'iot security': 'Security',
-    'data protection': 'Security',
-    'applied cryptology': 'Technology',
-    'complexity measures': 'Research/Academia',
-    'block cipher cryptanalysis': 'Technology',
-    'encryption risks': 'Security',
-    'bfsi sector': 'Business/Finance',
-    'data analysis': 'Business/Finance',
-    'ai in transportation': 'Technology',
-    'budgeting': 'Business/Finance',
-    'freight market': 'Business/Finance',
-    'logistics': 'Business/Finance',
-    'future outlook': 'Business/Finance',
-    'industry trends': 'Business/Finance',
-    'federated learning': 'Technology',
-    'intelligent transportation': 'Transportation',
-    'graph neural networks': 'Technology',
-    'object detection': 'Technology',
-    'planning': 'General',
-    'interdisciplinary transportation research': 'Research/Academia',
-    'technical papers': 'Research/Academia',
-    'systems': 'Technology',
-    'research digest': 'Report/Study',
-    'emergency transportation': 'Transportation',
-    'accident report': 'Transportation',
-    'traffic congestion': 'Transportation',
-    'road travel': 'Transportation',
-    'public transportation': 'Transportation',
-    'autonomous vehicles': 'Technology',
-    'public health crisis': 'Health',
-    'driver shortage': 'Business/Finance',
-    'air travel': 'Tourism',
-    'policy': 'Politics/Law',
-    'circulars': 'Research/Academia',
-    'research circulars': 'Research/Academia',
-    'whitepapers': 'Report/Study',
-    'back office efficiency': 'Business/Finance',
-    'innovation': 'General',
-    'infrastructure': 'Politics/Law',
-    'strategic research': 'Research/Academia',
-    'asphalt mixtures': 'General',
-    'federal judiciary': 'Politics/Law',
-    'caseload statistics': 'Politics/Law',
-    'data management': 'Technology',
-    'digital products': 'Business/Finance',
-    'legislation': 'Politics/Law',
-    'case law prediction': 'Technology',
-    'legal industry trends': 'Business/Finance',
-    'law firm growth': 'Business/Finance',
-    'legal ai': 'Technology',
-    'contract review': 'Legal/Policy',
-    'legal operations': 'Business/Finance',
-    'corporate legal': 'Business/Finance',
-    'intellectual property': 'Politics/Law',
-    'privacy': 'Politics/Law',
-    'access to justice': 'Politics/Law',
-    'legal data': 'Politics/Law',
-    'legal accuracy': 'Politics/Law',
-    'legal text analytics': 'Technology',
-    'india': 'Politics/Law',
-    'jurisprudence': 'Politics/Law',
-    'legal theory': 'Politics/Law',
-    'democratic ideals': 'Politics/Law',
-    'public law': 'Politics/Law',
-    'various legal topics': 'Politics/Law',
-    'faculty rankings': 'Research/Academia',
-    'research study': 'Research/Academia',
-    'political economy': 'Business/Finance',
-    'global politics': 'Politics/Law',
-    'various ir topics': 'Politics/Law',
-    'un sanctions': 'Politics/Law',
-    'u.s.-china relations': 'Politics/Law',
-    'economic strategy': 'Business/Finance',
-    'u.s. foreign policy': 'Politics/Law',
-    'global conflicts': 'Politics/Law',
-    'southeast asia': 'Politics/Law',
-    'u.s. military policy': 'Politics/Law',
-    'development': 'General',
-    'open access': 'Research/Academia',
-    'global climate policy': 'Environment/Sustainability',
-    'latin american perspectives': 'Politics/Law',
+    # Culture and Lifestyle
+    'Culture': 'Lifestyle/Culture',
+    'Lifestyle': 'Lifestyle/Culture',
+    'Social': 'Lifestyle/Culture',
+    'Entertainment': 'Lifestyle/Culture',
 
+    # Tourism and Travel
+    'Travel': 'Tourism',
+    'Tourism/Travel': 'Tourism',
+    'Hospitality': 'Tourism',
+    'Adventure Tourism': 'Tourism',
 
-    # Further Generalized Document Type Labels
-    'white paper': 'Report/Study',
-    'whitepapers': 'Report/Study',
-    'technical report': 'Report/Study',
-    'report': 'Report/Study',
-    'annual report': 'Report/Study',
-    'government report': 'Report/Study',
-    'case study': 'Report/Study',
-    'situation report': 'Report/Study',
-    'disease update': 'Report/Study',
-    'policy report': 'Report/Study',
-    'study': 'Report/Study',
-    'survey report': 'Report/Study',
-    'progress report': 'Report/Study',
-    'survey': 'Report/Study',
-    'statistical report': 'Report/Study',
-    'research digest': 'Report/Study',
-    'research circular': 'Report/Study',
-    'report/study': 'Report/Study',
-    'draft whitepaper': 'Report/Study',
-    'policy brief': 'Report/Study',
-    'government whitepaper': 'Report/Study',
-    'risk assessment': 'Report/Study',
-    'market report': 'Report/Study',
-    'un report': 'Report/Study',
-    'reports': 'Report/Study',
-    'white papers': 'Report/Study',
+    # Transportation
+    'Transport': 'Transportation',
+    'Mobility': 'Transportation',
+    'Transit': 'Transportation',
+    'Automotive': 'Transportation',
+    'Aviation': 'Transportation',
 
+    # International Relations
+    'International Relations': 'Foreign Policy',
+    'Global Relations': 'Foreign Policy',
+    'Diplomacy': 'Foreign Policy',
+    'International Affairs': 'Foreign Policy',
 
-    'technical guide': 'Guide/Manual',
-    'user guide': 'Guide/Manual',
-    'informational guide': 'Guide/Manual',
-    'guide': 'Guide/Manual',
-    'manual': 'Guide/Manual',
-    'style manual': 'Guide/Manual',
-    'handbook': 'Guide/Manual',
-    'guide/manual': 'Guide/Manual',
-    'framework': 'Guide/Manual',
-    'competency framework': 'Guide/Manual',
-    'security framework': 'Guide/Manual',
-    'toolkit': 'Guide/Manual',
-    'user manual': 'Guide/Manual',
-    'template': 'Guide/Manual', # Mapping Template to Guide/Manual
+    # Space and Astronomy
+    'Astronomy': 'Space',
+    'Aerospace': 'Space',
+    'Space Exploration': 'Space',
+    'Astrobiology': 'Space',
 
+    # Security
+    'Defense': 'Security',
+    'Cybersecurity': 'Security',
+    'Information Security': 'Security',
+    'Network Security': 'Security',
 
-    'news': 'Article/News',
-    'news article': 'Article/News',
-    'news articles': 'Article/News',
-    'magazine article': 'Article/News',
-    'article': 'Article/News',
-    'news release': 'Article/News',
-    'daily update': 'Article/News',
-    'announcement': 'Article/News',
-    'press release': 'Article/News',
-    'article/news': 'Article/News',
-    'legal update': 'Article/News',
-    'blog post': 'Article/News',
-    'blog': 'Article/News',
+    # Sports and Athletics
+    'Athletics': 'Sports',
+    'Physical Education': 'Sports',
+    'Sport Science': 'Sports',
 
-    'job application form': 'Application Form',
-    'university admission application form': 'Application Form',
-    'visa application form': 'Application Form',
-    'flexible work arrangement application form': 'Application Form',
-    'application form': 'Application Form',
-
-    'research paper': 'Research/Academic',
-    'research papers': 'Research/Academic',
-    'systematic review': 'Research/Academic',
-    'survey paper': 'Research/Academic',
-    'workshop paper': 'Research/Academia',
-    'seminal paper': 'Research/Academia',
-    'review paper': 'Research/Academic',
-    'arxiv preprint': 'Research/Academia',
-    'academic articles': 'Research/Academia',
-    'research articles': 'Research/Academia',
-    'research collection': 'Research/Academia',
-    'journal': 'Research/Academia',
-    'journal issue': 'Research/Academia',
-    'conference paper': 'Research/Academia',
-    'conference proceedings': 'Research/Academia',
-    'online repository': 'Research/Academia',
-    'index': 'Research/Academia',
-    'academic publications': 'Research/Academia',
-    'research study': 'Research/Academia',
-    'research/academic': 'Research/Academic',
-    'policy research': 'Research/Academia',
-    'journal article': 'Research/Academic',
-
-
-    'policy document': 'Legal/Policy',
-    'legal document': 'Legal/Policy',
-    'guidance document': 'Legal/Policy',
-    'legislation': 'Legal/Policy',
-    'court opinions': 'Legal/Policy',
-    'legal/policy': 'Legal/Policy',
-    'contract review': 'Legal/Policy',
-    'court judgment': 'Legal/Policy', # Mapping court judgment to Legal/Policy
-
-
-    'questionnaire': 'Questionnaire',
-    'survey instrument': 'Questionnaire',
-
-    'brochure': 'Brochure',
-
-    'transcript': 'Informational Text',
-    'interview transcript': 'Informational Text',
-    'encyclopedia entry': 'Informational Text',
-    'informational text': 'Informational Text',
-    'book summary': 'Informational Text',
-    'factsheet': 'Informational Text',
-    'web resource': 'Informational Text',
-    'press conference': 'Informational Text',
-    'press briefing': 'Informational Text',
-    'briefing': 'Informational Text',
-    'government reports': 'Report/Study', # Mapping government reports to Report/Study
-
-
-    'presentation pdf': 'Presentation',
-    'presentation': 'Presentation',
-    'presentation slides': 'Presentation',
-
-    'recipe': 'Food',
-
-    'product review': 'Review',
-    'review': 'Review',
-
-    'online course': 'Education',
-    'educational resource': 'Education',
-
-    # Labels to be excluded (Sources or irrelevant) - These will still be excluded if mapped to None
-    'jmir': None,
-    'reuters': None,
-    'samsung': None,
-    'wikipedia – die freie enzyklopädie': None,
-    'gosling.psy.utexas.edu': None,
-    'evaluationframework.sportengland.org': None,
-    'rand corporation': None,
-    'digital library': None,
-    'nasa history division': None,
-    'ft': None,
-    'ala': None,
-    'acrl': None,
-    'issues': None,
-    'diversity atlas': None,
-    'phd direction': None,
-    'world economic forum': None,
-    'new yorker': None,
-    'argophilia': None,
-    'traveldailynews': None,
-    'who': None,
-    'australiancybersecuritymagazine': None,
-    'communitymedicine4asses': None,
-    'linkedin': None,
-    'gds.earth': None,
-    'nist': None,
-    'nasa-dares': None,
-    'cisa': None,
-    'pk': None,
-    'eu': None,
-    'us': None,
-    'uk': None,
-    'pwc': None,
-    'qualtrics': None,
-    'mit sloan': None,
-    'cipd': None,
-    'josh bersin': None,
-    'mckinsey': None,
-    'payscale': None,
-    'ijtre': None,
-    'eajournals': None,
-    'ijaem': None,
-    'researchgate': None,
-    'stanford': None,
-    'princeton': None,
-    'cambridge': None,
-    'iacr': None,
-    'entrust': None,
-    'encryption consulting': None,
-    'mdpi': None,
-    'axios': None,
-    'the times': None,
-    'wired': None,
-    'myjournalcourier': None,
-    'houstonchronicle': None,
-    'hopskipdrive': None,
-    'transportation choices coalition': None,
-    'trb': None,
-    'ti-insight.com': None,
-    'ttnews.com': None,
-    'nltd.com': None,
-    'govwhitepapers.com': None,
-    'supremecourt.gov': None,
-    'uscourts.gov': None,
-    'treasury.gov': None,
-    'sba.gov': None,
-    'copyright.gov': None,
-    'federalregister.gov': None,
-    'mtc.gov': None,
-    'congress.gov': None,
-    'law.umn.edu': None,
-    'law.northwestern.edu': None,
-    'ssrn.com': None,
-    'digitalcommons.wcl.american.edu': None,
-    'clp.law.harvard.edu': None,
-    'z.umn.edu': None,
-    'ussc.gov': None,
-    'nycourts.gov': None,
-    'nyc.gov': None,
-    'leopardsolutions.com': None,
-    'law.stanford.edu': None,
-    'ftitechnology.com': None,
-    'calchamber.com': None,
-    'robinai.com': None,
-    'the-innovative-lawyer.squarespace.com': None,
-    'netdocuments.com': None,
-    'simplelegal.com': None,
-    'iab.com': None,
-    'justice.gov': None,
-    'tandfonline.com': None,
-    'law.ed.ac.uk': None,
-    'cornell.legal-studies.ssrn.com': None,
-    'loc.gov': None,
-    'legaltechconnection.com': None,
-    'cidob.org': None,
-    'cfr.org': None,
-    'state.gov': None,
-    'foreignaffairs.gov.fj': None,
-    'carnegieendowment.org': None,
-    'globalaffairs.org': None,
-    'apnews.com': None,
-    'washingtonpost.com': None,
-    'arcadia.edu': None,
-    'thebrpi.org': None,
-    'bepress.com': None,
-    'pmc': None,
-    'arxiv': None,
-    'jm': None,
-    'ted': None,
-    'congress.gov | library of congress': None,
-    'american psychological association': None,
-    'elsevier': None,
-    'springer': None,
-    'wiley': None,
-    'taylor & francis online': None,
-    'sage publications': None,
-    'nature': None,
-    'frontiers': None,
-    'aea': None,
-    'shrm': None,
-    'gartner': None,
-    'lattice': None,
-    'ibm': None,
-    'deloitte': None,
-    'google': None,
-    'microsoft': None,
-    'salesforce': None,
-    'nvidia': None,
-    'adobe': None,
-    'spotify': None,
-    'tiktok': None,
-    'zoom': None,
-    'intel': None,
-    'meta': None,
-    'cisco': None,
-    'openai': None,
-    'anthropic': None,
-    'adept': None,
-    'adobe firefly': None,
-    'chatgpt enterprise': None,
-    'watsonx': None,
-    'gaudi 3': None,
-    'claude 3': None,
-    'bedrock': None,
-    'gpt-4 with vision': None,
-    'gpt-4': None,
-    'gpt-4o': None,
-    'gpt-4 turbo': None,
-    'google ai test kitchen': None,
-    'sweep': None,
-    'outset': None,
-    'momentix': None,
-    'photoshop': None,
-    'messenger': None,
-    'teams': None,
-    'sales cloud': None,
-    'a100s': None,
-    'firefly': None,
-    'nltk': None,
-    'spacy': None,
-
-    # Added mappings for specific topic labels observed in cleaned data
-    'public-key cryptography': 'Security',
-    'information security': 'Security',
-    'encryption algorithms': 'Security',
-    'block ciphers': 'Security',
-    'quantum key distribution': 'Technology',
-    'quantum security': 'Security',
-    'key distribution': 'Technology',
-    'security goals': 'Security',
-    'stream ciphers': 'Technology',
-    'public key': 'Security',
-    'cryptoanalysis': 'Security',
-    'secure communication': 'Security',
-    'pki': 'Security',
-    'encryption strategies': 'Security',
-    'symmetric-key primitives': 'Technology',
-    'pseudo-random sequences': 'Technology',
-    'key space partitioning': 'Technology',
-    'cryptography research': 'Research/Academia',
-    'quantum threats': 'Security',
-    'smart transportation': 'Transportation',
-    'organ transplants': 'Health',
-    'safety audit': 'Business/Finance',
-    'consumer protection': 'Business/Finance',
-    'disability rights': 'Politics/Law',
-    'federal courts': 'Politics/Law',
-    'judicial independence': 'Politics/Law',
-    'foia': 'Politics/Law',
-    'media strategy': 'Business/Finance',
-    'global governance': 'Politics/Law',
-    'dual-use tech': 'Technology',
-    'diplomacy': 'Politics/Law',
-    'conflict forecasting': 'Politics/Law',
-    'international relation': 'Politics/Law',
-    'global affairs': 'Politics/Law',
-    'global strategy': 'Business/Finance',
-    'global mobility': 'Business/Finance',
-    'book recommendations': 'Lifestyle/Culture',
-    'reference': 'Research/Academia',
-    'digest': 'Report/Study',
-    'corporate law': 'Politics/Law',
-    'law and economics': 'Business/Finance',
-    'ai governance': 'Politics/Law',
-    'ai in law': 'Technology',
-    'model release': 'Technology',
-
-    # Further refined topic label mappings based on recent train_model output
-    'future of hr': 'Business/Finance',
-    'global hotspots': 'Politics/Law',
-    'international policy': 'Politics/Law',
-    'international security': 'Politics/Law',
-    'military strategy': 'Politics/Law',
-    'governance': 'Politics/Law',
-    'secret key': 'Security',
-    'security protocols': 'Security',
-    'robustness': 'Technology',
-    'history': 'Research/Academia',
-    'compliance': 'Business/Finance', # Mapping compliance to Business/Finance
-    # 'legal/policy': 'Politics/Law', # This is a document type, should not be a topic.
-                                     # Ensure logic in main loop correctly handles this.
-
+    # Global Collaboration
+    'International Collaboration': 'Global Collaboration',
+    'Global Partnership': 'Global Collaboration',
+    'Cross-border Cooperation': 'Global Collaboration'
 }
 
-def standardize_labels(labels_string, label_mapping):
-    """Splits labels string, standardizes each label, keeps unique valid ones.
-    Labels not explicitly mapped to None will be kept (either standardized or original).
-    """
-    raw_labels = [label.strip() for label in labels_string.split(',') if label.strip()]
-    standardized_labels_set = set() # Use a set to store unique standardized labels
-
-    for label in raw_labels:
-        current_label = label.strip()
-        current_label_lower = current_label.lower()
-        resolved_label = current_label # Start with the original label as the potential resolved label
-
-        # Track visited labels to detect cycles
-        visited = set()
-        visited.add(current_label_lower)
-
-        while current_label_lower in label_mapping:
-            next_label = label_mapping.get(current_label_lower)
-
-            if next_label is None:
-                # Explicitly mapped to None, discard this label chain
-                resolved_label = None
-                break
-            elif isinstance(next_label, str) and next_label.strip():
-                # Valid string mapping, continue following the chain
-                resolved_label = next_label.strip() # Update resolved label to the current mapping result
-                current_label_lower = resolved_label.lower()
-                if current_label_lower in visited:
-                    print(f"Warning: Cycle detected for label '{label}' during standardization. Path: {' -> '.join(visited)} -> {next_label}. Stopping.")
-                    # Keep the last valid resolved_label before the cycle
-                    break
-                visited.add(current_label_lower)
-            else:
-                # Mapping value is not a valid string (e.g., empty string, or unexpected type)
-                # Keep the last valid resolved_label before this point, or the original if no valid mapping was followed
-                break # Stop following the chain if mapping is not a valid string
-
-        # Add the resolved label if it's a non-empty string.
-        # If the original label was in the mapping and mapped to a valid string, that standardized label is added.
-        # If the original label was not in the mapping, it is kept.
-        if isinstance(resolved_label, str) and resolved_label.strip():
-            standardized_labels_set.add(resolved_label.strip())
-        # If the original label was not mapped (i.e., not in label_mapping keys) and not mapped to None,
-        # keep the original label (unless it's empty or whitespace).
-        elif current_label_lower not in label_mapping and current_label.strip():
-             standardized_labels_set.add(current_label.strip())
-
-    # Return as a sorted list for consistency
-    return sorted(list(standardized_labels_set))
-
-# Read the CSV and write the cleaned data to a new CSV
-cleaned_data = []
-
-# Check if the input file exists using the relative path
-if not os.path.exists(input_csv_path):
-    print(f"Error: Input file not found at {input_csv_path}")
-    sys.exit(1) # Exit after printing the path
-
-print(f"Reading input file: {input_csv_path}")
-with open(input_csv_path, mode='r', encoding='utf-8') as infile:
-    reader = csv.DictReader(infile)
-    fieldnames = reader.fieldnames
+# Define document type label mappings
+DOC_TYPE_LABEL_MAPPING = {
+    # Articles & News
+    'Article': 'Article',
+    'News Article': 'Article',
+    'News': 'Article',
+    'Blog Post': 'Article',
+    'Press Release': 'Article',
+    'Newsletter': 'Article',
+    'Magazine Article': 'Article',
+    'Opinion Piece': 'Article',
+    'Editorial': 'Article',
+    'Daily Update': 'Article',
+    'Announcement': 'Article',
     
-    if 'Topic Labels' not in fieldnames or 'Type Labels' not in fieldnames:
-        print("Error: CSV must contain 'Topic Labels' and 'Type Labels' columns.")
-        sys.exit(1)
-
-    for row in reader:
-        print(f"Processing document ID: {row.get('Document ID', 'N/A')}")
-        # Standardize Topic Labels (returns a list of unique standardized topics)
-        raw_topic_labels_string = row.get('Topic Labels', '')
+    # Research Documents
+    'Research Paper': 'Research',
+    'Academic Paper': 'Research',
+    'Scientific Paper': 'Research',
+    'Research Article': 'Research',
+    'Conference Paper': 'Research',
+    'Dissertation': 'Research',
+    'Thesis': 'Research',
+    'Journal Article': 'Research',
+    'Academic Journal': 'Research',
+    'Peer-reviewed Article': 'Research',
+    'Academic Publications': 'Research',
+    'Research/Academic': 'Research',
+    'Workshop Paper': 'Research',
+    'Conference Proceedings': 'Research',
+    'Systematic Review': 'Research',
+    'Literature Review': 'Research',
+    'Research Collection': 'Research',
+    'Review Paper': 'Research',
+    'Foundational Paper': 'Research',
+    'Seminal Paper': 'Research',
+    
+    # Reports & Studies
+    'Report': 'Report',
+    'Study': 'Report',
+    'Analysis': 'Report',
+    'Research Report': 'Report',
+    'Technical Report': 'Report',
+    'Market Report': 'Report',
+    'Annual Report': 'Report',
+    'Survey Report': 'Report',
+    'Case Study': 'Report',
+    'White Paper': 'Report',
+    'Whitepaper': 'Report',
+    'Policy Brief': 'Report',
+    'Briefing': 'Report',
+    'Risk Assessment': 'Report',
+    'Research Digest': 'Report',
+    'Research Circular': 'Report',
+    'Disease Update': 'Report',
+    
+    # Guides & Manuals
+    'Manual': 'Guide',
+    'Guide': 'Guide',
+    'Handbook': 'Guide',
+    'Tutorial': 'Guide',
+    'Instructions': 'Guide',
+    'Documentation': 'Guide',
+    'Reference Guide': 'Guide',
+    'User Guide': 'Guide',
+    'Guidelines': 'Guide',
+    'Best Practices': 'Guide',
+    'Guide/Manual': 'Guide',
+    'Guidance Document': 'Guide',
+    'Framework': 'Guide',
+    'Toolkit': 'Guide',
+    
+    # Legal & Policy Documents
+    'Policy Document': 'Legal',
+    'Legal Document': 'Legal',
+    'Regulation': 'Legal',
+    'Law': 'Legal',
+    'Legislation': 'Legal',
+    'Contract': 'Legal',
+    'Agreement': 'Legal',
+    'Legal/Policy': 'Legal',
+    'Court Judgment': 'Legal',
+    'Court Opinions': 'Legal',
+    'Legal Update': 'Legal',
+    
+    # Educational Materials
+    'Educational Resource': 'Educational',
+    'Textbook': 'Educational',
+    'Course Material': 'Educational',
+    'Curriculum': 'Educational',
+    'Lesson Plan': 'Educational',
+    'Online Course': 'Educational',
+    'Training Material': 'Educational',
+    'Educational Text': 'Educational',
+    'Learning Resource': 'Educational',
+    'Teaching Material': 'Educational',
+    
+    # Forms & Applications
+    'Form': 'Form',
+    'Application': 'Form',
+    'Registration Form': 'Form',
+    'Survey': 'Form',
+    'Quiz': 'Form',
+    'Feedback Form': 'Form',
+    'Assessment Form': 'Form',
+    'Questionnaire': 'Form',
+    'Application Form': 'Form',
+    'Template': 'Form',
+    
+    # Presentations
+    'Slides': 'Presentation',
+    'Presentation': 'Presentation',
+    'Slideshow': 'Presentation',
+    'Deck': 'Presentation',
+    'Conference Presentation': 'Presentation',
+    'Webinar': 'Presentation',
+    'Pitch Deck': 'Presentation',
+    
+    # References
+    'Reference': 'Reference',
+    'Index': 'Reference',
+    'Encyclopedia Entry': 'Reference',
+    'Reference Book': 'Reference',
+    'Glossary': 'Reference',
+    'Dictionary': 'Reference',
+    'Bibliography': 'Reference',
+    'Catalog': 'Reference',
+    'Directory': 'Reference',
+    'Web Resource': 'Reference',
+    'Online Repository': 'Reference',
+    'Database': 'Reference',
+    'Archive': 'Reference',
+    'Journal': 'Reference',
+    'Journal Issue': 'Reference',
+    
+    # Datasets & Collections
+    'Dataset': 'Dataset',
+    'Data Collection': 'Dataset',
+    'Database': 'Dataset',
+    'Statistics': 'Dataset',
+    'Metrics': 'Dataset',
+    'Research Data': 'Dataset',
+    'Data Repository': 'Dataset',
+    'Data Archive': 'Dataset'
+}
+def clean_csv():
+    """Clean and standardize the labels in the CSV file."""
+    print(f"Reading input CSV from {input_csv_path}...")
+    
+    try:
+        # Read the CSV file
+        df = pd.read_csv(input_csv_path)
+        initial_rows = len(df)
+        print(f"Initial number of rows: {initial_rows}")
         
-        # Process each raw topic label through standardize_labels individually
-        standardized_topic_labels = set()
-        for raw_topic_label in [label.strip() for label in raw_topic_labels_string.split(',') if label.strip()]:
-             resolved_labels = standardize_labels(raw_topic_label, label_mapping)
-             standardized_topic_labels.update(resolved_labels)
-
-        standardized_topic_labels_list = sorted(list(standardized_topic_labels))
-
-        # Select only one topic label: the first one alphabetically if multiple exist.
-        # If no standardized labels are found, the cleaned topic label will be an empty string.
-        cleaned_topic_label = standardized_topic_labels_list[0] if standardized_topic_labels_list else ''
-
-        # Standardize Document Type Labels (returns a list of unique standardized types)
-        raw_doctype_labels_string = row.get('Type Labels', '')
+        # Clean topic labels
+        print("\nCleaning topic labels...")
+        df['Topic Labels'] = df['Topic Labels'].fillna('')
+        df['Topic Labels'] = df['Topic Labels'].apply(normalize_topic_label)
         
-        # Process each raw document type label through standardize_labels individually
-        standardized_doctype_labels = set()
-        for raw_doctype_label in [label.strip() for label in raw_doctype_labels_string.split(',') if label.strip()]:
-             resolved_doctype_labels = standardize_labels(raw_doctype_label, label_mapping)
-             standardized_doctype_labels.update(resolved_doctype_labels)
-
-        standardized_doctype_labels_list = sorted(list(standardized_doctype_labels))
-
-        # Document type labels can still be multiple, join them with commas
-        cleaned_doctype_labels = ', '.join(standardized_doctype_labels_list)
+        # Clean document type labels
+        print("\nCleaning document type labels...")
+        df['Type Labels'] = df['Type Labels'].fillna('')
+        # Split multiple document types and clean each one
+        df['Type Labels'] = df['Type Labels'].apply(
+            lambda x: ','.join(sorted(set(
+                normalize_doc_type_label(t.strip()) 
+                for t in str(x).split(',')
+                if t.strip()
+            )))
+        )
         
-        # Update the row with cleaned labels
-        row['Topic Labels'] = cleaned_topic_label # Assign single topic label
-        row['Type Labels'] = cleaned_doctype_labels # Assign comma-separated type labels
+        # Remove rows where both labels are empty
+        df = df[~((df['Topic Labels'] == '') & (df['Type Labels'] == ''))]
+        final_rows = len(df)
         
-        cleaned_data.append(row)
+        # Save the cleaned CSV
+        df.to_csv(output_csv_path, index=False)
+        print(f"\nCleaned CSV saved to {output_csv_path}")
+        print(f"Rows processed: {initial_rows} -> {final_rows}")
+        
+        # Print statistics
+        print("\nTopic Label Distribution:")
+        topic_counts = df['Topic Labels'].value_counts()
+        for topic, count in topic_counts.items():
+            print(f"{topic:30} {count:5d}")
+        
+        print("\nDocument Type Label Distribution:")
+        type_counts = pd.Series([
+            t.strip() 
+            for types in df['Type Labels'].str.split(',') 
+            for t in types 
+            if t.strip()
+        ]).value_counts()
+        
+        for doc_type, count in type_counts.items():
+            print(f"{doc_type:30} {count:5d}")
+        
+        # Validate primary categories
+        unknown_topics = set(topic_counts.index) - PRIMARY_TOPICS - {''}
+        unknown_doc_types = set(type_counts.index) - PRIMARY_DOC_TYPES - {''}
+        
+        if unknown_topics:
+            print("\nWARNING: Found topics not in primary categories:")
+            for topic in sorted(unknown_topics):
+                print(f"  - {topic}")
+        
+        if unknown_doc_types:
+            print("\nWARNING: Found document types not in primary categories:")
+            for doc_type in sorted(unknown_doc_types):
+                print(f"  - {doc_type}")
+                
+    except Exception as e:
+        print(f"Error processing CSV: {str(e)}")
+        raise
 
-print(f"Writing cleaned data to: {output_csv_path}")
-# Write the cleaned data to a new CSV file
-with open(output_csv_path, mode='w', newline='', encoding='utf-8') as outfile:
-    writer = csv.DictWriter(outfile, fieldnames=fieldnames)
-    writer.writeheader()
-    writer.writerows(cleaned_data)
+def filter_csv(df):
+    """Filter out rows where either topic or document type is not in primary categories."""
+    # First normalize all labels
+    df['Topic Labels'] = df['Topic Labels'].apply(lambda x: normalize_topic_label(x) if pd.notna(x) else x)
+    df['Type Labels'] = df['Type Labels'].apply(lambda x: normalize_doc_type_label(x) if pd.notna(x) else x)
+    
+    # Filter rows where both topic and doc_type are in primary categories
+    valid_rows = (df['Topic Labels'].isin(PRIMARY_TOPICS)) & (df['Type Labels'].isin(PRIMARY_DOC_TYPES))
+    return df[valid_rows].copy()
 
-print(f"Cleaned data saved to {output_csv_path}")
+def main():
+    try:
+        print("Starting the label cleaning process...")
+        # Read the CSV file with pandas
+        print(f"Reading input CSV from {input_csv_path}...")
+        df = pd.read_csv(input_csv_path)
+        initial_rows = len(df)
+        print(f"Initial number of rows: {initial_rows}")
+        print(f"CSV columns: {', '.join(df.columns)}\n")
 
-# Update train_model.py to use the new cleaned CSV
-# Read the content of train_model.py
-# Assuming train_model.py is in the same directory as clean_labels.py (backend/)
-with open('train_model.py', 'r', encoding='utf-8') as f:
-    train_model_content = f.read()
+        # Debug print of first few rows
+        print("Sample of first few rows before cleaning:")
+        print(df[['Title', 'Topic Labels', 'Type Labels']].head())
+        print("\n")
 
-# Replace the old csv_path with the new one
-# The cleaned CSV is in the same directory as train_model.py and train_model.py expects this relative path
-new_train_model_content = train_model_content.replace(
-    "csv_path = 'NLP documents bank - Sheet1.csv'",
-    "csv_path = 'NLP documents bank - Sheet1_cleaned.csv'"
-)
+        # Clean topic labels
+        print("Cleaning topic labels...")
+        df['Topic Labels'] = df['Topic Labels'].fillna('')
+        df['Topic Labels'] = df['Topic Labels'].apply(lambda x: normalize_topic_label(x) if pd.notna(x) else '')
+        
+        # Clean document type labels
+        print("\nCleaning document type labels...")
+        df['Type Labels'] = df['Type Labels'].fillna('')
+        df['Type Labels'] = df['Type Labels'].apply(lambda x: normalize_doc_type_label(x) if pd.notna(x) else '')
 
-# Write the modified content back to train_model.py
-# Assuming train_model.py is in the same directory as clean_labels.py (backend/)
-with open('train_model.py', 'w', encoding='utf-8') as f:
-    f.write(new_train_model_content)
+        # Remove rows with empty or invalid labels
+        print("\nRemoving invalid entries...")
+        valid_topics = df['Topic Labels'].str.strip() != ''
+        valid_types = df['Type Labels'].str.strip() != ''
+        df = df[valid_topics & valid_types].copy()
 
-print("Updated train_model.py to use the cleaned CSV file.")
+        # Save the cleaned CSV
+        print("\nSaving cleaned data...")
+        df.to_csv(output_csv_path, index=False)
+        final_rows = len(df)
+        
+        print(f"\nCleaned CSV saved to {output_csv_path}")
+        print(f"Rows processed: {initial_rows} -> {final_rows}")
+        
+        # Print final statistics
+        print("\nFinal Topic Label Distribution:")
+        topic_counts = df['Topic Labels'].value_counts()
+        print(topic_counts)
+        
+        print("\nFinal Document Type Label Distribution:")
+        type_counts = df['Type Labels'].value_counts()
+        print(type_counts)
+        
+        print("\nSample of first few rows after cleaning:")
+        print(df[['Title', 'Topic Labels', 'Type Labels']].head())
+        
+    except Exception as e:
+        print(f"Error processing the CSV file: {str(e)}")
+        raise
+
+if __name__ == "__main__":
+    main()
