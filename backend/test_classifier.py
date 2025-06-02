@@ -4,6 +4,7 @@ Script to test the trained document classifier.
 """
 import os
 import django
+import csv
 
 # Set up Django environment
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.settings')
@@ -11,48 +12,223 @@ django.setup()
 
 from api.classifier import classifier
 
-def test_classifier():
-    """Test the classifier with sample texts."""
-    
-    test_documents = [
-    # Modified Existing Documents
-    "Quarterly financial analysis report: Review of Q3 2023 market performance, focusing on technology sector investments and projected growth based on recent economic indicators.", # Modified Finance
-    "Hands-on tutorial: Implementing a basic sentiment analysis model using NLTK and scikit-learn in Python for classifying movie reviews.", # Modified Tech/Education
-    "Latest research on Alzheimer's disease: Exploring potential biomarkers and early diagnostic methods through neuroimaging and genetic studies.", # Modified Health
-    "Press Release: Landmark court decision on property rights sets new precedent for land ownership disputes involving historical claims.", # Modified Legal
-    "Higher Education Admission Application: Please provide your academic history, personal statement, and contact information to apply.", # Modified University Application
-    "Employment Application Form: Complete all sections including work experience, educational background, and references for consideration.", # Modified Job Application
-    "Explore the enchanting landscapes of Kyoto, Japan. Visit ancient temples, serene gardens, and vibrant markets in this cultural heartland.", # Modified Tourism
+def test_classifier_new_cases():
+    """Test the classifier with new, hardcoded test cases."""
 
-    # New Documents
-    "A new report highlights the impact of deforestation on climate change and proposes sustainable forestry practices to mitigate environmental damage.", # Environmental Conservation
-    "Classic Chocolate Chip Cookie Recipe: Ingredients and step-by-step instructions for baking perfect chewy cookies.", # Recipe
-    "Product Review: The new XYZ noise-canceling headphones offer superb audio quality and comfort, though the battery life could be improved.", # Product Review
-    "Travel Guide Snippet: Best places to eat street food in Bangkok – a culinary journey through local markets and hidden gems.", # Travel Guide
-    "Chapter One: The old house stood silhouetted against the stormy sky, its windows like vacant eyes staring out over the choppy sea. A perfect place for secrets to hide.", # Creative Writing
+    new_test_cases = [
+        {
+            "content": "Recent breakthroughs in compact fusion reactor technology could revolutionize energy production.",
+            "expected_topic": "Technology",
+            "expected_types": ["Research/Academic", "Article/News"],
+        },
+        {
+            "content": "Summary of the new corporate tax regulations effective from next fiscal year.",
+            "expected_topic": "Politics/Law",
+            "expected_types": ["Legal/Policy", "Article/News"],
+        },
+        {
+            "content": "A delicious and easy-to-follow recipe for a classic vegan lasagna.",
+            "expected_topic": "Lifestyle/Culture",
+            "expected_types": ["Recipe"],
+        },
+        {
+            "content": "The impact of prolonged social media use on adolescent mental health: A research perspective.",
+            "expected_topic": "Health",
+            "expected_types": ["Article/News", "Research/Academic"],
+        },
+        {
+            "content": "Press release announcing a strategic partnership between innovaTech and quantiCorp.",
+            "expected_topic": "Business/Finance",
+            "expected_types": ["Article/News"],
+        },
+        {
+            "content": "A guide to implementing robust security measures for your cloud infrastructure.",
+            "expected_topic": "Technology",
+            "expected_types": ["Guide/Manual"],
+        },
+        # Added new test cases for better coverage
+        {
+            "content": "Analyzing the Q3 earnings report for major tech companies in Silicon Valley.",
+            "expected_topic": "Business/Finance",
+            "expected_types": ["Report/Study"],
+        },
+        {
+            "content": "The history and evolution of parliamentary systems in Western democracies.",
+            "expected_topic": "Politics/Law",
+            "expected_types": ["Research/Academic"],
+        },
+        {
+            "content": "Latest research findings on the effectiveness of cognitive behavioral therapy for anxiety.",
+            "expected_topic": "Health",
+            "expected_types": ["Research/Academic", "Article/News"],
+        },
+        {
+            "content": "A comprehensive manual for setting up and configuring your new wireless router.",
+            "expected_topic": "Technology",
+            "expected_types": ["Guide/Manual"],
+        },
+         {
+            "content": "New study reveals significant decline in polar ice caps due to global warming.",
+            "expected_topic": "Environment/Sustainability",
+            "expected_types": ["Report/Study", "Article/News"],
+        },
+        {
+            "content": "Exploring traditional cuisine and dining etiquette in Japan.",
+            "expected_topic": "Lifestyle/Culture",
+            "expected_types": ["Article/News"],
+        },
+        {
+            "content": "Match analysis and highlights from yesterday's football game between Manchester United and Liverpool.",
+            "expected_topic": "Sports",
+            "expected_types": ["Article/News"],
+        },
+        {
+            "content": "A guide for tourists visiting the historical sites in Rome, Italy.",
+            "expected_topic": "Tourism",
+            "expected_types": ["Guide/Manual"],
+        },
+        {
+            "content": "Report on the feasibility of implementing high-speed rail across the country.",
+            "expected_topic": "Transportation",
+            "expected_types": ["Report/Study"],
+        },
+        {
+            "content": "Discussion on current foreign policy challenges facing the European Union.",
+            "expected_topic": "Foreign Policy",
+            "expected_types": ["Report/Study", "Article/News"],
+        },
+        {
+            "content": "An overview of the basic principles of quantum mechanics for beginners.",
+            "expected_topic": "Research/Academia",
+            "expected_types": ["Informational Text", "Educational Resource"], # Mapping 'Educational Resource' to Education
+        },
+        {
+            "content": "Best practices for securing enterprise networks against cyber threats.",
+            "expected_topic": "Security",
+            "expected_types": ["Guide/Manual"],
+        },
+        {
+            "content": "The latest developments in space exploration and potential human missions to Mars.",
+            "expected_topic": "Space",
+            "expected_types": ["Article/News"],
+        },
+        {
+            "content": "Filling out the application form for a postgraduate program at a UK university.",
+            "expected_topic": "Education", # Could also be General
+            "expected_types": ["Application Form"],
+        },
+        {
+            "content": "Summary of key legal arguments in the recent Supreme Court ruling on privacy rights.",
+            "expected_topic": "Legal/Policy",
+            "expected_types": ["Legal/Policy", "Report/Study"],
+        },
+        {
+            "content": "A brochure detailing the services offered by a financial consulting firm.",
+            "expected_topic": "Business/Finance",
+            "expected_types": ["Brochure"],
+        },
+        {
+            "content": "Presentation slides from a conference on the future of work and automation.",
+            "expected_topic": "Business/Finance",
+            "expected_types": ["Presentation"],
+        },
+        {
+            "content": "A questionnaire designed to collect feedback on customer satisfaction with a new product.",
+            "expected_topic": "Business/Finance", # Could be General
+            "expected_types": ["Questionnaire"],
+        },
+         {
+            "content": "An informational text explaining the process of photosynthesis for high school students.",
+            "expected_topic": "Education",
+            "expected_types": ["Informational Text", "Educational Resource"], # Mapping 'Educational Resource' to Education
+        },
+         {
+            "content": "A review of the latest smartphone model released by major tech company.",
+            "expected_topic": "Technology",
+            "expected_types": ["Review"],
+        },
+         {
+            "content": "Guidelines for conducting ethical research involving human subjects.",
+            "expected_topic": "Research/Academia",
+            "expected_types": ["Guide/Manual", "Legal/Policy"], # Could be Policy too
+        },
     ]
-    
-    print("Testing Topic Classification:")
+
+    print(f"\n{'='*60}")
+    print(f"Testing classifier with {len(new_test_cases)} new hardcoded test cases")
+    print(f"{'='*60}")
+
+    print("\nTesting Topic Classification (New Cases):")
     print("-" * 50)
-    for i, doc in enumerate(test_documents):
-        print(f"Document {i+1}: {doc[:50]}...")
-        result = classifier.classify_document(doc, classification_type='topic')
-        
+    correct_topic_predictions = 0
+    total_topic_tests = 0
+
+    for i, test_case in enumerate(new_test_cases):
+        document_content = test_case['content']
+        expected_topic = test_case['expected_topic']
+
+        if not expected_topic:
+            continue
+
+        total_topic_tests += 1
+
+        print(f"\nDocument {i+1}: {document_content[:70]}...")
+        result = classifier.classify_document(document_content, classification_type='topic')
+
         if 'error' in result:
             print(f"  Error: {result['error']}")
         else:
-            print(f"  Topic: {result['result']} (Confidence: {result['confidence']*100:.1f}%)")
-    
-    print("\nTesting Document Type Classification:")
+            prediction = result['result']
+            confidence = result['confidence']
+            print(f"  Predicted Topic: {prediction} (Confidence: {confidence*100:.1f}%)")
+            print(f"  Expected Topic: {expected_topic}")
+
+            if prediction == expected_topic:
+                print("  Result: CORRECT")
+                correct_topic_predictions += 1
+            else:
+                print("  Result: INCORRECT")
+
+    topic_accuracy = (correct_topic_predictions / total_topic_tests) * 100 if total_topic_tests > 0 else 0
+    print("\n" + "-" * 50)
+    print(f"Topic Classification Accuracy (New Cases): {topic_accuracy:.1f}% (Tested on {total_topic_tests} documents)")
+
+    print("\nTesting Document Type Classification (New Cases):")
     print("-" * 50)
-    for i, doc in enumerate(test_documents):
-        print(f"Document {i+1}: {doc[:50]}...")
-        result = classifier.classify_document(doc, classification_type='document_type')
-        
+    correct_doctype_predictions = 0
+    total_doctype_tests = 0
+
+    for i, test_case in enumerate(new_test_cases):
+        document_content = test_case['content']
+        expected_doctypes = test_case['expected_types']
+
+        if not expected_doctypes:
+            continue
+
+        total_doctype_tests += 1
+
+        print(f"\nDocument {i+1}: {document_content[:70]}...")
+        result = classifier.classify_document(document_content, classification_type='document_type')
+
         if 'error' in result:
             print(f"  Error: {result['error']}")
         else:
-            print(f"  Document Type: {result['result']} (Confidence: {result['confidence']*100:.1f}%)")
+            prediction = result['result']
+            confidence = result['confidence']
+            print(f"  Predicted Type: {prediction} (Confidence: {confidence*100:.1f}%)")
+            print(f"  Expected Types: {', '.join(expected_doctypes)}")
+
+            if prediction in expected_doctypes:
+                print("  Result: CORRECT")
+                correct_doctype_predictions += 1
+            else:
+                print("  Result: INCORRECT")
+
+    doctype_accuracy = (correct_doctype_predictions / total_doctype_tests) * 100 if total_doctype_tests > 0 else 0
+    print("\n" + "-" * 50)
+    print(f"Document Type Classification Accuracy (New Cases): {doctype_accuracy:.1f}% (Tested on {total_doctype_tests} documents)")
+
 
 if __name__ == "__main__":
-    test_classifier() 
+    # Only run tests on the new, hardcoded test cases
+    test_classifier_new_cases()

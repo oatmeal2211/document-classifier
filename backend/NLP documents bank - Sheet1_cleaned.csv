@@ -1,0 +1,498 @@
+Document ID,Title,Link,Topic Labels,Type Labels
+doc_001,"Finance, Growth, and Inequality, WP/21/164, June 2021",https://www.imf.org/-/media/Files/Publications/WP/2021/English/wpiea2021164-print-pdf.ashx,Business/Finance,Report/Study
+doc_002,spaCy 101: Everything you need to know,https://spacy.io/usage/spacy-101,Education,"Article/News, Guide/Manual"
+doc_003,China end Malaysia's Sudirman Cup hopes in q-finals,https://www.thestar.com.my/sport/badminton/2025/05/02/china-end-malaysia039s-sudirman-cup-hopes-in-q-finals,Sports,Article/News
+doc_004,Q3 2023 Global Market Outlook Full Report,https://russellinvestments.com/-/media/files/us/insights/corporate/2023-global-market-outlook-full-report.pdf,Business/Finance,Report/Study
+doc_005,A guide to natural language processing with Python using spaCy,https://blog.logrocket.com/guide-natural-language-processing-python-spacy/,Education,Article/News
+doc_006,Machine Learning Meets Transparency in Osteoporosis Risk Assessment: A Comparative Study of ML and Explainability Analysis,https://arxiv.org/pdf/2505.00410.pdf,Health,Research/Academic
+doc_007,2023 State of the Markets Report,https://www.potomaceconomics.com/wp-content/uploads/2024/06/2023-MISO-SOM_Report_Body-Final.pdf,Business/Finance,Report/Study
+doc_008,Health Management I Module Guide,https://open.umich.edu/sites/default/files/downloads/university_of_the_western_cape_school_of_public_health_-_health_management_i_-_cc_by_nc_sa_-_2011-corrected_0.pdf,Education,Guide/Manual
+doc_009,Global Education Monitoring Report 2023,https://unesdoc.unesco.org/ark:/48223/pf0000380472,Education,Report/Study
+doc_010,"World Economic Outlook, April 2025",https://www.imf.org/-/media/Files/Publications/WEO/2025/April/English/text.ashx,Business/Finance,Report/Study
+doc_011,WHO Global Report on Traditional and Complementary Medicine 2022,https://www.who.int/publications/i/item/9789240052093,Health,Legal/Policy
+doc_012,UNEP Emissions Gap Report 2023,https://www.unep.org/resources/emissions-gap-report-2023,Environment/Sustainability,Report/Study
+doc_013,He-Con Sdn Bhd v Bulyah bt Ishak & Anor,https://drive.google.com/file/d/1b0jpc1zNIwFTMAWhWTc38WWGejksHbsu/view?usp=sharing,Politics/Law,Legal/Policy
+doc_014,Machine Learning for Cybersecurity: A Case Study,https://arxiv.org/pdf/2501.01234.pdf,Security,Research/Academic
+doc_015,Nuts about pistachio: What makes this nut so popular in Malaysia?,https://www.thestar.com.my/lifestyle/living/2025/04/29/nuts-about-pistachio-what-makes-this-nut-so-popular-in-malaysia,Lifestyle/Culture,Article/News
+doc_016,Top 20 most expensive cities in the world,https://www.thestar.com.my/lifestyle/living/2025/05/01/top-20-most-expensive-cities-in-the-world,Lifestyle/Culture,Article/News
+doc_017,Malaysia Airlines Job Application Form,https://www.malaysiaairlines.com/content/dam/mas/pdf/MAB%20New%20Job%20Application%20Form.pdf,Business/Finance,Application Form
+doc_018,Malaysia Airlines Job Application Form,https://www.malaysiaairlines.com/content/dam/mas/pdf/MAB%20New%20Job%20Application%20Form.pdf,Business/Finance,Application Form
+doc_019,Undergraduate Application Form – UOW Malaysia KDU,https://www.uow.edu.my/Student-Application-Form.pdf,Education,Application Form
+doc_020,Application Form – Monash University Malaysia,https://www.monash.edu.my/__data/assets/pdf_file/0003/1153848/MUM-Application-Form-June-2022.pdf,Education,Application Form
+doc_021,Malaysia Visa Application Form,https://fas.usda.gov/sites/default/files/2018-11/1_malaysia_visa_application.pdf,Politics/Law,Application Form
+doc_022,Graduate School Application Form – HELP University,https://university.help.edu.my/wp-content/uploads/2023/12/ELMGS_Application_Form-1.pdf,Education,Application Form
+doc_023,Flexible Work Arrangement (FWA) Application Form,https://malaysiahrforum.com/wp-content/uploads/2022/08/Flexible-Work-Application-Form-Sample.pdf,Business/Finance,Application Form
+doc_024,Direct Application for Admission to Foundation/Undergraduate Programmes – University of Southampton Malaysia,https://www.southamptonmalaysia.edu.my/sites/default/files/node/brochure-form/files/2021-11/6.%20Application%20Form.pdf,Education,Application Form
+doc_025,What is Cognitive Behavioral Therapy?,https://www.apa.org/ptsd-guideline/patients-and-families/cognitive-behavioral.pdf (American Psychological Association),Health,Guide/Manual
+doc_026,The Impact of Social Media on the Mental Health of Adolescents and Young Adults,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10476631/ (PMC),Health,Research/Academic
+doc_027,The Association between Green Space and Adolescents’ Mental Well-Being,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7557737/ (PMC),Education,Research/Academic
+doc_028,Urban greenery and mental wellbeing in adults: Cross-sectional mediation analyses on multiple pathways across different greenery measures,https://arxiv.org/pdf/1905.04488.pdf (arXiv),Health,Research/Academic
+doc_029,Risk Factors and Leadership in a Digitalized Working World and Their Effects on Employees’ Stress and Resources: Web-Based Questionnaire Study,https://www.jmir.org/2021/3/e24906/PDF (JMIR),Business/Finance,Research/Academic
+doc_030,Malaysia Travel Guide,https://assets.ctfassets.net/v228i5y5k0x4/oBA6EChifYyOGASIyO0y0/cf4842a2f25bfbdfec07b8300d9397e7/Malaysia.pdf,Tourism,Brochure
+doc_031,Kuala Lumpur: The Dazzling Capital City,https://idbtm.blob.core.windows.net/storage/KL%20Dazzling_December_2023.pdf,Tourism,Brochure
+doc_032,Langkawi: The Jewel of Kedah,https://storage.ebrochures.malaysia.travel/storage/Langkawi-The-Jewel-of-Kedah_English_.pdf,Tourism,Brochure
+doc_033,Penang Map & Guide,https://storage.ebrochures.malaysia.travel/storage/Map_Guide_PENANG_Eng.pdf,Lifestyle/Culture,Brochure
+doc_034,Cool Highlands – Experience Guide,https://storage.ebrochures.malaysia.travel/storage/CHR_2020_for_IDB.pdf,Tourism,Brochure
+doc_035,Biden’s 2024 State of the Union Address: Full Transcript,https://www.congress.gov/118/meeting/house/116942/documents/HHRG-118-JU00-20240312-SD001.pdf (Congress.gov | Library of Congress),Politics/Law,Informational Text
+doc_036,Brené Brown: The Power of Vulnerability (TED Talk) Transcript,https://www.ted.com/talks/brene_brown_the_power_of_vulnerability/transcript (TED),Health,Informational Text
+doc_037,"Press Conference by UN Secretary-General Boutros Boutros-Ghali, 25 May 1994",https://digitallibrary.un.org/record/199906 (Digital Library),Politics/Law,Informational Text
+doc_038,"NASA Press Conference on the Space Shuttle Columbia, 27 August 2003",https://history2.nasa.gov/columbia/Troxell/Columbia%20Web%20Site/Documents/NASA/Press%20Releases/caib_transcript.pdf (NASA History Division),Research/Academia,Informational Text
+doc_039,Apollo 11 Lunar Surface Journal: Raw Transcripts,https://www.nasa.gov/history/alsj/a11/a11trans.html (NASA),Research/Academia,Informational Text
+doc_040,"US jobs data calms market fears, but jitters on policy uncertainty dominate markets",https://www.reuters.com/markets/us/us-jobs-data-calms-market-fears-jitters-policy-uncertainty-dominate-2025-03-07/ (Reuters),Business/Finance,Article/News
+doc_041,Stocks gain on signs of easing Sino-US trade tensions,https://www.reuters.com/markets/global-markets-wrapup-1-2025-05-02/ (Reuters),Business/Finance,Article/News
+doc_042,US private payrolls growth beats expectations in March,https://www.reuters.com/markets/us/us-private-payrolls-accelerate-march-2025-04-02/ (Reuters),Business/Finance,Article/News
+doc_043,"Stocks rebound, dollar gains; earnings, U.S.-China tariff talks in focus",https://www.reuters.com/markets/global-markets-wrapup-1-2025-04-22/ (Reuters),Business/Finance,Article/News
+doc_044,Galaxy S22 5G Repair Guide,https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=SM-S901B%2FDS&CttFileID=9432538&CDCttType=EU&VPath=EU%2F202312%2F20231219191544036%2FSM-S901B_RepairGuide_EU_Eng_Rev.1.1_231127.pdf (Samsung),Technology,Guide/Manual
+doc_045,Galaxy S22 5G Safety Guide,https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=SM-S901B%2FDS&CttFileID=9387431&CDCttType=UM&VPath=UM%2F202311%2F20231127141131934%2FSafety_information_Rev.2.0.0_231013.pdf (Samsung),Technology,Guide/Manual
+doc_046,Galaxy S22 5G Statement of Compliance,https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=SM-S901B%2FDS&CttFileID=9605349&CDCttType=UM&VPath=UM%2F202404%2F20240419162202636%2FPSTI_SOC_SM-S901B_DS_r1.pdf (Samsung),Technology,Guide/Manual
+doc_047,Galaxy S22 User Manual (Android 12),https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=SM-S901B%2FDS&CttFileID=8463982&CDCttType=UM&VPath=UM%2F202202%2F20220210122425532%2FSM-S90X_UM_EU_SS_Eng_Rev.1.0_220209.pdf (Samsung),Technology,Guide/Manual
+doc_048,Galaxy S22 User Manual (Android 14),https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=SM-S901B%2FDS&CttFileID=9599908&CDCttType=UM&VPath=UM%2F202404%2F20240418152523294%2FSM-S90X_G99X_UM_EU_UU_Eng_Rev.1.1_240417.pdf (Samsung),Technology,Guide/Manual
+doc_049,PHQ-9 Depression Screening Questionnaire,https://www.uke.de/dateien/institute/institut-und-poliklinik-f%C3%BCr-psychosomatische-medizin-und-psychotherapie/downloads/phq-9.pdf (Wikipedia – Die freie Enzyklopädie),Health,Questionnaire
+doc_050,Ten-Item Personality Inventory (TIPI),https://gosling.psy.utexas.edu/wp-content/uploads/2014/09/tipi.pdf (gosling.psy.utexas.edu),Health,Questionnaire
+doc_051,IPAQ Short Form (7-day),https://evaluationframework.sportengland.org/media/1084/2015-ipaq-sf.pdf (evaluationframework.sportengland.org),Health,Questionnaire
+doc_052,RAND SF-36 Health Survey Instrument,https://www.rand.org/content/dam/rand/www/external/health/surveys_tools/mos/mos_core_36item_survey.pdf (RAND Corporation),Health,Questionnaire
+doc_053,ILPT Q1 2025 Earnings Presentation,https://s22.q4cdn.com/903350330/files/doc_financials/2025/q1/ILPT-Earnings-Presentation-Q1-2025.pdf,Business/Finance,Presentation
+doc_054,Neural Natural Language Processing for Long Texts: A Survey on Classification and Summarization,https://arxiv.org/abs/2305.16259,Technology,Research/Academic
+doc_055,Natural Language Processing Technologies for Document Profiling,https://aclanthology.org/R17-1039/,Technology,Research/Academia
+doc_056,NLP for Knowledge Discovery and Information Extraction from Energetics Corpora,https://arxiv.org/pdf/2402.06964,Technology,Research/Academic
+doc_057,NLP for Language Documentation: Two Reasons for the Gap between Theory and Practice,https://aclanthology.org/2024.americasnlp-1.1/,Research/Academia,Research/Academia
+doc_058,Capturing Style in Author and Document Representation,https://arxiv.org/abs/2407.13358,Research/Academia,Research/Academic
+doc_059,A Survey of Document-Level Information Extraction,https://arxiv.org/abs/2309.13249,Technology,Research/Academic
+doc_060,LMDX: Language Model-based Document Information Extraction and Localization,https://aclanthology.org/2024.findings-acl.899/,Technology,Research/Academia
+doc_061,Deep Learning-based NLP Data Pipeline for EHR Scanned Documents,https://arxiv.org/abs/2110.11864,Health,Research/Academic
+doc_062,NLP on Spoken Documents Without ASR,https://aclanthology.org/D10-1045/,Technology,Research/Academia
+doc_063,Risks and NLP Design: A Case Study on Procedural Document QA,https://arxiv.org/abs/2408.11860,Business/Finance,Report/Study
+doc_064,"The Future of Diversity, Equity, Inclusion, and Belonging 2024",https://www.affirmity.com/resources/future-diversity-equity-inclusion-belonging-2024/,Business/Finance,Report/Study
+doc_065,Diversity in Clinical Trials: 2024,https://trinitylifesciences.com/white-paper/diversity-in-clinical-trials-2024/,Business/Finance,Report/Study
+doc_066,Forecasting High-Impact Research Topics via Machine Learning on Evolving Knowledge Graphs,https://arxiv.org/abs/2402.08640,Research/Academia,Research/Academic
+doc_067,A Scoping Review of ChatGPT Research in Accounting and Finance,https://arxiv.org/abs/2412.05731,Business/Finance,Research/Academic
+doc_068,Recent Advances in Text Analysis,https://arxiv.org/abs/2401.00775,Technology,Research/Academic
+doc_069,"Analyzing 16,193 LLM Papers for Fun and Profits",https://arxiv.org/abs/2504.08619,Research/Academia,Research/Academic
+doc_070,The Equity Equation White Paper,https://www.mheducation.com/highered/blog/2024/04/the-equity-equation-white-paper.html,Education,Report/Study
+doc_071,2022-2023 Diversity & Inclusion Report,https://www.elibrary.imf.org/view/journals/007/2024/032/007.2024.issue-032-en.xml,Business/Finance,Report/Study
+doc_072,Top 25 Downloaded Research Papers of 2024,https://www.nature.com/collections/jjebdbhbje,Research/Academia,Research/Academia
+doc_073,A Look at 2024’s Most Viewed Research Topics,https://www.frontiersin.org/news/2025/01/14/2024-most-viewed-research-topics,Research/Academia,Article/News
+doc_074,2024 in Research Highlights - American Economic Association,https://www.aeaweb.org/research/top-ten-research-highlight-2024,Business/Finance,Article/News
+doc_075,6 Major Takeaways From the 2024 Future of DEIB Report,https://www.affirmity.com/blog/6-major-takeaways-from-2024-future-deib-report/,Business/Finance,Article/News
+doc_076,What Diverse Talent Wants in 2024: Key Stats,https://powertofly.com/up/2024-workplace-dei-statistics-trends,Business/Finance,Report/Study
+doc_077,15 Essential DEI Training Topics for Today's Evolving Workplace,https://www.findcourses.com/prof-dev/guides/diversity/15-essential-dei-training-topics-for-todays-evolving-workplace-24337,Business/Finance,Guide/Manual
+doc_078,250 Latest Research Paper Topics and Ideas [2024],https://us.greatassignmenthelp.com/blog/research-paper-topics/,Education,Article/News
+doc_079,Research Paper Ideas 2024 - PhD Direction,https://www.phddirection.com/research-thesis-topics-2024/,Education,Article/News
+doc_080,Research Papers - Diversity Atlas,https://diversityatlas.io/research-papers,Business/Finance,Research/Academic
+doc_081,White Papers and Reports - American Library Association,https://www.ala.org/acrl/issues/whitepapers,Report/Study,Report/Study
+doc_082,A Search for New Antibiotics in Ancient DNA,https://www.wsj.com/science/biology/antibiotics-woolly-mammoths-neanderthals-94395f19,Health,Article/News
+doc_083,Gender-transformative climate action framework rooted in feminist theory & justice,https://timesofindia.indiatimes.com/city/chandigarh/gender-transformative-climate-action-framework-rooted-in-feminist-theory-justice-research-paper/articleshow/121375332.cms,Environment/Sustainability,Research/Academic
+doc_084,China's national security: White Paper on CCP longevity amidst 'volatile' geopolitical landscape,https://timesofindia.indiatimes.com/world/china/chinas-national-security-white-paper-on-ccp-longevity-amidst-volatile-geopolitical-landscape/articleshow/121331981.cms,Politics/Law,Report/Study
+doc_085,AI tools enhance judgment of relevance of research to society,https://www.ft.com/content/1160d247-be62-4dbe-9a36-7a99a8f96ae4,Research/Academia,Article/News
+doc_086,Research paper downloads act as proxy for academics' real-world influence,https://www.ft.com/content/94a63515-d197-4d88-b176-d177ac1226be,Business/Finance,Article/News
+doc_087,AI used to predict potential new antibiotics in groundbreaking study,https://www.theguardian.com/society/article/2024/jun/05/ai-antibiotic-resistance,Health,Article/News
+doc_088,"Evolving Topics in Federated Learning: Trends, and Emerging Directions for IS",https://arxiv.org/abs/2409.15773,Technology,Research/Academic
+doc_089,Exploring utilization of generative AI for research and education in data-driven materials science,https://arxiv.org/abs/2504.08817,Research/Academia,Research/Academic
+doc_090,Artificial intelligence for Sustainable Energy: A Contextual Topic Modeling and Content Analysis,https://arxiv.org/abs/2110.00828,Environment/Sustainability,Research/Academic
+doc_091,Disinformation research,https://en.wikipedia.org/wiki/Disinformation_research,Lifestyle/Culture,Informational Text
+doc_092,"2024 Wrapped: Our Top White Papers, Webinars, and Blogs",https://airshare.air-inc.com/2024-wrapped-our-top-white-papers-webinars-and-blogs,Business/Finance,Article/News
+doc_093,White paper: 10 Most Important Digitalization Trends in 2024,https://go.valantic.com/white-paper-digitalization-trends-2024,Technology,Report/Study
+doc_095,Advanced Manufacturing and Factory Automation White Papers,https://www.manufacturingtomorrow.com/whitepapers.php,Business/Finance,Report/Study
+doc_096,White Papers - Society for Clinical Research Sites,https://myscrs.org/learning-campus/white-papers/,Health,Report/Study
+doc_097,A 2025 Guide to White Papers (with Templates and Examples),https://piktochart.com/blog/white-papers-templates-examples/,Business/Finance,Guide/Manual
+doc_098,25 White Paper Examples & Templates to Use Right Away [2025],https://visme.co/blog/white-paper-examples/,Business/Finance,Guide/Manual
+doc_099,Finding a white paper topic,https://thatwhitepaperguy.com/finding-a-white-paper-topic/,Business/Finance,Article/News
+doc_100,White Paper Topics: How to Find Topics That Will Get Downloaded,https://www.upliftcontent.com/blog/white-paper-topics/,Business/Finance,Article/News
+doc_102,2024-2025 CRA Quad Paper: Reclaiming the Future,https://www.arxiv.org/pdf/2503.18952,Research/Academia,Report/Study
+doc_103,2024 Google Scholar Research Interest Ranking for Top 3260 Computer Science Authors,https://arxiv.org/abs/2503.13451,Research/Academia,Research/Academic
+doc_104,Human Understanding AI Paper Challenge 2024 -- Dataset Design,https://arxiv.org/abs/2403.16509,Technology,Research/Academic
+doc_105,The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery,https://arxiv.org/abs/2408.06292,Research/Academia,Research/Academic
+doc_106,Can LLMs Generate Novel Research Ideas?,https://arxiv.org/pdf/2409.04109,Research/Academia,Research/Academic
+doc_107,2024-2025 CRA Quad Paper - Computing Research Association,https://www.arxiv.org/pdf/2503.09612,Politics/Law,Report/Study
+doc_108,Neuro-Symbolic AI in 2024: A Systematic Review,https://arxiv.org/abs/2501.05435,Technology,Research/Academic
+doc_109,Adaptive Transit Signal Priority based on Deep Reinforcement Learning and Connected Vehicles,https://arxiv.org/abs/2408.00098,Technology,Research/Academic
+doc_110,Measuring Progress in Dictionary Learning for Language Model Interpretability with Board Game Models,https://arxiv.org/abs/2408.00113,Technology,Research/Academic
+doc_111,AI-Empowered Human Research Integrating Brain Science and Social Sciences Insights,https://arxiv.org/pdf/2411.12761,Health,Research/Academic
+doc_112,"On Lattices, Learning with Errors, Random Linear Codes, and Cryptography",https://arxiv.org/abs/2401.03703,Technology,Research/Academic
+doc_113,A framework for improving the accessibility of research papers on arXiv.org,https://arxiv.org/abs/2212.07286,General,Research/Academic
+doc_114,Temporal Subspace Clustering for Molecular Dynamics Data,https://arxiv.org/abs/2408.00056,Research/Academia,Research/Academic
+doc_115,On the Perturbed States for Transformed Input-robust Reinforcement Learning,https://arxiv.org/abs/2408.00023,Technology,Research/Academic
+doc_116,2024-2025 CRA Quad Paper: Prioritizing Computing Research to Empower and Protect Vulnerable Populations,https://www.arxiv.org/pdf/2503.09612,Research/Academia,Report/Study
+doc_117,AI tools enhance judgment of relevance of research to society,https://www.ft.com/content/1160d247-be62-4dbe-9a36-7a99a8f96ae4,Research/Academia,Article/News
+doc_118,Research paper downloads act as proxy for academics' real-world influence,https://www.ft.com/content/94a63515-d197-4d88-b176-d177ac1226be,Research/Academia,Article/News
+doc_119,AI used to predict potential new antibiotics in groundbreaking study,https://www.theguardian.com/society/article/2024/jun/05/ai-antibiotic-resistance,Health,Article/News
+doc_120,China's national security: White Paper on CCP longevity amidst 'volatile' geopolitical landscape,https://timesofindia.indiatimes.com/world/china/chinas-national-security-white-paper-on-ccp-longevity-amidst-volatile-geopolitical-landscape/articleshow/121331981.cms,Politics/Law,Report/Study
+doc_121,Gender-transformative climate action framework rooted in feminist theory & justice,https://timesofindia.indiatimes.com/city/chandigarh/gender-transformative-climate-action-framework-rooted-in-feminist-theory-justice-research-paper/articleshow/121375332.cms,Environment/Sustainability,Research/Academic
+doc_122,Likely Exploited Vulnerabilities: A Proposed Metric for Vulnerability Exploitation Probability,https://csrc.nist.gov/News/2025/nist-publishes-cybersecurity-white-paper-41,Security,Report/Study
+doc_123,World Health Statistics 2025: Mixed Progress Towards WHO's Triple Billion Targets,https://www.who.int/news/item/15-05-2025-who-warns-of-slowing-global-health-gains-in-new-statistics-report,Health,Report/Study
+doc_124,Pandemic Agreement Adopted to Enhance Global Health Equity and Safety,https://www.who.int/news/item/20-05-2025-world-health-assembly-adopts-historic-pandemic-agreement-to-make-the-world-more-equitable-and-safer-from-future-pandemics,Politics/Law,Article/News
+doc_125,Community White Papers for NASA Decadal Astrobiology Research and Exploration Strategy (NASA-DARES),https://exoplanets.nasa.gov/exep/exopag/NASA-DARES/,Space,Report/Study
+doc_126,Office of Space Commerce Solicits White Papers for TraCSS Research & Technology Development,https://www.space.commerce.gov/office-of-space-commerce-solicits-white-papers-for-ssa-stc-research/,Politics/Law,Report/Study
+doc_127,New White Paper on the Standardization of the Government Specialist Position,https://www.justice.gov/oip/blog/new-white-paper-standardization-government-specialist-position-chief-foia-officers-0,Politics/Law,Report/Study
+doc_128,Transition to Advanced Encryption Standard (AES) White Paper,https://www.cisa.gov/resources-tools/resources/transition-advanced-encryption-standard-aes-white-paper,Security,Report/Study
+doc_129,World Report on Social Determinants of Health Equity,https://www.who.int/teams/social-determinants-of-health/equity-and-health/world-report-on-social-determinants-of-health-equity,Health,Report/Study
+doc_130,Multi-country Cholera Outbreak: External Situation Report #24,https://www.who.int/publications/m/item/multi-country-cholera-outbreak--external-situation-report--24--20-march-2025,Health,Report/Study
+doc_131,Yellow Fever in the Americas: 2025 Update,https://www.who.int/emergencies/disease-outbreak-news/item/2025-DON570,Health,Report/Study
+doc_132,State of the World's Nursing 2025 Report Launch,https://www.emro.who.int/media/news/state-of-the-worlds-nursing-2025-report-launch.html,Health,Report/Study
+doc_133,New EU Sustainability Regulations White Paper for Tourism Management Organizations,https://www.argophilia.com/news/new-eu-sustainability-regulations/242349/,Politics/Law,Report/Study
+doc_134,The Future of Jobs Report 2025,https://www.weforum.org/publications/the-future-of-jobs-report-2025/infographics-94b6214b36/,Business/Finance,Report/Study
+doc_135,AI-Driven Animation Production Redefined in CreateAI’s Latest White Paper Release,https://www.nripage.com/articles/finance-%26-economics/2025/05/07/ai-driven-animation-production-redefined-in-createais-latest-white-paper-release,Technology,Report/Study
+doc_136,New Research Paper: Participatory Approaches and Digital Documentation,https://crdf.org.in/news/new-research-paper-participatory-approaches-and-digital-documentation-can-the-two-meet,Research/Academia,Research/Academic
+doc_137,Review: China's New White Paper on Its Political System,https://news.cgtn.com/news/2021-06-25/Review-China-s-new-white-paper-on-its-political-system-11nJMpYs1Jm/index.html,Politics/Law,Report/Study
+doc_138,New White Paper Sets Stance on Taiwan in Clear Focus,https://www.chinadaily.com.cn/a/201907/25/WS5d38eafba310d83056400d99.html,Politics/Law,Report/Study
+doc_139,New White Paper: Navigating the Future of Sales Tax Compliance,https://salestaxdatalink.com/new-white-paper-navigating-the-future-of-sales-tax-compliance/,Politics/Law,Report/Study
+doc_140,White Papers - Society for Clinical Research Sites,https://myscrs.org/learning-campus/white-papers/,Research/Academia,Report/Study
+doc_141,White Papers,https://www.fhfaoig.gov/Reports/WhitePapers,,Business/Finance
+doc_142,Likely Exploited Vulnerabilities: A Proposed Metric for Vulnerability Exploitation Probability,https://csrc.nist.gov/News/2025/nist-publishes-cybersecurity-white-paper-41,Security,Report/Study
+doc_143,World Health Statistics 2025: Monitoring Health for the SDGs,https://www.who.int/publications/i/item/9789240110496,Health,Report/Study
+doc_144,Community White Papers for NASA Decadal Astrobiology Research and Exploration Strategy (NASA-DARES),https://exoplanets.nasa.gov/exep/exopag/NASA-DARES/,Space,Report/Study
+doc_145,A Destination's Guide to the New EU Sustainability Regulations,https://etc-corporate.org/reports/a-destinations-guide-to-the-new-eu-sustainability-regulations/,Politics/Law,Report/Study
+doc_146,The Future of Jobs Report 2025,https://www.weforum.org/publications/the-future-of-jobs-report-2025/,Business/Finance,Report/Study
+doc_147,Foundation Models for Astrobiology - NASA-DARES 2025 White Paper,https://astrobiology.com/2025/05/foundation-models-for-astrobiology-nasa-dares-2025-white-paper.html,Technology,Report/Study
+doc_148,Cybersecurity Framework: Incident Response Recommendations and Considerations,https://www.nist.gov/cyberframework,Security,Guide/Manual
+doc_149,World Health Assembly Daily Update: 22 May 2025,https://www.who.int/news/item/22-05-2025-seventy-eighth-world-health-assembly---daily-update--22-may-2025,Politics/Law,Article/News
+doc_150,New EU Sustainability Regulations White Paper for Tourism Management Organizations,https://www.argophilia.com/news/new-eu-sustainability-regulations/242349/,Politics/Law,Report/Study
+doc_151,NIST Releases CSWP 39: Considerations for Achieving Crypto Agility,https://csrc.nist.gov/news/2025/nist-releases-cswp-39-for-public-comment,Security,Report/Study
+doc_152,African Union and WHO Renew Strategic Partnership to Strengthen Health Systems in Africa,https://www.who.int/news/item/24-05-2025-world-health-organization-and-african-union-renew-strategic-partnership-to-drive-impact-and-strengthen-health-systems-in-africa,Health,Article/News
+doc_153,Tourism in Transport Policy - European Parliament Briefing,https://www.europarl.europa.eu/RegData/etudes/BRIE/2025/772845/EPRS_BRI%282025%29772845_EN.pdf,Politics/Law,Informational Text
+doc_154,WHO Press Conference: World Health Statistics 2025,https://www.unognewsroom.org/teleprompter/en/2646/who-press-conference-world-health-statistics-2025-15-may-2025,Health,Informational Text
+doc_155,NIST Calls for Public Input on New 5G Cybersecurity Paper,https://executivegov.com/2025/01/nist-5g-white-paper-no-supi-based-paging/,Security,Report/Study
+doc_156,GDS-Movement and ETC Urge Destinations to Get Ahead of New EU Green Rules,https://www.traveldailynews.com/special-interest-travel/sustainable-tourism/gds-movement-and-etc-urge-destinations-to-get-ahead-of-new-eu-green-rules/,Tourism,Article/News
+doc_157,The World Health Assembly Endorses Extension of the Global Strategy on Digital Health to 2027,https://www.who.int/news/item/23-05-2025-world-health-assembly-endorses-extension-of-the-global-digital-health-strategy-to-2027,Technology,Article/News
+doc_158,NIST National Cybersecurity Center Calls for Comment on Latest White Paper,https://australiancybersecuritymagazine.com.au/nist-national-cybersecurity-center-calls-for-comment-on-latest-white-paper/,Security,Report/Study
+doc_159,WHO Publishes World Health Statistics Report 2025,https://communitymedicine4asses.wordpress.com/2025/05/16/who-publishes-world-health-statistics-report-2025-15-may-2025/,Health,Report/Study
+doc_160,NASA DARES to Establish an Astrobiology-Specific Technology Development Program,https://primordialscoop.org/2025/03/21/nasa-dares-to-establish-an-astrobiology-spec_,Space,
+doc_161,"The Astrobiology Data Ecosystem, Open Science, And The AI Era – NASA-DARES 2025 White Paper",https://astrobiology.com/2025/05/the-astrobiology-data-ecosystem-open-science-and-the-ai-era-nasa-dares-2025-white-paper.html,Research/Academia,Report/Study
+doc_162,Foundation Models for Astrobiology - NASA-DARES 2025 White Paper,https://astrobiology.com/2025/05/foundation-models-for-astrobiology-nasa-dares-2025-white-paper.html,Space,Report/Study
+doc_163,NASA TPS Capability for Astrobiology Missions – NASA-DARES 2025 White Paper,https://astrobiology.com/2025/05/nasa-tps-capability-for-astrobiology-missions-nasa-dares-2025-white-paper.html,Space,Report/Study
+doc_164,Likely Exploited Vulnerabilities: NIST Publishes Cybersecurity White Paper 41,https://csrc.nist.gov/News/2025/nist-publishes-cybersecurity-white-paper-41,Security,Report/Study
+doc_165,NIST Releases CSWP 39 for Public Comment,https://csrc.nist.gov/news/2025/nist-releases-cswp-39-for-public-comment,Technology,Report/Study
+doc_166,Seventy-eighth World Health Assembly – Daily update: 22 May 2025,https://www.who.int/news/item/22-05-2025-seventy-eighth-world-health-assembly---daily-update--22-may-2025,Health,Article/News
+doc_167,WHO warns of slowing global health gains in new statistics report,https://www.who.int/news/item/15-05-2025-who-warns-of-slowing-global-health-gains-in-new-statistics-report,Health,Article/News
+doc_168,World Health Statistics 2025 is published!,https://www.linkedin.com/posts/haidong-wang-19ba108_world-health-statistics-2025-is-published-activity-7329515588408532992-wnel,Health,Article/News
+doc_169,A Destination's Guide to the New EU Sustainability Regulations,https://etc-corporate.org/reports/a-destinations-guide-to-the-new-eu-sustainability-regulations/,Politics/Law,Report/Study
+doc_170,GDS-Movement and European Travel Commission Urge Destinations to Get Ahead of New EU Green Rules,https://www.gds.earth/blog/gds-movement-and-european-travel-commission-urge-destinations-to-get-ahead-of-new-eu-green-rules/,Tourism,Article/News
+doc_171,The Future of Jobs Report 2025,https://www.weforum.org/publications/the-future-of-jobs-report-2025/,Business/Finance,Business/Finance
+doc_172,Why AI literacy is now a core competency in education,https://www.weforum.org/stories/2025/05/why-ai-literacy-is-now-a-core-competency-in-education/,Education,Article/News
+doc_173,The Future of Jobs in South-Eastern Asia: upskilling dominates as technology and geoeconomic uncertainty change talent landscape,https://www.weforum.org/stories/2025/05/the-future-of-jobs-in-south-eastern-asia-upskilling-dominates-as-technology-and-geoeconomic-uncertainty-change-talent-landscape/,Business/Finance,Article/News
+doc_174,The new skills triad: How we equip the workforce for the future of work,https://www.weforum.org/stories/2025/04/new-skills-triad-and-future-of-work/,Business/Finance,Article/News
+doc_175,Is AI closing the door on entry-level job opportunities?,https://www.weforum.org/stories/2025/04/ai-jobs-international-workers-day/,Business/Finance,Article/News
+doc_176,Medical Benchmarks and the Myth of the Universal Patient,https://www.newyorker.com/magazine/2025/03/31/medical-benchmarks-and-the-myth-of-the-universal-patient,Health,Article/News
+doc_177,Donors pledge over $170 million to WHO ahead of US exit,https://www.reuters.com/business/healthcare-pharmaceuticals/countries-pledge-over-170-million-who-ahead-us-exit-2025-05-20/,Business/Finance,Article/News
+doc_178,"Half a billion young people will be obese or overweight by 2030, report finds",https://www.theguardian.com/society/2025/may/20/young-people-obesity-2030-report,Health,Article/News
+doc_179,"People in 70 countries are missing out on medical care amid funding cuts, says WHO",https://www.reuters.com/business/healthcare-pharmaceuticals/least-70-countries-missing-out-treatment-amid-funding-cuts-says-who-chief-2025-05-19/,Health,Article/News
+doc_180,NASA DARES to Establish an Astrobiology-Specific Technology Development Program,https://primordialscoop.org/2025/03/21/nasa-dares-to-establish-an-astrobiology-specific-technology-development-program/,Space,Report/Study
+doc_181,WHO warns of slowing global health gains in new statistics report,https://www.who.int/news/item/15-05-2025-who-warns-of-slowing-global-health-gains-in-new-statistics-report,Health,Article/News
+doc_182,Seventy-eighth World Health Assembly – Daily update: 22 May 2025,https://www.who.int/news/item/22-05-2025-seventy-eighth-world-health-assembly---daily-update--22-may-2025,Politics/Law,Article/News
+doc_183,World Health Statistics 2025 is published!,https://www.linkedin.com/posts/haidong-wang-19ba108_world-health-statistics-2025-is-published-activity-7329515588408532992-wnel,Health,Article/News
+doc_184,A Destination's Guide to the New EU Sustainability Regulations,https://etc-corporate.org/reports/a-destinations-guide-to-the-new-eu-sustainability-regulations/,Politics/Law,Report/Study
+doc_185,GDS-Movement and European Travel Commission Urge Destinations to Get Ahead of New EU Green Rules,https://www.gds.earth/blog/gds-movement-and-european-travel-commission-urge-destinations-to-get-ahead-of-new-eu-green-rules/,Tourism,Article/News
+doc_186,The Future of Jobs Report 2025, https://www.weforum.org/publications/the-future-of-jobs-report-2025/ ,Business/Finance,Business/Finance
+doc_187,Why AI literacy is now a core competency in education,https://www.weforum.org/stories/2025/05/why-ai-literacy-is-now-a-core-competency-in-education/,Education,Article/News
+doc_188,The Future of Jobs in South-Eastern Asia: upskilling dominates as technology and geoeconomic uncertainty change talent landscape,https://www.weforum.org/stories/2025/05/the-future-of-jobs-in-south-eastern-asia-upskilling-dominates-as-technology-and-geoeconomic-uncertainty-change-talent-landscape/,Business/Finance,Article/News
+doc_189,The new skills triad: How we equip the workforce for the future of work,https://www.weforum.org/stories/2025/04/new-skills-triad-and-future-of-work/,Business/Finance,Article/News
+doc_190,Is AI closing the door on entry-level job opportunities?,https://www.weforum.org/stories/2025/04/ai-jobs-international-workers-day/,Business/Finance,Article/News
+doc_191,Medical Benchmarks and the Myth of the Universal Patient,https://www.newyorker.com/magazine/2025/03/31/medical-benchmarks-and-the-myth-of-the-universal-patient,Health,Article/News
+doc_192,Donors pledge over $170 million to WHO ahead of US exit,https://www.reuters.com/business/healthcare-pharmaceuticals/countries-pledge-over-170-million-who-ahead-us-exit-2025-05-20/,Business/Finance,Article/News
+doc_193,"Half a billion young people will be obese or overweight by 2030, report finds",https://www.theguardian.com/society/2025/may/20/young-people-obesity-2030-report,Health,Article/News
+doc_194,"People in 70 countries are missing out on medical care amid funding cuts, says WHO",https://www.reuters.com/business/healthcare-pharmaceuticals/least-70-countries-missing-out-treatment-amid-funding-cuts-says-who-chief-2025-05-19/,Health,Article/News
+doc_195,NASA DARES to Establish an Astrobiology-Specific Technology Development Program,https://primordialscoop.org/2025/03/21/nasa-dares-to-establish-an-astrobiology-specific-technology-development-program/,Space,Report/Study
+doc_196,"The Astrobiology Data Ecosystem, Open Science, And The AI Era – NASA-DARES 2025 White Paper",https://astrobiology.com/2025/05/the-astrobiology-data-ecosystem-open-science-and-the-ai-era-nasa-dares-2025-white-paper.html,Research/Academia,Report/Study
+doc_197,Foundation Models for Astrobiology - NASA-DARES 2025 White Paper,https://astrobiology.com/2025/05/foundation-models-for-astrobiology-nasa-dares-2025-white-paper.html,Space,Report/Study
+doc_198,NASA TPS Capability for Astrobiology Missions – NASA-DARES 2025 White Paper,https://astrobiology.com/2025/05/nasa-tps-capability-for-astrobiology-missions-nasa-dares-2025-white-paper.html,Space,Report/Study
+doc_199,NIST Releases CSWP 39 for Public Comment,https://csrc.nist.gov/news/2025/nist-releases-cswp-39-for-public-comment,Technology,Report/Study
+doc_200,Considerations for Achieving Crypto Agility: Strategies and Practices,https://csrc.nist.gov/pubs/cswp/39/considerations-for-achieving-cryptographic-agility/ipd,Security,Report/Study
+doc_201,OpenAI debuts GPT-4 Turbo and fine-tuning program for GPT-4,https://techcrunch.com/2023/11/06/openai-launches-gpt-4-turbo-and-launches-fine-tuning-program-for-gpt-4/,Technology,Article/News
+doc_202,OpenAI debuts GPT-4o ‘omni’ model now powering ChatGPT,https://techcrunch.com/2024/05/13/openais-newest-model-is-gpt-4o/,Technology,Article/News
+doc_203,"OpenAI makes ChatGPT more direct, less verbose",https://techcrunch.com/2024/04/11/openai-makes-chatgpt-more-direct-less-verbose/,Technology,Article/News
+doc_204,OpenAI will soon phase out GPT-4 from ChatGPT,https://techcrunch.com/2025/04/11/openai-is-winding-down-its-gpt-4-ai-model-in-chatgpt/,Politics/Law,Article/News
+doc_205,OpenAI makes GPT-4 generally available,https://techcrunch.com/2023/07/06/openai-makes-gpt-4-generally-available/,Technology,Article/News
+doc_206,Sweep aims to automate basic dev tasks using large language models,https://techcrunch.com/2023/11/02/sweep-aims-to-automate-basic-dev-tasks-using-large-language-models/,Technology,Article/News
+doc_207,Outset is using GPT-4 to make user surveys better,https://techcrunch.com/2023/10/26/outset-gpt-4-surveys/,Research/Academia,Article/News
+doc_208,Microsoft-affiliated research finds flaws in GPT-4,https://techcrunch.com/2023/10/17/microsoft-affiliated-research-finds-flaws-in-gpt-4/,Research/Academia,Article/News
+doc_209,OpenAI releases “GPT-4 with vision” — research shows its strengths & weaknesses,https://techcrunch.com/2023/11/06/openai-gpt-4-with-vision-release-research-flaws/,Technology,Article/News
+doc_210,Google AI Test Kitchen Now Available,https://techcrunch.com/2023/10/11/google-ai-test-kitchen/,Technology,Article/News
+doc_211,Amazon launches Bedrock for building generative AI applications,https://techcrunch.com/2023/08/03/amazon-launches-bedrock/,Technology,Article/News
+doc_212,"Anthropic launches Claude 3, its most powerful AI assistant yet",https://techcrunch.com/2024/04/03/anthropic-launches-claude-3/,Technology,Article/News
+doc_213,AI startup Adept emerges from stealth with $65M to rethink enterprise workflows,https://techcrunch.com/2024/02/28/adept-raises-65m/,Business/Finance,Article/News
+doc_214,Microsoft brings AI-powered features to Teams,https://techcrunch.com/2024/03/10/microsoft-brings-ai-powered-features-to-teams/,Business/Finance,Article/News
+doc_215,Salesforce acquires AI startup Momen­tix to supercharge Sales Cloud,https://techcrunch.com/2023/12/05/salesforce-acquires-momentix/,Business/Finance,Article/News
+doc_216,NVIDIA unveils next-gen A100s GPUs for accelerated AI workloads,https://techcrunch.com/2024/05/21/nvidia-unveils-next-gen-a100s/,Technology,Article/News
+doc_217,Adobe integrates Firefly AI features directly into Photoshop,https://techcrunch.com/2023/11/07/adobe-firefly-photoshop/,Technology,Article/News
+doc_218,Spotify’s new AI recommender learns your taste faster,https://techcrunch.com/2023/09/12/spotify-uses-ai-to-recommend-songs/,Lifestyle/Culture,Article/News
+doc_219,TikTok tests AI avatars that mimic your expressions,https://techcrunch.com/2024/04/17/tiktok-tests-ai-avatars/,Lifestyle/Culture,Article/News
+doc_220,Zoom launches AI meeting assistant to transcribe and summarize calls,https://techcrunch.com/2023/10/25/zoom-launches-ai-meeting-assistant/,Technology,Article/News
+doc_221,"IBM unveils watsonx, its next-generation AI and data platform",https://techcrunch.com/2023/11/14/ibm-unveils-watsonx/,Business/Finance,Article/News
+doc_222,Intel debuts Gaudi 3 AI chip with upgraded performance,https://techcrunch.com/2024/03/04/intel-gaudi3-ai-chip/,Technology,Article/News
+doc_223,Meta AI now offers real-time language translation in Messenger,https://techcrunch.com/2024/01/09/meta-ai-real-time-translation/,Technology,Article/News
+doc_224,Cisco adds generative AI capabilities to its networking gear,https://techcrunch.com/2024/06/03/cisco-ai-networking/,Technology,Article/News
+doc_225,OpenAI rolls out new ChatGPT Enterprise features for corporate customers,https://techcrunch.com/2024/02/21/openai-chatgpt-enterprise-features/,Business/Finance,Article/News
+doc_226,Future of Jobs Report 2023 — World Economic Forum,https://www3.weforum.org/docs/WEF_Future_of_Jobs_2023.pdf,Business/Finance,Report/Study
+doc_227,"“Sustainable Tourism Development: A Critique” (2003, Journal of Sustainable Tourism)",https://doi.org/10.1080/09669580308667211,Tourism,Research/Academic
+doc_228,"“Sustainability and Marketing in Tourism: Contexts, Paradoxes, Approaches, Challenges & Potential” (2017, JST)",https://doi.org/10.1080/09669582.2017.1322824,Tourism,Research/Academic
+doc_229,"“Global Trends in Sustainable Tourism Research” (2019, Journal of Sustainable Tourism)",https://doi.org/10.1080/09669582.2018.1457992,Tourism,Research/Academic
+doc_230,"“Barriers to Implementing Sustainable Tourism Policy in Mass-Tourism Destinations” (2010, Tourism & Hospitality Planning & Development)",https://doi.org/10.1080/1479053X.2010.502386,Tourism,Research/Academic
+doc_231,"“Policy Learning and Policy Failure in Sustainable Tourism Governance” (2011, Journal of Policy Research in Tourism, Leisure & Events)",https://doi.org/10.1080/19407963.2011.576870,Tourism,Research/Academic
+doc_232,"“Traditions of Sustainability in Tourism Studies” (2006, Annals of Tourism Research)",https://doi.org/10.1016/j.annals.2005.06.004,Tourism,Research/Academic
+doc_233,"“Sustainable Tourism: Research and Reality” (2012, Annals of Tourism Research)",https://doi.org/10.1016/j.annals.2012.02.003,Tourism,Research/Academic
+doc_234,"“The Global–Local Nexus in Sustainable Tourism Development” (2013, Journal of Sustainable Tourism)",https://doi.org/10.1080/09669582.2013.835703,Tourism,Research/Academic
+doc_235,"“Natural Resource Use and Impacts in Sustainable Tourism” (2015, Tourism Management)",https://doi.org/10.1016/j.tourman.2014.08.013,Tourism,Research/Academic
+doc_236,"“Measuring Progress Toward Sustainable Tourism” (2018, Tourism Management Perspectives)",https://doi.org/10.1016/j.tmp.2018.04.003,Tourism,Research/Academic
+doc_237,"Carbon Footprint of Tourism Destinations: A Review of Methodologies & Case Studies (2019, Tourism Management)",https://doi.org/10.1016/j.tourman.2018.09.017,Tourism,Research/Academic
+doc_238,"Residents’ Perceptions of Tourism Impacts and Sustainable Development (2016, Journal of Sustainable Tourism)",https://doi.org/10.1080/09669582.2015.1048417,Tourism,Research/Academic
+doc_239,"Circular Economy in Tourism: A Review (2021, Sustainability)",https://doi.org/10.3390/su13084233,Tourism,Research/Academic
+doc_240,"Community-Based Tourism and Sustainable Livelihoods (2018, Tourism Planning & Development)",https://doi.org/10.1080/21568316.2017.1312506,Tourism,Research/Academic
+doc_241,"Measuring Tourism Carrying Capacity: A Systematic Review (2022, Ecological Indicators)",https://doi.org/10.1016/j.ecolind.2021.108357,Tourism,Research/Academic
+doc_242,"Overtourism and Sustainable Tourism Management (2020, Journal of Travel Research)",https://doi.org/10.1177/0047287519883039,Tourism,Research/Academic
+doc_243,"Green Hotel Practices and Guest Satisfaction (2018, International Journal of Hospitality Management)",https://doi.org/10.1016/j.ijhm.2018.02.012,Tourism,Research/Academic
+doc_244,"Climate-Change Adaptation in Coastal Tourism (2020, Journal of Sustainable Tourism)",https://doi.org/10.1080/09669582.2019.1601839,Tourism,Research/Academic
+doc_245,"Food-Waste Reduction in the Hospitality Industry (2021, International Journal of Hospitality Management)",https://doi.org/10.1016/j.ijhm.2020.102681,Tourism,Research/Academic
+doc_246,"Ecotourism and Biodiversity Conservation (2015, Journal of Sustainable Tourism)",https://doi.org/10.1080/09669582.2015.1010185,Tourism,Research/Academic
+doc_247,"Social Media Influence on Sustainable Tourist Behaviour (2019, Current Issues in Tourism)",https://doi.org/10.1080/13683500.2018.1468288,Tourism,Research/Academic
+doc_248,"Smart Tourism for Sustainability (2020, Tourism Management)",https://doi.org/10.1016/j.tourman.2019.104009,Tourism,Research/Academic
+doc_249,"Renewable-Energy Adoption in Island Tourism (2017, Renewable & Sustainable Energy Reviews)",https://doi.org/10.1016/j.rser.2017.01.019,Tourism,Research/Academic
+doc_250,"Inclusive Tourism and Accessibility (2017, Tourism Management Perspectives)",https://doi.org/10.1016/j.tmp.2017.09.002,Tourism,Research/Academic
+doc_251,"Volunteer Tourism and the SDGs (2021, Journal of Sustainable Tourism)",https://doi.org/10.1080/09669582.2020.1770203,Tourism,Research/Academic
+doc_252,"Sustainable Tourism Indicators: A Meta-Analysis (2019, Tourism Management Perspectives)",https://doi.org/10.1016/j.tmp.2018.12.001,Tourism,Research/Academic
+doc_253,"Landscape Stewardship in Rural Tourism (2018, Tourism Geographies)",https://doi.org/10.1080/14616688.2018.1470199,Tourism,Research/Academic
+doc_254,"Cultural Heritage and Sustainable Urban Tourism (2020, Sustainability)",https://doi.org/10.3390/su12083277,Tourism,Research/Academic
+doc_255,"Plastic-Waste Mitigation in Marine Tourism (2022, Marine Pollution Bulletin)",https://doi.org/10.1016/j.marpolbul.2022.113341,Tourism,Research/Academic
+doc_256,"Environmental Certification and Hotel Performance (2019, Journal of Cleaner Production)",https://doi.org/10.1016/j.jclepro.2019.118555,Tourism,Research/Academic
+doc_257,Global Education Monitoring Report 2023: Technology in Education,https://unesdoc.unesco.org/ark:/48223/pf0000382164.locale=en,Education,Report/Study
+doc_258,Education at a Glance 2023 — OECD Indicators,https://www.oecd.org/education/education-at-a-glance/2023/eag-2023.pdf,Education,Report/Study
+doc_259,"PISA 2022 Results, Vol. I: Student Performance",https://www.oecd.org/pisa/PISA-2022-results-volume-I.pdf,Education,Report/Study
+doc_260,Learning Poverty Brief 2022 — World Bank,https://thedocs.worldbank.org/en/doc/7ed34514996447170e154e9e06cb55e8-0050062022/related/2022-Learning-Poverty-Brief.pdf,Education,Report/Study
+doc_261,Global Higher Education Sector Outlook 2023 (Deloitte),https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Public-Sector/gx-edu-global-higher-education-sector-outlook-2023.pdf,Education,Report/Study
+doc_262,"The Future of Jobs and Skills in Education (WEF, 2016 sector briefing)",https://www3.weforum.org/docs/GAC16_Future_of_Jobs.pdf,Business/Finance,Report/Study
+doc_263,"“Artificial Intelligence in Education: Promises and Implications” (Computers & Education, 2019)",https://doi.org/10.1016/j.compedu.2019.103832,Technology,Research/Academic
+doc_264,"“Gamification in Education: Engagement Effects” (Frontiers in Education, 2020)",https://doi.org/10.3389/feduc.2020.00020,Education,Research/Academic
+doc_265,"Project-Based Learning Research Review (Edutopia, 2023 blog)",https://www.edutopia.org/project-based-learning-research,Education,Article/News
+doc_266,"Digital Learning: Education in the Fourth Industrial Revolution (UNESCO, 2020)",https://unesdoc.unesco.org/ark:/48223/pf0000375704,Education,Report/Study
+doc_267,Global Education Monitoring Report 2022: Non-State Actors,https://unesdoc.unesco.org/ark:/48223/pf0000380951.locale=en,Education,Report/Study
+doc_268,Education Finance Watch 2023,https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099004503292310698/idu0b39ee6160833f041860989303a451602c366,Business/Finance,Report/Study
+doc_269,TALIS 2018 Insights and Interpretations,https://www.oecd.org/education/talis/TALIS2018_Insights_and_Interpretations.pdf,Education,Report/Study
+doc_270,Prioritising Learning During COVID-19 (GEEAP 2022),https://documents.worldbank.org/en/publication/documents-reports/documentdetail/891971638804396610,Education,Report/Study
+doc_271,Coursera Global Skills Report 2023,https://www.coursera.org/content/dam/Coursera/Assets/skills-reports/global-skills-report/Coursera_GlobalSkillsReport2023.pdf,Education,Report/Study
+doc_272,World Development Report 2018: Learning to Realize Education’s Promise,https://openknowledge.worldbank.org/bitstream/handle/10986/28340/9781464810961.pdf,Education,Report/Study
+doc_273,OECD Digital Education Outlook 2021,https://www.oecd-ilibrary.org/education/oecd-digital-education-outlook-2021_b71f4606-en.pdf,Technology,Report/Study
+doc_274,UNICEF Education Strategy 2019-2030,https://www.unicef.org/media/58146/file/UNICEF-education-strategy-2019-2030.pdf,Politics/Law,Report/Study
+doc_275,UNESCO ICT in Education Report 2023,https://unesdoc.unesco.org/ark:/48223/pf0000384899.locale=en,Technology,Report/Study
+doc_276,Reimagining Our Futures Together (UNESCO 2021),https://unesdoc.unesco.org/ark:/48223/pf0000379707.locale=en,Education,Report/Study
+doc_277,The Flipped Classroom: Advantages & Challenges (Computers & Education 2017),https://doi.org/10.1016/j.compedu.2016.12.002,Education,Research/Academic
+doc_278,MOOCs for Continuing Professional Development (Computers & Education 2019),https://doi.org/10.1016/j.compedu.2018.10.002,Education,Research/Academic
+doc_279,Effectiveness of Virtual Reality for Learning (Computers & Education 2020),https://doi.org/10.1016/j.compedu.2020.103910,Technology,Research/Academic
+doc_280,Student Engagement in Online Environments (Educational Research Review 2023),https://doi.org/10.1016/j.edurev.2022.100424,Education,Research/Academic
+doc_281,Learning Loss From COVID-19 School Closures (Nature Human Behaviour 2022),https://doi.org/10.1038/s41562-021-01297-8,Health,Research/Academic
+doc_282,Artificial Intelligence in Higher Education: Review (ETHE 2020),https://doi.org/10.1186/s41239-020-00218-x,Education,Research/Academic
+doc_283,Gamified Learning Meta-Analysis (JCAL 2019),https://doi.org/10.1111/jcal.12399,Education,Research/Academic
+doc_284,Class Size and Student Achievement (Educational Research Review 2018),https://doi.org/10.1016/j.edurev.2018.06.001,Education,Research/Academic
+doc_285,STEM Education in Primary Schools (IJSTEM 2021),https://doi.org/10.1186/s40594-021-00296-0,Education,Research/Academic
+doc_286,Open Educational Resources: Systematic Review (EIT 2020),https://doi.org/10.1007/s10639-019-10065-2,Education,Research/Academic
+doc_287,EdTech Evidence Review 2022 (EdTech Hub),https://docs.edtechhub.org/lib/P8QQVQHU/download/2SV67896/edtech-hub-2022-edtech-evidence-review.pdf,Technology,Report/Study
+doc_288,Trends Shaping Education 2022 (OECD),https://www.oecd.org/education/tse-2022.pdf,Business/Finance,Report/Study
+doc_289,Education Under Attack 2022,https://protectingeducation.org/wp-content/uploads/documents/documents_eea2022.pdf,Politics/Law,Report/Study
+doc_290,Equity in Education: Breaking Down Barriers (OECD 2018),https://www.oecd-ilibrary.org/education/equity-in-education_9789264073234-en.pdf,Education,Report/Study
+doc_291,Mobile Learning for Mathematics: Review (Computers & Education 2020),https://doi.org/10.1016/j.compedu.2020.103915,Technology,Research/Academic
+doc_292,Augmented Reality in Science Education (Computers & Education 2018),https://doi.org/10.1016/j.compedu.2018.11.005,Research/Academia,Research/Academic
+doc_293,Perceptions of Online Learning Quality (Distance Education 2020),https://doi.org/10.1080/01587919.2020.1869528,Education,Research/Academic
+doc_294,EU Digital Education Action Plan 2021-2027,https://education.ec.europa.eu/sites/default/files/document-library-docs/deap-communication-sept2020_en.pdf,Business/Finance,Report/Study
+doc_295,Teaching During COVID-19 Highlights (OECD 2020),https://www.oecd.org/education/talis/Teaching_during_COVID-19_Highlights.pdf,Education,Report/Study
+doc_296,State of the Global Education Crisis (World Bank/UNESCO/UNICEF 2021),https://documents.worldbank.org/en/publication/documents-reports/documentdetail/416991638768297704,Education,Report/Study
+doc_297,Global Teacher Status Index 2018 (Varkey Foundation),https://www.varkeyfoundation.org/media/filer_public/0c/51/0c5175de-9165-4f1e-a015-d91030d29e3e/global_teacher_status_index_2018.pdf,Education,Report/Study
+doc_298,Learning Passport: R&D Brief (UNICEF 2021),https://www.unicef.org/media/93511/file/The-Learning-Passport-Research-and-Development-Brief.pdf,Education,Report/Study
+doc_299,GPE Results Report 2023,https://assets.globalpartnership.org/s3fs-public/2023-09/gpe-results-report-2023.pdf,Politics/Law,Report/Study
+doc_300,Homework and Student Achievement: Meta-Analysis (RER 2022),https://doi.org/10.3102/00346543221102232,Education,Research/Academic
+doc_301,Teacher Burnout and Student Outcomes (TATE 2019),https://doi.org/10.1016/j.tate.2019.102356,Business/Finance,Research/Academic
+doc_302,How AI Is Changing Assessment in the Classroom (EdSurge 2023),https://www.edsurge.com/news/2023-05-15-how-ai-is-changing-assessment-in-the-classroom,Education,Article/News
+doc_303,Project-Based Learning That Works in Remote Settings (Edutopia 2022),https://www.edutopia.org/article/project-based-learning-remote,Education,Article/News
+doc_304,Global Learning Crisis Threatens 70% of 10-Year-Olds (The Guardian 2022),https://www.theguardian.com/global-development/2022/jun/23/global-learning-crisis-threatens-70-of-10-year-olds,Education,Article/News
+doc_305,Pandemic’s Effects on U.S. Test Scores (NY Times 2023),https://www.nytimes.com/2023/02/09/us/covid-education-test-scores.html,Health,Article/News
+doc_306,World Bank EdStats Data Handbook 2023,https://datatopics.worldbank.org/education/files/EdStats%20Handbook_2023.pdf,Education,Report/Study
+doc_307,"The Human Resources Reckoning (2023, Financial Times)",https://www.ft.com/content/fddaa145-af5f-4dd2-9647-0e4b32040a95,Business/Finance,Article/News
+doc_308,"Young People Are Taking Over the Workplace (2023, WSJ)",https://www.wsj.com/lifestyle/careers/gen-z-workforce-expectation-differences-a07c5915,Business/Finance,Article/News
+doc_309,Human Resource Management Review (ScienceDirect),https://www.sciencedirect.com/journal/human-resource-management-review,Business/Finance,Research/Academia
+doc_310,Human Resource Management Journal (Wiley),https://onlinelibrary.wiley.com/journal/17488583,Business/Finance,Research/Academia
+doc_311,Journal of Human Resources,https://jhr.uwpress.org/,Business/Finance,Research/Academia
+doc_312,Strategic Human Resource Management and Firm Performance (2022),https://doi.org/10.1016/j.hrmr.2022.100957,Business/Finance,Research/Academic
+doc_313,Improving Communication Culture in Manufacturing (2024),https://www.onlinewhitepapers.com/human-resources/improving-communication-culture-manufacturing/,Business/Finance,Report/Study
+doc_314,"How HR Can Lead Culture Transformation (2023, SHRM)",https://www.shrm.org/hr-today/news/hr-magazine/summer2023/pages/how-hr-can-lead-culture-transformation.aspx,Business/Finance,Article/News
+doc_315,HR Trends for 2024 (AIHR),https://www.aihr.com/blog/hr-trends/,Business/Finance,Article/News
+doc_316,Top HR Challenges in 2023 (Gartner),https://www.gartner.com/en/articles/top-5-priorities-for-hr-leaders-in-2023,Business/Finance,Report/Study
+doc_317,State of People Strategy 2023 (Lattice),https://lattice.com/library/the-state-of-people-strategy-2023,Business/Finance,Report/Study
+doc_318,"AI in HR: Transforming the Employee Lifecycle (IBM, 2023)",https://www.ibm.com/downloads/cas/VQZ9NJZA,Technology,Report/Study
+doc_319,Deloitte Human Capital Trends Report (2023),https://www2.deloitte.com/content/dam/Deloitte/global/Documents/HumanCapital/hc-trends-2023.pdf,Business/Finance,Report/Study
+doc_320,Global Talent Trends 2023 (LinkedIn),https://business.linkedin.com/talent-solutions/global-talent-trends,Business/Finance,Report/Study
+doc_321,Reinventing HR: Google Re:Work Guide,https://rework.withgoogle.com/guides/,Business/Finance,Guide/Manual
+doc_322,"HR Scorecard: Linking People, Strategy, and Performance (Book Summary)",https://hbr.org/product/the-hr-scorecard-linking-people-strategy-and-performance/4328-HBK-ENG,Business/Finance,Informational Text
+doc_323,"HR in the Age of Automation (World Economic Forum, 2022)",https://www3.weforum.org/docs/WEF_Future_of_Jobs_2020.pdf,Technology,Report/Study
+doc_324,"Human Resource Planning Guide (AIHR, 2024)",https://www.aihr.com/blog/human-resource-planning/,Business/Finance,Guide/Manual
+doc_325,"Employee Experience Index (Qualtrics & MIT Sloan, 2022)",https://www.qualtrics.com/employee-experience/employee-experience-index/,Business/Finance,Report/Study
+doc_326,What is Strategic HRM? (Chartered Institute of Personnel and Development),https://www.cipd.org/uk/knowledge/factsheets/strategic-hrm-factsheet/,Business/Finance,Informational Text
+doc_327,"HR Metrics and Workforce Analytics (AIHR, 2023)",https://www.aihr.com/blog/hr-metrics/,Business/Finance,Guide/Manual
+doc_328,SHRM 2023 HR Competency Model,https://www.shrm.org/learningandcareer/competency-model/pages/default.aspx,Guide/Manual,Informational Text
+doc_329,2023 Global Human Capital Trends (Deloitte),https://www2.deloitte.com/us/en/insights/focus/human-capital-trends.html,Business/Finance,Report/Study
+doc_330,HR Policy Manual Template (Society for Nonprofits),https://www.snpo.org/publications/hrpolicies.pdf,Politics/Law,Guide/Manual
+doc_331,"Ethics in Human Resource Management (2019, ResearchGate)",https://www.researchgate.net/publication/335932469_Ethics_in_Human_Resource_Management,Business/Finance,Research/Academic
+doc_332,"Human Resource Management Capstone Guide (Coursera, 2023)",https://www.coursera.org/learn/human-resource-management-capstone,Business/Finance,Education
+doc_333,Top 10 Global HR Trends for 2024 (Forbes),https://www.forbes.com/sites/forbeshumanresourcescouncil/2023/12/27/top-10-hr-trends-to-watch-in-2024/,Business/Finance,Article/News
+doc_334,Workforce of the Future 2030 (PwC),https://www.pwc.com/gx/en/services/people-organisation/workforce-of-the-future/workforce-of-the-future-the-competing-forces-shaping-2030-pwc.pdf,Business/Finance,Report/Study
+doc_335,Understanding the Employee Lifecycle (AIHR),https://www.aihr.com/blog/employee-lifecycle/,Business/Finance,Article/News
+doc_336,SHRM Workplace Immigration Guide,https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/workplace-immigration-guide.aspx,Business/Finance,Guide/Manual
+doc_337,"DEI in HR: Diversity, Equity & Inclusion Toolkit (Catalyst, 2022)",https://www.catalyst.org/wp-content/uploads/2022/09/catalyst-dei-toolkit.pdf,Business/Finance,Guide/Manual
+doc_338,"Human Resource Risk Management Strategies (2023, SafetyCulture)",https://safetyculture.com/topics/human-resource-risk-management/,Business/Finance,Guide/Manual
+doc_339,World Bank HR Strategic Plan 2020-2025,https://thedocs.worldbank.org/en/doc/982731511086279643-0070022017/original/HRStrategy.pdf,Politics/Law,Report/Study
+doc_340,Digital HR: Tech Tools for 2024 (AIHR),https://www.aihr.com/blog/hr-technology/,Technology,Article/News
+doc_341,Harvard Business Review: HR’s Role in Strategy Execution (2023),https://hbr.org/2005/07/human-resources-strategy,Business/Finance,Research/Academic
+doc_342,People Analytics: A Practical Guide (Josh Bersin),https://joshbersin.com/2023/02/a-practical-guide-to-people-analytics/,Business/Finance,Article/News
+doc_343,"The Role of HR in ESG Strategy (McKinsey, 2023)",https://www.mckinsey.com/business-functions/people-and-organizational-performance/our-insights/the-role-of-hr-in-esg,Environment/Sustainability,Report/Study
+doc_344,SHRM COVID-19 Workforce Survey,https://www.shrm.org/hr-today/trends-and-forecasting/research-and-surveys/pages/covid-19-research.aspx,Business/Finance,Report/Study
+doc_345,Compensation Benchmarking Guide (Payscale),https://www.payscale.com/compensation-trends/guide-to-compensation-benchmarking/,Business/Finance,Guide/Manual
+doc_346,The AI-Driven HR Function (MIT Sloan Management Review),https://sloanreview.mit.edu/article/how-to-lead-an-ai-powered-human-resources-function/,Business/Finance,Research/Academic
+doc_347,A Research Paper on Cryptography (2019),https://ijtre.com/wp-content/uploads/2021/10/2019070403.pdf,Technology,Research/Academic
+doc_348,Cryptography.pdf - EA Journals (2021),https://www.eajournals.org/wp-content/uploads/Cryptography.pdf,Security,Research/Academic
+doc_349,Cryptography: A Review (2021),https://ijaem.net/issue_dcp/Cryptography%20A%20Review.pdf,Security,Research/Academic
+doc_350,A Review Paper on Cryptography (2019),https://www.researchgate.net/publication/334418542_A_Review_Paper_on_Cryptography,Security,Research/Academic
+doc_351,Overview of Cryptography (2009),https://www.researchgate.net/publication/315029214_Overview_of_Cryptography,Security,Research/Academic
+doc_352,New Directions in Cryptography (1976),https://www-ee.stanford.edu/~hellman/publications/24.pdf,Security,Research/Academia
+doc_353,Communication Theory of Secrecy Systems (1949),https://en.wikipedia.org/wiki/Communication_Theory_of_Secrecy_Systems,Research/Academia,Foundational Paper
+doc_354,Quantum Cryptography: Key Distribution and Beyond (2018),https://arxiv.org/abs/1802.05517,Technology,Research/Academic
+doc_355,Security Aspects of Practical Quantum Cryptography (1999),https://arxiv.org/abs/quant-ph/9911054,Security,Research/Academic
+doc_356,Quantum Cryptography Using Larger Alphabets (1999),https://arxiv.org/abs/quant-ph/9910095,Research/Academia,Research/Academic
+doc_357,A Graduate Course in Applied Cryptography (2017),https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_4.pdf,Security,Education
+doc_358,Cryptography: An Introduction (3rd Edition) (2010),https://www.cs.umd.edu/~waa/414-F11/IntroToCrypto.pdf,Technology,Education
+doc_359,An Overview of Cryptography (2005),https://www.cs.princeton.edu/~chazelle/courses/BIB/overview-crypto.pdf,Security,Education
+doc_360,Cryptography - Department of Computer Science and Technology (2005),https://www.cl.cam.ac.uk/archive/rja14/Papers/SE-05.pdf,Research/Academia,Education
+doc_361,Encyclopedia of Cryptography and Security (2005),https://en.wikipedia.org/wiki/Encyclopedia_of_Cryptography_and_Security,Security,Research/Academia
+doc_362,Hold the Photons! (2005),https://www.wired.com/2005/12/hold-the-photons,Security,Article/News
+doc_363,NIST's Postquantum Cryptography Standards: 'This Is the Start of the Race' (2024),https://deloitte.wsj.com/cio/nists-postquantum-cryptography-standards-this-is-the-start-of-the-race-6e279b49,Security,Article/News
+doc_364,Cryptology ePrint Archive,https://eprint.iacr.org/,Research/Academic,Research/Academia
+doc_365,Security Protocols Open Repository,https://en.wikipedia.org/wiki/Security_Protocols_Open_Repository,Security,Research/Academia
+doc_366,Index of Cryptography Articles,https://en.wikipedia.org/wiki/Index_of_cryptography_articles,Research/Academia,Research/Academia
+doc_367,Advancing Scalability in Decentralized Storage: A Novel Approach to Proof-of-Replication via Polynomial Evaluation (2024),https://iacr.org/cryptodb/data/conf.php?venue=crypto&year=2024,Transportation,Research/Academic
+doc_368,Report on Post-Quantum Cryptography (2024),https://bidenwhitehouse.archives.gov/wp-content/uploads/2024/07/REF_PQC-Report_FINAL_Send.pdf,Politics/Law,Report/Study
+doc_369,The Post-Quantum Cryptography Transition: Making Progress But Still a Long Road Ahead (2025),https://cra.org/wp-content/uploads/2025/01/2024-2025-CRA-Quad-Paper_-The-Post-Quantum-Cryptography-Transition_-Making-Progress-But-Still-a-Long-Road-Ahead.pdf,Technology,Whitepaper
+doc_370,State of Crypto Report 2024,https://a16zcrypto.com/posts/article/state-of-crypto-report-2024/,Technology,Report/Study
+doc_371,Agile Cryptography for the Banking Industry (2024),https://academy.sandboxaq.com/marketing-collateral-qsg/102709,Business/Finance,Whitepaper
+doc_372,The New NIST Standards Are Here: What Does It Mean for PQC in 2024?,https://pqshield.com/new-whitepaper-the-new-nist-standards-are-here-what-does-it-mean-for-pqc-in-2024/,Security,Whitepaper
+doc_373,"Post Quantum Cryptography Awareness is High, But Widespread Preparation Lags (2024)",https://www.entrust.com/company/newsroom/post-quantum-cryptography-awareness-is-high-but-widespread-action-lags-finds-2024-global-entrust-report,Business/Finance,Report/Study
+doc_374,NIST Releases Draft Report on Transition to Post-Quantum Cryptography (2024),https://www.quantum.gov/nist-draft-report-on-pqc-transition/,Technology,Report/Study
+doc_375,"2024 Global PKI, IoT and Post Quantum Cryptography Study",https://ponemonsullivanreport.com/2024/08/2024-global-pki-iot-and-post-quantum-cryptography-study/,Security,Report/Study
+doc_376,Global Encryption Trends – 2024,https://www.encryptionconsulting.com/global-encryption-trends-2024/,Security,Report/Study
+doc_377,Selected Areas in Cryptography – SAC 2024,https://link.springer.com/book/10.1007/978-3-031-82852-2,Technology,Research/Academia
+doc_378,Top 74 Cryptography Papers Published in 2024,https://scispace.com/journals/cryptography-2yifskpu/2024,Research/Academia,Research/Academia
+doc_379,"Cryptography, Volume 8, Issue 2 (June 2024)",https://www.mdpi.com/2410-387X/8/2,Research/Academia,Research/Academia
+doc_380,"Cryptography, Volume 8, Issue 4 (December 2024)",https://www.mdpi.com/2410-387X/8/4,Technology,Research/Academia
+doc_381,Cryptography and Security Sep 2024,https://www.arxiv.org/list/cs.CR/2024-09?show=2000&skip=85,Security,Research/Academia
+doc_382,Safeguarding U.S. Secrets from Quantum Computers Just Got Easier (2024),https://www.axios.com/2024/08/13/nist-post-quantum-cryptography-encryption,Security,Article/News
+doc_383,Battle Begins to Stop Quantum Computers Smashing Cyber Defenses (2024),https://www.thetimes.co.uk/article/battle-begins-to-stop-quantum-computers-smashing-cyber-defences-rzmlwqw7f,Security,Article/News
+doc_384,The Quantum Apocalypse Is Coming. Be Very Afraid (2025),https://www.wired.com/story/q-day-apocalypse-quantum-computers-encryption,Security,Article/News
+doc_385,UK Cybersecurity Agency Warns Over Risk of Quantum Hackers (2025),https://www.theguardian.com/technology/2025/mar/20/uk-cybersecurity-agency-quantum-hackers,Technology,Article/News
+doc_386,"BFSI Not Ready to Tackle Quantum Computing Threats, Says Study (2025)",https://timesofindia.indiatimes.com/city/hyderabad/bfsi-not-ready-to-tackle-quantum-computing-threats-says-study/articleshow/121170313.cms,Business/Finance,Article/News
+doc_387,Transportation Statistical Annual Report 2024,https://www.bts.gov/newsroom/transportation-statistical-annual-report-2024,Business/Finance,Report/Study
+doc_388,Critical Issues in Transportation for 2024 and Beyond,https://nap.nationalacademies.org/catalog/27432/critical-issues-in-transportation-for-2024-and-beyond,Politics/Law,Report/Study
+doc_389,Understanding AI Risks in Transportation (September 2024),https://www.transportation.gov/sites/dot.gov/files/2024-09/HASS_COE_AI_Assurance_Whitepaper_AI_Risk_Sep2024.pdf,Report/Study,Whitepaper
+doc_390,Annual Performance Report 2024,https://www.transportation.gov/mission/budget/annual-performance-report-2024,Business/Finance,Report/Study
+doc_391,The State of Freight – October 2024,https://www.freightwaves.com/news/white-paper-the-state-of-freight-october-2024,Business/Finance,Whitepaper
+doc_392,Transportation White Paper 2024 - Disability Rights Pennsylvania,https://www.breakthroughfuel.com/resources/exclusive-content/2024-state-of-transportation-report/,General,Whitepaper
+doc_393,2024 State of Transportation Report: Trends and Challenges,https://www.breakthroughfuel.com/resources/exclusive-content/2024-state-of-transportation-report/,Business/Finance,Report/Study
+doc_394,Transport and Logistics Industry Risks and Opportunities 2024,https://www.onlinewhitepapers.com/finance/logistics-risks-opportunities/,Business/Finance,Whitepaper
+doc_395,US Future of Transportation Report 2024,https://store.mintel.com/report/us-future-of-transportation-market-report,Business/Finance,Report/Study
+doc_396,Gallagher Transportation Sector Perspectives 2024 — State of the Sector,https://www.ajg.com/news-and-insights/transportation-2024-state-of-the-sector/,Business/Finance,Whitepaper
+doc_397,Responsible Federated Learning in Smart Transportation: Outlooks and Challenges (2024),https://arxiv.org/abs/2404.06777,Technology,Research/Academic
+doc_398,Quantum Computing in Intelligent Transportation Systems: A Survey (2024),https://arxiv.org/abs/2406.00862,Technology,Research/Academic
+doc_399,"Graph Neural Networks in Intelligent Transportation Systems: Advances, Applications and Trends (2024)",https://arxiv.org/abs/2401.00713,Technology,Research/Academic
+doc_400,Advancing Object Detection in Transportation with Multimodal Large Language Models (2024),https://arxiv.org/abs/2409.18286,Technology,Research/Academic
+doc_401,Transportation Research Part A: Policy and Practice,https://www.sciencedirect.com/journal/transportation-research-part-a-policy-and-practice,General,Research/Academia
+doc_402,"Transportation Research Interdisciplinary Perspectives, Vol 24",https://www.sciencedirect.com/journal/transportation-research-interdisciplinary-perspectives/vol/24/suppl/C,Research/Academia,Research/Academia
+doc_403,Transportation Research Record,https://journals.sagepub.com/home/trr,Research/Academia,Research/Academia
+doc_404,"Journal of Transportation Engineering, Part A: Systems",https://ascelibrary.org/journal/jtepbs,Technology,Research/Academia
+doc_405,Transportation (Springer Journal),https://link.springer.com/journal/11116,Tourism,Research/Academia
+doc_406,"Research Digest, January 2024 - Center for Transportation Research",https://ctr.utexas.edu/2024/01/24/research-digest-january-2024-transportation-research-board-publications/,Report/Study,Report/Study
+doc_407,Green corridors beat clock: Delhi traffic police's lifesaving routes give transplant patients second chance (2025),https://timesofindia.indiatimes.com/city/delhi/green-corridors-beat-clock-delhi-traffic-polices-lifesaving-routes-give-transplant-patients-second-chance/articleshow/121480470.cms,Health,Article/News
+doc_408,"NTSB releases report on fatal Illinois school bus, semi-truck crash that killed 5 (2025)",https://www.myjournalcourier.com/news/article/ntsb-illinois-school-bus-crash-20310835.php,Transportation,Article/News
+doc_409,Seattle drivers face growing traffic woes (2025),https://www.axios.com/local/seattle/2025/01/06/seattle-traffic-congestion-2024,Transportation,Article/News
+doc_410,"US drivers log 3.28 trillion miles in 2024, setting new record (2025)",https://www.reuters.com/world/us/us-drivers-log-328-trillion-miles-2024-setting-new-record-2025-03-05/,Transportation,Article/News
+doc_411,"MTA's emergency exits are a gauntlet of dangers like exposed wiring, broken handrails and missing lights: audit (2024)",https://www.reuters.com/world/us/us-drivers-log-328-trillion-miles-2024-setting-new-record-2025-03-05/,Business/Finance,Article/News
+doc_412,"Gondolas, driverless trucks and more transportation initiatives in Houston reported during 2024",https://www.houstonchronicle.com/news/houston-texas/trending/article/2024-transportation-services-houston-20002794.php,Technology,Article/News
+doc_413,"US faces growing crisis over high traffic deaths, NTSB chair says (2024)",https://www.reuters.com/business/healthcare-pharmaceuticals/us-faces-growing-public-health-crisis-over-traffic-deaths-ntsb-chair-says-2024-11-19/,Health,Article/News
+doc_414,Key Findings from the 2024 State of School Transportation Report,https://www.hopskipdrive.com/blog/key-findings-2024-state-of-school-transportation-report/,Business/Finance,Article/News
+doc_415,Air Travel Consumer Reports for 2024,https://www.transportation.gov/resources/individuals/aviation-consumer-protection/air-travel-consumer-reports-2024,Business/Finance,Report/Study
+doc_416,Annual Report 2024 - Transportation Choices Coalition,https://transportationchoices.org/annual-report-2024/,Politics/Law,Report/Study
+doc_417,Transportation Research Circulars,https://www.trb.org/Publications/PubsTransportationResearchCirculars.aspx,Research/Academia,Research/Academia
+doc_418,Whitepapers - Transport Intelligence,https://ti-insight.com/research-papers/whitepapers/,Business/Finance,Report/Study
+doc_419,Whitepapers,https://www.ttnews.com/whitepapers,Business/Finance,Report/Study
+doc_420,Exploring the 2024 Transportation Industry Update,https://nltd.com/transportation_whitepaper,Business/Finance,Whitepaper
+doc_421,FTA Annual Research Report for Fiscal Year 2024,https://www.transit.dot.gov/research-innovation/fta-annual-research-report-fiscal-year-2024-report-0273,General,Report/Study
+doc_422,Transportation Statistics Annual Report 2024,https://govwhitepapers.com/whitepapers/transportation-statistics-annual-report-2024,Politics/Law,Report/Study
+doc_423,Advancing Highway Traffic Monitoring Through Strategic Research: 2024 Update,https://www.trb.org/Publications/PubsTransportationResearchCirculars.aspx,Research/Academia,Report/Study
+doc_424,Adjustment to Asphalt Mixtures to Meet Performance Testing Requirements and Allow Innovations,https://www.trb.org/Publications/PubsTransportationResearchCirculars.aspx,General,Report/Study
+doc_426,Opinions of the Court - 2024,https://www.supremecourt.gov/opinions/slipopinion/24,Politics/Law,Legal/Policy
+doc_427,2024 Year-End Report on the Federal Judiciary,https://www.supremecourt.gov/publicinfo/year-end/2024year-endreport.pdf,Politics/Law,Report/Study
+doc_428,Federal Judicial Caseload Statistics 2024,https://www.uscourts.gov/data-news/reports/statistical-reports/federal-judicial-caseload-statistics/federal-judicial-caseload-statistics-2024,Politics/Law,Report/Study
+doc_429,2024 National Money Laundering Risk Assessment,https://home.treasury.gov/system/files/136/2024-National-Money-Laundering-Risk-Assessment.pdf,Politics/Law,Report/Study
+doc_430,SBA Issues White Paper on its Size Standards Methodology (2024),https://www.sba.gov/article/2024/09/13/sba-issues-white-paper-its-size-standards-methodology,Politics/Law,Whitepaper
+doc_431,Copyright and Artificial Intelligence Report (Parts 1-3),https://www.copyright.gov/ai/,Politics/Law,Report/Study
+doc_432,2024 Guidance Update on Patent Subject Matter Eligibility,https://www.federalregister.gov/documents/2024/07/17/2024-15377/2024-guidance-update-on-patent-subject-matter-eligibility-including-on-artificial-intelligence,Politics/Law,Legal/Policy
+doc_433,New White Paper on FOIA Data,https://www.justice.gov/oip/blog/new-white-paper-foia-data-chief-foia-officer-council-technology-committees-working-group,Politics/Law,Whitepaper
+doc_434,Taxation of Digital Products Uniformity Project Draft White Paper,https://www.mtc.gov/wp-content/uploads/2024/09/Draft-Bundling-White-Paper-for-9-5-24-Work-Group-Meeting.pdf,Business/Finance,Report/Study
+doc_435,"Further Consolidated Appropriations Act, 2024",https://www.congress.gov/bill/118th-congress/house-bill/2882/text,Politics/Law,Legal/Policy
+doc_436,LawLLM: Law Large Language Model for the US Legal System (2024),https://arxiv.org/abs/2407.21065,Technology,Research/Academic
+doc_437,Challenges and Opportunities for Visual Analytics in Jurisprudence (2024),https://arxiv.org/abs/2412.06543,Research/Academia,Research/Academic
+doc_438,Large Legal Fictions: Profiling Legal Hallucinations in LLMs (2024),https://arxiv.org/abs/2401.01301,Politics/Law,Research/Academic
+doc_439,PILOT: Legal Case Outcome Prediction with Case Law (2024),https://arxiv.org/abs/2401.15770,Technology,Research/Academic
+doc_440,University of Minnesota Law School Legal Studies Research Paper Series Vol. 22 No. 5 (2024),https://law.umn.edu/news/2024-10-14-university-minnesota-law-school-legal-studies-research-paper-series-vol-22-no-5,Business/Finance,Research/Academic
+doc_441,Faculty Publications - Northwestern Law (2024),https://wwws.law.northwestern.edu/research-faculty/publications/search/fpsearchr.cfm?month=6&year=2024,Politics/Law,Research/Academic
+doc_442,SSRN Research Paper Series,https://www.law.virginia.edu/ssrn-research-paper-series,Business/Finance,Research/Academic
+doc_443,Articles in Law Reviews & Other Academic Journals,https://digitalcommons.wcl.american.edu/facsch_lawrev/,Politics/Law,Research/Academia
+doc_444,Academic Publications - Harvard Law School Center on the Legal Profession,https://clp.law.harvard.edu/knowledge-hub/academic-publications/,Business/Finance,Research/Academia
+doc_445,Scholarly Impact of Law School Faculties in 2024,https://z.umn.edu/9yr2,Research/Academia,Research/Academia
+doc_446,The legal profession in 2024: AI,https://hls.harvard.edu/today/harvard-law-expert-explains-how-ai-may-transform-the-legal-profession-in-2024/,Politics/Law,Article/News
+doc_447,The Most Viewed Legal Research Reports and Global Legal Monitor Articles of 2024,https://blogs.loc.gov/law/2025/01/the-most-viewed-legal-research-reports-and-global-legal-monitor-articles-of-2024/,Politics/Law,Article/News
+doc_448,Interactive Case Law Update - United States Sentencing Commission,https://www.ussc.gov/education/training-resources/interactive-case-law-update,Legal/Policy,Article/News
+doc_449,New York Official Reports: Law Reports Style Manual,https://nycourts.gov/reporter/Styman_menu.shtml,Research/Academia,Guide/Manual
+doc_450,Local Law Reports - NYCEM,https://www.nyc.gov/site/em/about/local-law-reports.page,Politics/Law,Report/Study
+doc_451,2024 State of the Legal Industry White Paper,https://www.leopardsolutions.com/thought-leadership/state-of-the-legal-industry-2024/,Business/Finance,Whitepaper
+doc_452,Generative AI Legal Landscape 2024,https://law.stanford.edu/publications/generative-ai-legal-landscape-2024-2/,Technology,Whitepaper
+doc_453,2024 General Counsel Report,https://www.ftitechnology.com/l/gc-report-2024,Politics/Law,Whitepaper
+doc_454,2024 Midyear Employment Law Update,https://hrwatchdog.calchamber.com/2024/08/free-2024-midyear-employment-law-update-white-paper/,Politics/Law,Whitepaper
+doc_455,2024 Report on the Legal Industry: Exploring Applications and Use Cases for Legal AI,https://www.robinai.com/whitepaper/2024-report-on-the-legal-industry-exploring-applications-and-use-cases-for-legal-ai,Business/Finance,Whitepaper
+doc_456,Future of Legal Services – White Paper 2024,https://the-innovative-lawyer.squarespace.com/s/future-of-legal-services-report-2024.pdf,Environment/Sustainability,Whitepaper
+doc_457,24 Voices for 2024,https://www.netdocuments.com/resource/24-voices-for-2024/,Technology,Whitepaper
+doc_458,Top Trends Influencing Legal Operations in 2024,https://info.simplelegal.com/legal-ops-trends-2024,Business/Finance,Whitepaper
+doc_459,Legal Issues and Business Considerations When Using Generative AI,https://www.iab.com/wp-content/uploads/2024/06/IAB_GenerativeAI_WhitePaper_June2024.pdf,Politics/Law,Whitepaper
+doc_460,2024 LAIR Report: Access to Justice through Data and Research,https://www.justice.gov/atj/media/1379491/dl,Politics/Law,Report/Study
+doc_461,Large Legal Fictions: Profiling Legal Hallucinations in Large Language Models (2024),https://arxiv.org/abs/2401.01301,Politics/Law,Research/Academic
+doc_462,Human Centered AI for Indian Legal Text Analytics (2024),https://arxiv.org/abs/2403.10944,Politics/Law,Research/Academic
+doc_463,PILOT: Legal Case Outcome Prediction with Case Law (2024),https://arxiv.org/abs/2401.15770,Legal/Policy,Research/Academic
+doc_464,Challenges and Opportunities for Visual Analytics in Jurisprudence (2024),https://arxiv.org/abs/2412.06543,Politics/Law,Research/Academic
+doc_465,"Laws, Volume 13, Issue 3 (June 2024)",https://www.mdpi.com/2075-471X/13/3,Politics/Law,Research/Academia
+doc_466,"Journal of Corporate Law Studies, Volume 24, Issue 2 (2024)",https://www.tandfonline.com/toc/rcls20/current,Politics/Law,Research/Academia
+doc_467,University of Minnesota Law School Legal Studies Research Paper Series Vol. 22 No. 5 (2024),https://law.umn.edu/news/2024-10-14-university-minnesota-law-school-legal-studies-research-paper-series-vol-22-no-5,Business/Finance,Research/Academic
+doc_468,Edinburgh Law School Legal Studies Research Paper Series - September 2024,https://www.law.ed.ac.uk/news-events/news/edinburgh-law-school-legal-studies-research-paper-series-september-2024,Politics/Law,Research/Academic
+doc_469,Case Research Paper Series in Legal Studies - SSRN,https://www.ssrn.com/link/case-legal-studies.html,Politics/Law,Research/Academic
+doc_470,Cornell Law School Legal Studies Research Paper Series - SSRN,https://www.ssrn.com/link/cornell-legal-studies.html,Politics/Law,Research/Academic
+doc_471,The Most Viewed Legal Research Reports and Global Legal Monitor Articles of 2024,https://blogs.loc.gov/law/2025/01/the-most-viewed-legal-research-reports-and-global-legal-monitor-articles-of-2024/,Politics/Law,Article/News
+doc_472,Interactive Case Law Update - United States Sentencing Commission,https://www.ussc.gov/education/training-resources/interactive-case-law-update,Legal/Policy,Article/News
+doc_473,New York Official Reports: Law Reports Style Manual,https://nycourts.gov/reporter/Styman_menu.shtml,Research/Academia,Guide/Manual
+doc_474,Law - Latest Research and News - Nature,https://www.nature.com/subjects/law,Research/Academia,Article/News
+doc_475,Legal Tech Connection - 2024 White Papers,https://www.legaltechconnection.com/2024/white-paper/,Business/Finance,Report/Study
+doc_476,The World in 2024: Ten Issues That Will Shape the International Agenda (2024),https://www.cidob.org/en/publications/world-2024-ten-issues-will-shape-international-agenda,Politics/Law,Report/Study
+doc_477,2024 CFR Annual Report,https://www.cfr.org/annual-report,Foreign Policy,Report/Study
+doc_478,2024 Comprehensive Annual Report on Public Diplomacy and International Broadcasting,https://www.state.gov/2024-comprehensive-annual-report-on-public-diplomacy-and-international-broadcasting/,Business/Finance,Report/Study
+doc_479,Foreign Policy White Paper – Fiji (2024),https://www.foreignaffairs.gov.fj/foreign-policy-white-paper-2/,Foreign Policy,Report/Study
+doc_480,2024 Carnegie California Global Affairs Survey,https://carnegieendowment.org/research/2024/10/2024-carnegie-california-global-affairs-survey,Politics/Law,Report/Study
+doc_481,Conflicts to Watch in 2024,https://www.cfr.org/report/conflicts-watch-2024,Politics/Law,Report/Study
+doc_482,Annual Report 2024/2025 – Atlantic Council,https://www.atlanticcouncil.org/in-depth-research-reports/report/2024-annual-report-how-programs-shaped-the-global-future/,Business/Finance,Report/Study
+doc_483,2024 Chicago Council Survey: America's Foreign Policy Future,https://globalaffairs.org/research/public-opinion-survey/americas-foreign-policy-future-public-opinion-and-2024-election,Politics/Law,Report/Study
+doc_484,World Migration Report 2024,https://en.wikipedia.org/wiki/World_Migration_Report,Business/Finance,Report/Study
+doc_485,Ten Global Affairs Reads of 2024,https://globalaffairs.org/commentary-and-analysis/blogs/ten-global-affairs-reads-2024,Lifestyle/Culture,Article/News
+doc_486,AI Technologies and International Relations (2024),https://www.tandfonline.com/doi/full/10.1080/03071847.2024.2392394,Politics/Law,Research/Academic
+doc_487,Governing Dual-Use Technologies: Lessons for AI Governance (2024),https://arxiv.org/abs/2409.02779,Politics/Law,Research/Academic
+doc_488,Escalation Risks from Language Models in Military and Diplomatic Decision-Making (2024),https://arxiv.org/abs/2401.03408,Politics/Law,Research/Academic
+doc_489,Persistent Hierarchy in Contemporary International Collaboration (2024),https://arxiv.org/abs/2410.13020,Global Collaboration,Research/Academic
+doc_490,The Global Governance of Artificial Intelligence: Next Steps for Research (2023),https://arxiv.org/abs/2305.11528,Politics/Law,Research/Academic
+doc_491,"International Relations - Volume 39, Number 1 (2024)",https://journals.sagepub.com/toc/ireb/current,Environment/Sustainability,Research/Academia
+doc_492,"International Affairs - Volume 100, Issue 1 (2024)",https://academic.oup.com/ia/issue/100/1,Politics/Law,Research/Academia
+doc_493,"Journal of International Relations, Peace Studies, and Development",https://scholarworks.arcadia.edu/agsjournal/,General,Academic Journal
+doc_494,Journal of International Relations & Foreign Policy (JIRFP),https://jirfp.thebrpi.org/,Business/Finance,Academic Journal
+doc_495,International Relations Open Access Articles,https://network.bepress.com/social-and-behavioral-sciences/political-science/international-relations/,Politics/Law,Research/Academia
+doc_496,US and Allies Accuse North Korea and Russia of Violating UN Sanctions (2025),https://apnews.com/article/3ada38bfc312ccd4b9bb6551bb671195,Politics/Law,Article/News
+doc_497,"Despite Tariff Pause, U.S. and China Continue Bitter 'Decoupling' (2025)",https://www.washingtonpost.com/world/2025/05/29/us-china-decoupling-accelerates/,Business/Finance,Article/News
+doc_498,Transcript: A Foreign Policy Debrief with Jake Sullivan (2025),https://www.ft.com/content/515f4d78-be95-4e09-9be2-8663d0f6d2ec,Politics/Law,Informational Text
+doc_499,East Timor Deports Ex-Filipino Congressman Accused of Masterminding a Governor's Murder (2025),https://apnews.com/article/8e7407ec852eb7fae3d1e70b7de76e6c,Politics/Law,Article/News
+doc_500,How U.S. Cuts in Somalia Could Imperil the Fight Against al-Shabab (2025),https://www.washingtonpost.com/world/2025/05/27/somalia-al-shabab-american-troops-trump/,Politics/Law,Article/News

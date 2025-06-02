@@ -84,7 +84,7 @@ class DocumentClassifier:
         
         # Create and train the pipeline
         pipeline = Pipeline([
-            ('tfidf', TfidfVectorizer(max_features=5000, ngram_range=(1, 2))),
+            ('tfidf', TfidfVectorizer(max_features=5000, ngram_range=(1, 3))),
             ('classifier', LinearSVC(C=1.5))
         ])
         
@@ -113,7 +113,7 @@ class DocumentClassifier:
         
         # Create and train the pipeline
         pipeline = Pipeline([
-            ('tfidf', TfidfVectorizer(max_features=5000, ngram_range=(1, 2))),
+            ('tfidf', TfidfVectorizer(max_features=5000, ngram_range=(1, 3))),
             ('classifier', LinearSVC(C=1.5))
         ])
         
@@ -134,61 +134,66 @@ class DocumentClassifier:
         """Classify a document by topic or document type."""
         # Preprocess the text
         processed_text = self.preprocess_text(text)
-        
+
         if classification_type == 'topic':
             if self.topic_classifier is None:
                 return {'error': 'Topic classifier has not been trained yet.'}
-            
+
             # Predict topic
             prediction = self.topic_classifier.predict([processed_text])[0]
-            
+
             # Calculate confidence based on classifier type
-            if isinstance(self.topic_classifier.named_steps['classifier'], LinearSVC):
+            # Corrected step name from 'classifier' to 'clf'
+            if isinstance(self.topic_classifier.named_steps['clf'], LinearSVC):
                 # Use decision_function for LinearSVC
                 scores = self.topic_classifier.decision_function([processed_text])[0]
                 # Get the index of the predicted class
                 pred_idx = self.topic_classifier.classes_.tolist().index(prediction)
                 # Confidence is the absolute value of the score for the predicted class
                 confidence = float(abs(scores[pred_idx]))
+            # Keep the predict_proba logic just in case a different classifier type is used later
             else:
                 # Use predict_proba for other classifiers (like MultinomialNB)
                 probabilities = self.topic_classifier.predict_proba([processed_text])[0]
                 confidence = float(max(probabilities))
-            
+
             return {
                 'classification_type': 'topic',
                 'result': prediction,
                 'confidence': confidence
             }
-            
+
         elif classification_type == 'document_type':
             if self.doc_type_classifier is None:
                 return {'error': 'Document type classifier has not been trained yet.'}
-            
+
             # Predict document type
             prediction = self.doc_type_classifier.predict([processed_text])[0]
 
             # Calculate confidence based on classifier type
-            if isinstance(self.doc_type_classifier.named_steps['classifier'], LinearSVC):
+            # Corrected step name from 'classifier' to 'clf'
+            if isinstance(self.doc_type_classifier.named_steps['clf'], LinearSVC):
                 # Use decision_function for LinearSVC
                 scores = self.doc_type_classifier.decision_function([processed_text])[0]
                 # Get the index of the predicted class
                 pred_idx = self.doc_type_classifier.classes_.tolist().index(prediction)
                 # Confidence is the absolute value of the score for the predicted class
                 confidence = float(abs(scores[pred_idx]))
+            # Keep the predict_proba logic just in case a different classifier type is used later
             else:
                 # Use predict_proba for other classifiers (like MultinomialNB)
                 probabilities = self.doc_type_classifier.predict_proba([processed_text])[0]
                 confidence = float(max(probabilities))
-            
+
             return {
                 'classification_type': 'document_type',
                 'result': prediction,
                 'confidence': confidence
             }
-            
+
         else:
             return {'error': 'Invalid classification type.'}
+
 
 def fetch_document_content(url):
     """Fetches content from a URL and extracts text based on content type, limiting large documents."""

@@ -24,6 +24,7 @@ from sklearn.model_selection import train_test_split
 import joblib
 from nltk.stem import WordNetLemmatizer
 from sklearn.pipeline import Pipeline
+import concurrent.futures # Import concurrent.futures
 
 # Set up Django environment
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.settings')
@@ -84,59 +85,59 @@ class DocumentClassifier:
         """Train the topic classifier with provided documents and labels."""
         # Preprocess documents
         processed_docs = [self.preprocess_text(doc) for doc in documents]
-        
+
         # Split data into training and testing sets
         docs_train, docs_test, labels_train, labels_test = train_test_split(
             processed_docs, labels, test_size=0.2, random_state=42
         )
-        
-        # Create and train the pipeline
-        pipeline = Pipeline([
-            ('tfidf', TfidfVectorizer(max_features=5000, ngram_range=(1, 2))),
-            ('classifier', LinearSVC())
+
+        # Create a pipeline with TF-IDF vectorizer and Linear SVC classifier
+        topic_classifier_pipeline = Pipeline([
+            ('tfidf', TfidfVectorizer(max_features=15000, ngram_range=(1, 4), min_df=2)),
+            ('clf', LinearSVC(C=0.1, random_state=42, class_weight='balanced', loss='squared_hinge'))
         ])
         
         # Train the model
-        pipeline.fit(docs_train, labels_train)
+        topic_classifier_pipeline.fit(docs_train, labels_train)
         
         # Evaluate the model (optional, but good for debugging)
-        accuracy = pipeline.score(docs_test, labels_test)
+        accuracy = topic_classifier_pipeline.score(docs_test, labels_test)
         print(f"Topic classifier test accuracy: {accuracy:.2f}")
         
         # Save the model
-        joblib.dump(pipeline, TOPIC_MODEL_PATH)
-        self.topic_classifier = pipeline
+        joblib.dump(topic_classifier_pipeline, TOPIC_MODEL_PATH)
+        self.topic_classifier = topic_classifier_pipeline
         
-        return pipeline
+        return topic_classifier_pipeline
     
     def train_doc_type_classifier(self, documents, labels):
         """Train the document type classifier with provided documents and labels."""
         # Preprocess documents
         processed_docs = [self.preprocess_text(doc) for doc in documents]
-        
+
         # Split data into training and testing sets
         docs_train, docs_test, labels_train, labels_test = train_test_split(
             processed_docs, labels, test_size=0.2, random_state=42
         )
-        
-        # Create and train the pipeline
-        pipeline = Pipeline([
-            ('tfidf', TfidfVectorizer(max_features=5000, ngram_range=(1, 2))),
-            ('classifier', LinearSVC())
+
+        # Create a pipeline with TF-IDF vectorizer and Linear SVC classifier
+        document_type_classifier_pipeline = Pipeline([
+            ('tfidf', TfidfVectorizer(max_features=7000, ngram_range=(1, 3), min_df=2)),
+            ('clf', LinearSVC(C=0.5, random_state=42, class_weight='balanced')) # Add class_weight='balanced' here
         ])
         
         # Train the model
-        pipeline.fit(docs_train, labels_train)
+        document_type_classifier_pipeline.fit(docs_train, labels_train)
         
         # Evaluate the model (optional, but good for debugging)
-        accuracy = pipeline.score(docs_test, labels_test)
+        accuracy = document_type_classifier_pipeline.score(docs_test, labels_test)
         print(f"Document type classifier test accuracy: {accuracy:.2f}")
         
         # Save the model
-        joblib.dump(pipeline, DOC_TYPE_MODEL_PATH)
-        self.doc_type_classifier = pipeline
+        joblib.dump(document_type_classifier_pipeline, DOC_TYPE_MODEL_PATH)
+        self.doc_type_classifier = document_type_classifier_pipeline
         
-        return pipeline
+        return document_type_classifier_pipeline
     
     def classify_document(self, text, classification_type='topic'):
         """Classify a document by topic or document type."""
@@ -151,7 +152,7 @@ class DocumentClassifier:
             prediction = self.topic_classifier.predict([processed_text])[0]
             
             # Calculate confidence based on classifier type
-            if isinstance(self.topic_classifier.named_steps['classifier'], LinearSVC):
+            if isinstance(self.topic_classifier.named_steps['clf'], LinearSVC):
                 # Use decision_function for LinearSVC
                 scores = self.topic_classifier.decision_function([processed_text])[0]
                 # Get the index of the predicted class
@@ -177,7 +178,7 @@ class DocumentClassifier:
             prediction = self.doc_type_classifier.predict([processed_text])[0]
 
             # Calculate confidence based on classifier type
-            if isinstance(self.doc_type_classifier.named_steps['classifier'], LinearSVC):
+            if isinstance(self.doc_type_classifier.named_steps['clf'], LinearSVC):
                 # Use decision_function for LinearSVC
                 scores = self.doc_type_classifier.decision_function([processed_text])[0]
                 # Get the index of the predicted class
@@ -295,49 +296,219 @@ def fetch_document_content(url):
         return ""
 
 def clean_csv_data(csv_path):
-    """Extract training data from the CSV file."""
-    training_data = []
+    """Extract training data from the CSV file, fetching content concurrently."""
+    documents_to_fetch = []
+    documents_no_url = []
     
+    # Read the CSV and filter documents first
     with open(csv_path, 'r', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
+            title = row.get('Title', '')
             url = row.get('Link')
-            title = row.get('Title', '') # Get the title
+            doc_id = row.get('Document ID', 'N/A')
 
-            # Split topic labels by comma if there are multiple and filter out empty ones
-            topic_labels = [label.strip() for label in row.get('Topic Labels', '').split(',') if label.strip()]
-
-            # Split document type labels by comma if there are multiple and filter out empty ones
+            # Split topic and document type labels and filter out empty ones
+            topic_label = row.get('Topic Labels', '').strip()
             doc_type_labels = [label.strip() for label in row.get('Type Labels', '').split(',') if label.strip()]
-            
-            # Skip processing if the document type is 'textbook' (case-insensitive) or if there are no valid labels
-            if 'textbook' in [label.lower() for label in doc_type_labels] or not topic_labels or not doc_type_labels:
-                print(f"Skipping document {row.get('Document ID', '')} due to document type 'textbook' or missing labels.")
-                continue
 
-            # Attempt to fetch content from the URL
-            content = ""
+            # We should only skip rows with absolutely no content (neither URL nor title) AND no labels
+            if not (url or title) and not (topic_label or doc_type_labels):
+                 print(f"Skipping row {doc_id} due to missing link, title, and labels in cleaned CSV.")
+                 continue
+
             if url:
-                print(f"Fetching content for {row.get('Document ID', '')} from {url}...")
-                content = fetch_document_content(url)
+                documents_to_fetch.append(row)
+            elif title:
+                # Documents with no URL but a title are processed immediately with the title
+                documents_no_url.append(row)
+            else:
+                # This case should ideally be caught by the check above, but as a safeguard
+                print(f"Warning: Document {doc_id} has no link or title, but has labels. Processing with empty content for now.")
+                # Process with empty content, labels will still be added if present
+                documents_no_url.append(row) # Treat as no-url case, will use empty content
 
-            # If content fetching failed or no URL was provided, use the title as content
-            if not content and title:
-                print(f"Using title as content for {row.get('Document ID', '')} due to failed fetch or empty content.")
-                content = title
-            elif not content and not title:
-                print(f"Skipping row {row.get('Document ID', '')} due to missing link and title.")
-                continue
+    training_data = []
 
-            # Use fetched content or title for training purposes
-            # For each topic and document type combination, create a training entry
-            for topic in topic_labels:
-                for doc_type in doc_type_labels:
-                    training_data.append({
-                        'content': content,
-                        'topic_label': topic,
-                        'document_type_label': doc_type
-                    })
+    # Process documents with no URL (using title as content or empty if no title)
+    for row in documents_no_url:
+         content = row.get('Title', '').strip()
+         topic_label = row.get('Topic Labels', '').strip() # Single topic label
+         doc_type_labels = [label.strip() for label in row.get('Type Labels', '').split(',') if label.strip()] # List of types
+
+         # Create training entries based on available labels and content
+         # Ensure we only add if at least one label is present
+         if topic_label or doc_type_labels:
+             # If there's a topic label, create entries for each document type with this topic
+             if topic_label:
+                 if doc_type_labels:
+                     for doc_type in doc_type_labels:
+                         training_data.append({
+                             'content': content,
+                             'topic_label': topic_label,
+                             'document_type_label': doc_type
+                         })
+                 else:
+                      # If no document types but has topic, add with empty doc type
+                      training_data.append({
+                          'content': content,
+                          'topic_label': topic_label,
+                          'document_type_label': '' # Empty doc type label
+                      })
+
+             # If no topic label but has document types, create entries with empty topic
+             elif doc_type_labels:
+                  for doc_type in doc_type_labels:
+                      training_data.append({
+                          'content': content,
+                          'topic_label': '', # Empty topic label
+                          'document_type_label': doc_type
+                      })
+
+             print(f"Processed document {row.get('Document ID', 'N/A')}.")
+
+    # Fetch content for documents with URLs concurrently
+    if documents_to_fetch:
+        print(f"Fetching content concurrently for {len(documents_to_fetch)} documents...")
+        # Use a thread pool executor
+        # Adjust max_workers based on your system and network capabilities
+        with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+            # Submit fetching tasks and map futures to original rows
+            future_to_row = {executor.submit(fetch_document_content, doc['Link']): doc for doc in documents_to_fetch}
+
+            for future in concurrent.futures.as_completed(future_to_row):
+                row = future_to_row[future]
+                doc_id = row.get('Document ID', 'N/A')
+                url = row.get('Link')
+
+                try:
+                    content = future.result()
+                    print(f"Finished fetching content for {doc_id}.")
+
+                    # If content fetching failed or returned empty, use the title as content
+                    if not content:
+                         title = row.get('Title', '')
+                         if title:
+                             content = title
+                             print(f"Using title as content for {doc_id} due to empty fetched content.")
+                         else:
+                             print(f"Warning: Document {doc_id} has empty fetched content and missing title.")
+                             content = '' # Use empty content if no title fallback
+
+                    # Get cleaned labels from the row
+                    topic_label = row.get('Topic Labels', '').strip() # Single topic label
+                    doc_type_labels = [label.strip() for label in row.get('Type Labels', '').split(',') if label.strip()] # List of types
+
+                    # Create training entries based on available labels and fetched content
+                    # Ensure we only add if at least one label is present
+                    if topic_label or doc_type_labels:
+                        # If there's a topic label, create entries for each document type with this topic
+                        if topic_label:
+                            if doc_type_labels:
+                                for doc_type in doc_type_labels:
+                                    training_data.append({
+                                        'content': content,
+                                        'topic_label': topic_label,
+                                        'document_type_label': doc_type
+                                    })
+
+                            else:
+                                 # If no document types but has topic, add with empty doc type
+                                  training_data.append({
+                                      'content': content,
+                                      'topic_label': topic_label,
+                                      'document_type_label': '' # Empty doc type label
+                                  })
+
+                        # If no topic label but has document types, create entries with empty topic
+                        elif doc_type_labels:
+                             for doc_type in doc_type_labels:
+                                  training_data.append({
+                                      'content': content,
+                                      'topic_label': '', # Empty topic label
+                                      'document_type_label': doc_type
+                                  })
+
+                        print(f"Processed document {doc_id} with title fallback.")
+                    else:
+                         print(f"Skipping document {doc_id} due to fetch exception and missing title.")
+                         continue # Skip if fetch failed and no title to fallback on
+
+                except Exception as exc:
+                    print(f'Error fetching or processing document {doc_id} ({url}): {exc}')
+                    # Fallback to using title if fetching failed due to an exception
+                    title = row.get('Title', '')
+                    if title:
+                         content = title
+                         print(f"Using title as content for {doc_id} due to fetch exception.")
+
+                         # Get cleaned labels from the row
+                         topic_label = row.get('Topic Labels', '').strip() # Single topic label
+                         doc_type_labels = [label.strip() for label in row.get('Type Labels', '').split(',') if label.strip()] # List of types
+
+                         # Create training entries based on available labels and title content
+                         # Ensure we only add if at least one label is present
+                         if topic_label or doc_type_labels:
+                              # If there's a topic label, create entries for each document type with this topic
+                             if topic_label:
+                                 if doc_type_labels:
+                                     for doc_type in doc_type_labels:
+                                         training_data.append({
+                                             'content': content,
+                                             'topic_label': topic_label,
+                                             'document_type_label': doc_type
+                                         })
+                                 else:
+                                      # If no document types but has topic, add with empty doc type
+                                       training_data.append({
+                                           'content': content,
+                                           'topic_label': topic_label,
+                                           'document_type_label': '' # Empty doc type label
+                                       })
+
+                              # If no topic label but has document types, create entries with empty topic
+                             elif doc_type_labels:
+                                for doc_type in doc_type_labels:
+                                    training_data.append({
+                                        'content': content,
+                                        'topic_label': '', # Empty topic label
+                                        'document_type_label': doc_type
+                                    })
+    
+                         print(f"Processed document {doc_id} with title fallback.")
+                    else:
+                         print(f"Skipping document {doc_id} due to fetch exception and missing title.")
+                         continue # Skip if fetch failed and no title to fallback on
+    
+    # --- Basic Oversampling for Topic Labels ---
+    # Count occurrences of each topic label
+    topic_counts = {}
+    for item in training_data:
+        topic_counts[item['topic_label']] = topic_counts.get(item['topic_label'], 0) + 1
+
+    # Identify minority topics and determine how many duplicates are needed
+    oversample_target = 40 # Target number of documents for minority classes
+    minority_topics_to_duplicate = {}
+    for label, count in topic_counts.items():
+        # Define minority threshold (e.g., less than 10% of the average count, or a fixed number)
+        # Using a fixed threshold of 10 for simplicity here.
+        if count < 10 and count > 0: # Only oversample if count is between 1 and 9
+             minority_topics_to_duplicate[label] = oversample_target - count
+
+    # Duplicate entries for minority topics
+    additional_training_data = []
+    for item in training_data:
+        label = item['topic_label']
+        if label in minority_topics_to_duplicate:
+            num_duplicates = minority_topics_to_duplicate[label]
+            for _ in range(num_duplicates):
+                additional_training_data.append(item) # Append the original item
+            # Remove the label from the dict after duplicating to avoid re-duplicating
+            del minority_topics_to_duplicate[label]
+
+    # Add the duplicated entries to the training data
+    training_data.extend(additional_training_data)
+    # --- End Oversampling Logic ---
     
     return training_data
 
@@ -382,7 +553,7 @@ def train_models():
 
 def main():
     # Path to the CSV file
-    csv_path = 'NLP documents bank - Sheet1.csv'
+    csv_path = 'NLP documents bank - Sheet1_cleaned.csv'
     
     # Check if the file exists
     if not os.path.exists(csv_path):
@@ -399,7 +570,25 @@ def main():
     
     print(f"Imported {imported_count} training examples.")
     
-    print("Training models...")
+    # Print unique topic and document type labels in the training data
+    unique_topic_labels = sorted(list(set([item['topic_label'] for item in training_data])))
+    unique_doctype_labels = sorted(list(set([item['document_type_label'] for item in training_data])))
+    print("\nUnique Topic Labels in Training Data:")
+    print(unique_topic_labels)
+    print("\nUnique Document Type Labels in Training Data:")
+    print(unique_doctype_labels)
+
+    # Print distribution of topic labels
+    topic_label_counts = {}
+    for item in training_data:
+        label = item['topic_label']
+        topic_label_counts[label] = topic_label_counts.get(label, 0) + 1
+
+    print("\nTopic Label Distribution in Training Data:")
+    for label, count in sorted(topic_label_counts.items()):
+        print(f"  {label}: {count}")
+
+    print("\nTraining models...")
     success = train_models()
     
     if success:
